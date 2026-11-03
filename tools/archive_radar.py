@@ -1,4 +1,4 @@
-"""Copy the current T.O. Culture Radar edition into the archive and rebuild the archive index.
+"""Copy the current Culture Radar T.O. edition into the archive and rebuild the archive index.
 
 Run from the repo root after every change to radar/index.html:
     python3 tools/archive_radar.py
@@ -40,7 +40,7 @@ def stats(page):
 
 
 def archive_copy(page, label):
-    page = page.replace("<title>T.O. Culture Radar</title>", f"<title>T.O. Culture Radar, {label}</title>")
+    page = page.replace("<title>Culture Radar T.O.</title>", f"<title>Culture Radar T.O., {label}</title>")
     page = page.replace("</style>", BANNER_CSS + "\n</style>", 1)
     banner = (
         f'<p class="archived">Archived edition · {html.escape(label)} · '

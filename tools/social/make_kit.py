@@ -1,4 +1,4 @@
-"""Render the Instagram kit for the current T.O. Culture Radar edition.
+"""Render the Instagram kit for the current Culture Radar T.O. edition.
 
     python3 tools/social/make_kit.py OUTDIR [--week-start YYYY-MM-DD]
 
@@ -77,14 +77,14 @@ def cover(month, n):
     chips = "".join(f"<span class=mono style='background:{INK[k]};padding:10px 16px;border:3px solid {BLACK}'>{CAT[k]}</span>" for k in CAT)
     return shell(1080, 1350, f"""<div class=frame>
 <div class='strip mono'><span>Toronto · Free</span><span>No. {issue_no(month)} · {html.escape(month)}</span></div>
-<div class=mast style='font-size:118px;margin-top:40px;--c:{INK["film"]}'><span class=mis>T.O.</span></div>
-<div class='mast mis' style='font-size:300px;--c:{INK["film"]}'>Culture</div>
+<div class='mast mis' style='font-size:300px;margin-top:44px;--c:{INK["film"]}'>Culture</div>
 <div class='mast mis' style='font-size:300px;color:{PAPER};-webkit-text-stroke:6px {BLACK};--c:{BLACK}'>Radar</div>
-<div class=rule style='margin-top:30px'></div>
+<div class=mast style='font-size:130px;margin-top:22px'><span style='display:inline-block;background:{INK["film"]};border:6px solid {BLACK};padding:14px 22px 2px;transform:rotate(-2deg);box-shadow:9px 9px 0 {BLACK}'>T.O.</span></div>
+<div class=rule style='margin-top:36px'></div>
 <div style='font-size:46px;line-height:1.2;margin-top:22px;max-width:19ch;font-weight:600'>What’s on in {html.escape(mname)}: film, art, music, and theatre.</div>
 <div class=foot style='display:flex;gap:14px;flex-wrap:wrap'>{chips}</div>
 <div class='mono' style='margin-top:22px;display:flex;justify-content:space-between'><span>{HANDLE}</span><span>Swipe →</span></div></div>
-<div class='burst mast' style='width:330px;height:330px;right:60px;top:800px;transform:rotate(12deg);--c2:{INK["music"]};font-size:76px;line-height:.85'>{n}<br>picks</div>""",
+<div class='burst mast' style='width:330px;height:330px;right:60px;top:830px;transform:rotate(12deg);--c2:{INK["music"]};font-size:76px;line-height:.85'>{n}<br>picks</div>""",
         bg=INK["art"])
 
 def pick(r, i, n, month):
@@ -169,7 +169,7 @@ def main():
     if ws:
         doc, n = story(rows, ws); jobs.append((os.path.join(out, "story-this-week.png"), doc, 1080, 1920))
     asyncio.run(render(jobs))
-    cap = [f"T.O. Culture Radar, {month}. {len(picks)} picks:", ""]
+    cap = [f"Culture Radar T.O., {month}. {len(picks)} picks:", ""]
     for r in picks:
         cap.append(f"{r[1]} · {r[2]} · {r[3].split(' · ')[0]}")
     cap += ["", f"Plus {len(rows) - len(picks)} more listings across film, art, music, and theatre, with ticket links. Link in bio.", "", f"Full guide: {SITE}", "", "#toronto #torontofilm #torontoart #torontoevents"]

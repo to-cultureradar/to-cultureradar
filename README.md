@@ -7,6 +7,10 @@ A small static site, published with GitHub Pages at https://safetydept.github.io
 - `fox/ics/` and `fox/fox.ics` — iCal files, one per showing plus a subscribable feed. Generated from the page data; never edit by hand.
 - `radar/index.html` — T.O. Culture Radar, a monthly list of picks. Data lives in the `E` array in the page script; the masthead’s `.issue` block holds the edition month and date. Picks, tabs, counts, and sections are all built from `E`.
 - `assets/fonts.css` + `assets/fonts/` — self-hosted typefaces (Archivo, Newsreader, IBM Plex Mono; SIL Open Font License) shared by every page.
+- `radar/archive/` — one folder per edition (`YYYY-MM/`) plus an index. Generated; never edit by hand.
+- `tools/archive_radar.py` — run after every change to `radar/index.html`: copies the edition into `radar/archive/<month>/` and rebuilds the archive index (`python3 tools/archive_radar.py`).
 - `tools/make_ics.py` — rebuilds the iCal files: `python3 tools/make_ics.py fox/index.html fox/ics fox/fox.ics YEAR MONTH`
 
 Both pages are refreshed by scheduled Claude tasks: the Fox page every Monday, the Radar on the 1st of each month.
+
+All internal links are root-relative (`/Culture-calendar/...`), because GitHub Pages serves the site under that path.

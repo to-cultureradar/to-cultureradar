@@ -14,14 +14,14 @@ import os, re, sys, json, html, asyncio, datetime as dt
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FONTS = os.path.join(ROOT, "assets", "fonts")
 MON = {m: i for i, m in enumerate(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"], 1)}
-CAT = {"film": "Film", "art": "Art", "music": "Music", "theatre": "Theatre", "talks": "Talks", "outdoors": "Outdoors", "festivals": "Festivals", "daytrips": "Day trips"}
+CAT = {"film": "Film", "art": "Art", "music": "Music", "theatre": "Theatre", "talks": "Talks", "outdoors": "Outdoors", "festivals": "Festivals"}
 CORE = ["film", "art", "music", "theatre"]  # the four chips on the cover and preview card
 
 def load():
     page = open(os.path.join(ROOT, "index.html"), encoding="utf8").read()
     month = re.search(r'class="issue[^"]*"><strong>([A-Z][a-z]+ \d{4})</strong>', page).group(1)
     rows = []
-    for m in re.finditer(r'^ (\["(?:film|art|music|theatre|talks|outdoors|festivals|daytrips)".*\]),?$', page, re.M):
+    for m in re.finditer(r'^ (\["(?:film|art|music|theatre|talks|outdoors|festivals)".*\]),?$', page, re.M):
         line = re.sub(r",SRC\.\w+,", ',"",', m.group(1))
         try:
             rows.append(json.loads(line))
@@ -40,7 +40,7 @@ HANDLE = "@cultureradar.to"
 SITE = "cultureradar.to"
 # 90s alt-weekly look: newsprint, halftone, misregistered spot colour, one bright ink per section
 INK = {"film": "#ff2e88", "art": "#ffd600", "music": "#00b2ff", "theatre": "#ff5a1f",
-       "talks": "#a66bff", "outdoors": "#33c463", "festivals": "#ff4f4f", "daytrips": "#00c9b1"}
+       "talks": "#a66bff", "outdoors": "#33c463", "festivals": "#ff4f4f"}
 PAPER, BLACK = "#f3eddc", "#111111"
 
 CSS = f"""

@@ -34,7 +34,7 @@ def month_of(page):
 
 
 def stats(page):
-    rows = re.findall(r'^ \["(film|art|music|theatre|talks|outdoors|festivals|daytrips)","[^"]*","([^"]*)".*?,\[([^\]]*)\]\],?$', page, re.M)
+    rows = re.findall(r'^ \["(film|art|music|theatre|talks|outdoors|festivals)","[^"]*","([^"]*)".*?,\[([^\]]*)\]\],?$', page, re.M)
     picks = [t for _, t, tags in rows if '"pick"' in tags]
     return len(rows), picks
 

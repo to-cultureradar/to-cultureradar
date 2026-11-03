@@ -2,7 +2,7 @@
 
 A small static site, published with GitHub Pages at https://cultureradar.to/
 
-- `index.html` — the home page: Culture Radar Toronto, a monthly list of picks across eight lanes (film, art, music, theatre, talks, outdoors, festivals, day trips), with This week / This weekend and Free only filters. Data lives in the `E` array in the page script; the masthead’s `.issue` block holds the edition month and date. Picks, tabs, counts, and sections are all built from `E`.
+- `index.html` — the home page: Culture Radar Toronto, a monthly list of picks across seven lanes (film, art, music, theatre, talks, outdoors, festivals), with This week / This weekend and Free only filters. Data lives in the `E` array in the page script; the masthead’s `.issue` block holds the edition month and date. Picks, tabs, counts, and sections are all built from `E`.
 - `links/index.html` — Culture Calendar T.O., a secondary page linking the Radar, the Fox, and both archives (served at /links/).
 - `fox/index.html` — Fox Theatre screenings for the next four weeks. Data lives in the `F` (films) and `S` (schedule) objects in the page script.
 - `fox/ics/` and `fox/fox.ics` — iCal files, one per showing plus a subscribable feed. Generated from the page data; never edit by hand.

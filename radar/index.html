@@ -70,6 +70,8 @@ section.cat{margin-top:44px}
 .flag{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:1px 6px;border:1px solid currentColor}
 .flag.pick{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .flag.free,.flag.tour{color:var(--ink)}
+.flag.sold{background:var(--soft);border-color:var(--soft);color:var(--paper)}
+.row.is-sold .body h3,.row.is-sold .body p{color:var(--soft)}
 .body p{margin:8px 0 0;max-width:62ch;font-size:17px}
 .empty{padding-block:24px;color:var(--soft)}
 footer{margin-top:56px;padding-top:14px;border-top:3px solid var(--rule-strong);font-family:var(--f-mono);font-size:12.5px;color:var(--soft);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
@@ -135,7 +137,7 @@ const E=[
  ["art","To Jan 3","Psychedelics: Art. Culture. Science.","Royal Ontario Museum","Psychedelics through art, culture, and medicine. Closes Jan 3.",SRC.rom,["tour"]],
  ["art","To Feb 2027","Sunday Best","Art Gallery of Ontario","Black style and self-presentation from the 1880s to now. Opens here before moving to Philadelphia.",SRC.ago,["tour"]],
  ["art","To spring 2027","Melissa Auf der Maur: My ’90s Photographs","Art Gallery of Ontario","More than 200 photos from the bassist’s years on the road with Hole and the Smashing Pumpkins.",SRC.ago,[]],
- ["music","Nov 5","Angine de Poitrine","History","Masked Québécois duo playing microtonal, loop-heavy instrumental rock.",SRC.exclaim,[]],
+ ["music","Nov 5","Angine de Poitrine","History","Masked Québécois duo playing microtonal, loop-heavy instrumental rock.",SRC.exclaim,["sold"]],
  ["music","Nov 6","Kerri Chandler, open to close","Apollo · 131 McCormack St.","The New Jersey deep house pioneer plays from open to close: one long, warm set instead of a headline hour.","https://ra.co/events/2396504",["pick"]],
  ["music","Nov 6","Benji B + Immigrant Muscle","Standard Time","The Deviation founder and BBC radio host, moving between house, broken beat, jazz, and UK club music.","https://ra.co/events/2556276",[]],
  ["music","Nov 7","FORMAT × Standard Time: Altinbas, Measure Divide, anise","Standard Time","Dub and minimal techno in one of the city’s best small rooms.","https://ra.co/events/2554792",[]],
@@ -166,7 +168,7 @@ function parts(w){
 }
 function key(w){const m=w.match(/^([A-Z][a-z]{2}) (\d+)/);if(!m)return 0;const mo=MON[m[1]]||0;return (mo<6?mo+12:mo)*100+(+m[2]);}
 const ext=u=>/^https?:/.test(u);
-function flags(t){return (t.includes("pick")?'<span class="flag pick">Pick</span>':"")+(t.includes("free")?'<span class="flag free">Free</span>':"")+(t.includes("tour")?'<span class="flag tour">Touring</span>':"");}
+function flags(t){return (t.includes("pick")?'<span class="flag pick">Pick</span>':"")+(t.includes("free")?'<span class="flag free">Free</span>':"")+(t.includes("tour")?'<span class="flag tour">Touring</span>':"")+(t.includes("sold")?'<span class="flag sold">Sold out</span>':"");}
 function renderPicks(){
   const P=E.filter(e=>e[6].includes("pick")).sort((a,b)=>key(a[1])-key(b[1]));
   document.getElementById("picks").innerHTML=P.map(([c,w,t,where,,link])=>`<a class="pickcard" href="${esc(link)}"${ext(link)?' target="_blank" rel="noopener"':''}><span class="d">${esc(w)} · ${esc(c==="theatre"?"Theatre":c[0].toUpperCase()+c.slice(1))}</span><span class="t">${esc(t)}</span><span class="v">${esc(where.split(" · ")[0])}</span></a>`).join("");
@@ -188,7 +190,7 @@ function render(){
     if(!rows.length)return;
     shown+=rows.length;
     const s=document.createElement("section");s.className="cat";s.id=k;
-    s.innerHTML=`<h2>${label}<small>${rows.length} listings</small></h2>`+rows.map(([c,w,t,where,why,link,tags])=>{const d=parts(w);return `<article class="row"><div class="date"><span class="m">${esc(d.m)}</span><span class="n${d.sm?" sm":""}">${esc(d.n)}</span></div><div class="body"><h3><a href="${esc(link)}"${ext(link)?' target="_blank" rel="noopener"':''}>${esc(t)}</a>${ext(link)?'<span class="arrow" aria-hidden="true">↗</span>':''}</h3><div class="meta"><span>${esc(where)}</span>${flags(tags)}</div><p>${esc(why)}</p></div></article>`}).join("");
+    s.innerHTML=`<h2>${label}<small>${rows.length} listings</small></h2>`+rows.map(([c,w,t,where,why,link,tags])=>{const d=parts(w);return `<article class="row${tags.includes("sold")?" is-sold":""}"><div class="date"><span class="m">${esc(d.m)}</span><span class="n${d.sm?" sm":""}">${esc(d.n)}</span></div><div class="body"><h3><a href="${esc(link)}"${ext(link)?' target="_blank" rel="noopener"':''}>${esc(t)}</a>${ext(link)?'<span class="arrow" aria-hidden="true">↗</span>':''}</h3><div class="meta"><span>${esc(where)}</span>${flags(tags)}</div><p>${esc(why)}</p></div></article>`}).join("");
     L.appendChild(s);
   });
   if(!shown)L.innerHTML='<p class="empty">Nothing free in this section this month.</p>';

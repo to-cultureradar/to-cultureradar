@@ -41,6 +41,7 @@ def stats(page):
 
 def archive_copy(page, label):
     page = page.replace("<title>Culture Radar T.O.</title>", f"<title>Culture Radar T.O., {label}</title>")
+    page = re.sub(r'<meta property="og:url"[^>]*>\n?', "", page)  # archived copies are not the canonical page
     page = page.replace("</style>", BANNER_CSS + "\n</style>", 1)
     banner = (
         f'<p class="archived">Archived edition · {html.escape(label)} · '

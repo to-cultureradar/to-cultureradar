@@ -1,11 +1,12 @@
 """Render the Instagram kit for the current Culture Radar T.O. edition.
 
-    python3 tools/social/make_kit.py OUTDIR [--week-start YYYY-MM-DD]
+    python3 tools/social/make_kit.py OUTDIR [--week-start YYYY-MM-DD] [--og assets/social/og.png]
 
 Reads the picks and listings from index.html (the Radar) and writes:
   OUTDIR/feed-00-cover.png … feed-NN-*.png   (1080×1350 carousel: cover, one slide per pick, closing slide)
   OUTDIR/story-this-week.png                  (1080×1920, events in the 7 days from --week-start)
   OUTDIR/caption.txt                          (carousel caption)
+  --og PATH                                   (1200×630 link-preview image; the site uses assets/social/og.png)
 Needs Playwright with a Chromium/Chrome binary.
 """
 import os, re, sys, json, html, asyncio, datetime as dt
@@ -141,6 +142,19 @@ def story(rows, start):
 <div class='mono' style='margin-top:22px;background:{BLACK};color:{INK["art"]};padding:16px 20px;display:flex;justify-content:space-between'><span>Tickets</span><span>{SITE}</span></div></div>""",
         dots="dots fade"), len(wk)
 
+def og_card(month, n):
+    """1200×630 link-preview image (Open Graph), same look as the cover."""
+    chips = "".join(f"<span class=mono style='background:{INK[k]};padding:8px 14px;border:3px solid {BLACK};font-size:20px'>{CAT[k]}</span>" for k in CAT)
+    return shell(1200, 630, f"""<div class=frame style='inset:44px 52px'>
+<div class='strip mono' style='font-size:20px'><span>Toronto · Free</span><span>{html.escape(month)}</span></div>
+<div style='display:flex;align-items:flex-end;gap:26px;margin-top:30px'>
+<div><div class='mast mis' style='font-size:190px;--c:{INK["film"]}'>Culture</div>
+<div class='mast mis' style='font-size:190px;color:{PAPER};-webkit-text-stroke:5px {BLACK};--c:{BLACK}'>Radar</div></div>
+<div class=mast style='font-size:110px;margin-bottom:6px'><span style='display:inline-block;background:{INK["film"]};border:5px solid {BLACK};padding:10px 18px 0;transform:rotate(-2deg);box-shadow:8px 8px 0 {BLACK}'>T.O.</span></div></div>
+<div class=foot style='display:flex;gap:12px;align-items:center'>{chips}<span class=mono style='margin-left:auto;font-size:22px'>{SITE}</span></div></div>
+<div class='burst mast' style='width:230px;height:230px;right:40px;top:110px;transform:rotate(12deg);--c2:{INK["music"]};font-size:54px;line-height:.85'>{n}<br>picks</div>""",
+        bg=INK["art"])
+
 async def render(jobs):
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
@@ -166,6 +180,8 @@ def main():
         slug = re.sub(r"[^a-z0-9]+", "-", r[2].lower()).strip("-")[:40]
         jobs.append((os.path.join(out, f"feed-{i:02d}-{slug}.png"), pick(r, i, len(picks), month), 1080, 1350))
     jobs.append((os.path.join(out, f"feed-{len(picks)+1:02d}-more.png"), closing(month, len(rows) - len(picks)), 1080, 1350))
+    if "--og" in sys.argv:
+        jobs.append((os.path.abspath(sys.argv[sys.argv.index("--og") + 1]), og_card(month, len(picks)), 1200, 630))
     if ws:
         doc, n = story(rows, ws); jobs.append((os.path.join(out, "story-this-week.png"), doc, 1080, 1920))
     asyncio.run(render(jobs))

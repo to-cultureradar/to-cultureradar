@@ -36,6 +36,7 @@ def snapshot(page, when, rng):
     page = page.replace("<title>Fox Theatre Calendar</title>", f"<title>Fox Theatre Calendar, week of {label}</title>")
     page = page.replace("</style>", BANNER_CSS + "\n</style>", 1)
     page = re.sub(r'<p class="subscribe">.*?</p>\n?', "", page, count=1, flags=re.S)
+    page = re.sub(r'<meta property="og:url"[^>]*>\n?', "", page)  # archived copies are not the canonical page
     page = re.sub(r"const todayNum=.*?;", "const todayNum=null;", page, count=1)
     page = page.replace('"fox-filter"', '"fox-arch-filter"')
     banner = (f'<p class="archived">Archived week · listings as of {html.escape(label)} · '

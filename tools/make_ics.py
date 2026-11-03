@@ -1,5 +1,6 @@
 import re,json,sys,os,datetime as dt
-"""Build per-showing .ics files and one subscribable feed from the F and S data in fox/index.html.
+"""S keys may be day numbers (YEAR/MONTH args apply) or "YYYY-MM-DD" strings.
+Build per-showing .ics files and one subscribable feed from the F and S data in fox/index.html.
 Usage: python3 tools/make_ics.py fox/index.html fox/ics fox/fox.ics YEAR MONTH"""
 html,outdir,feed,year,month=sys.argv[1],sys.argv[2],sys.argv[3],int(sys.argv[4]),int(sys.argv[5])
 h=open(html,encoding="utf8").read()
@@ -21,7 +22,7 @@ events=[]
 for day,arr in S.items():
     for x in arr:
         t,slug=x.split(" ")[:2]; f=F[slug]
-        hh,mm=map(int,t.split(":")); start=dt.datetime(year,month,int(day),hh,mm)
+        hh,mm=map(int,t.split(":")); start=(dt.datetime.strptime(day,"%Y-%m-%d").replace(hour=hh,minute=mm) if "-" in day else dt.datetime(year,month,int(day),hh,mm))
         end=start+dt.timedelta(minutes=f[2] or 120)
         desc=[]
         if len(f)>5 and f[5]: desc.append("Directed by "+f[5])

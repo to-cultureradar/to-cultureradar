@@ -1,6 +1,6 @@
 # Culture Calendar
 
-A small static site, published with GitHub Pages at https://safetydept.github.io/Culture-calendar/
+A small static site, published with GitHub Pages at https://cultureradar.to/
 
 - `index.html` — home page linking the two calendars
 - `fox/index.html` — Fox Theatre screenings for the next four weeks. Data lives in the `F` (films) and `S` (schedule) objects in the page script.
@@ -15,4 +15,4 @@ A small static site, published with GitHub Pages at https://safetydept.github.io
 
 Both pages are refreshed by scheduled Claude tasks: the Fox page every Monday, the Radar on the 1st of each month.
 
-All internal links are root-relative (`/Culture-calendar/...`), because GitHub Pages serves the site under that path.
+All internal links are root-relative (`/...`). The site is served from the custom domain in `CNAME` (cultureradar.to).

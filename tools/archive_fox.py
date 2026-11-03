@@ -14,7 +14,7 @@ import os, re, html, shutil
 from datetime import datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = "/Culture-calendar/"
+BASE = "/"
 FOX = os.path.join(ROOT, "fox", "index.html")
 ARCH = os.path.join(ROOT, "fox", "archive")
 

@@ -14,7 +14,7 @@ import html
 from datetime import datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = "/Culture-calendar/"
+BASE = "/"
 RADAR = os.path.join(ROOT, "radar", "index.html")
 ARCH = os.path.join(ROOT, "radar", "archive")
 

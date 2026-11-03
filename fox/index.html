@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fox Theatre Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a single marquee-board agenda — week bands, day rows with a date stub on the left and the night's bill on the right */
+:root{
+  --bg:#f6f2ef; --surface:#fffdfb; --ink:#231a1c; --muted:#76656a; --line:#e3d8d6;
+  --accent:#8c1c2b; --accent-soft:#f3e1e3; --gold:#a8771f;
+  --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#171113; --surface:#211a1c; --ink:#f1e8e6; --muted:#a8989b; --line:#3a2e31;
+  --accent:#e0707f; --accent-soft:#3a1f25; --gold:#d6a654; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171113; --surface:#211a1c; --ink:#f1e8e6; --muted:#a8989b; --line:#3a2e31;
+  --accent:#e0707f; --accent-soft:#3a1f25; --gold:#d6a654; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:760px;margin:0 auto}
+header h1{font-family:var(--f-display);font-weight:800;font-size:clamp(2.4rem,9vw,3.6rem);line-height:.92;letter-spacing:.01em;text-transform:uppercase;margin:0;text-wrap:balance}
+header h1 span{color:var(--accent)}
+.sub{color:var(--muted);margin:.5rem 0 0;font-size:.95rem}
+.sub a{color:inherit}
+.controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;margin-top:14px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.chip{font-family:var(--f-display);font-weight:600;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.chip:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.week h2{font-family:var(--f-display);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.95rem;color:var(--muted);margin:28px 0 8px}
+.day{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.day.today .stub{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.stub{border:1.5px solid var(--ink);border-radius:6px;text-align:center;padding:4px 0 6px;align-self:start;background:var(--surface)}
+.stub .dow{font-family:var(--f-display);font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.stub .num{font-family:var(--f-display);font-weight:800;font-size:2rem;line-height:1}
+.bill{display:flex;flex-direction:column;gap:12px;min-width:0}
+.show{display:grid;grid-template-columns:70px 1fr;gap:10px;min-width:0}
+.time{font-family:var(--f-mono);font-size:.85rem;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.title{font-weight:600;color:var(--ink);text-decoration:none;font-size:1.05rem}
+.title:hover{color:var(--accent);text-decoration:underline}
+.meta{font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;margin-top:2px}
+.calpick{display:flex;align-items:center;gap:0;margin-left:auto;font-size:.85rem;color:var(--muted)}
+.calpick span{margin-right:8px}
+.seg{font:inherit;font-size:.85rem;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:4px 10px;cursor:pointer}
+.seg:first-of-type{border-radius:6px 0 0 6px}.seg:last-of-type{border-radius:0 6px 6px 0;border-left:0}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.seg:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.dir{color:var(--ink)}
+@media (max-width:520px){.calpick{margin-left:0;width:100%}}
+.calpick{display:flex;align-items:center;margin-left:auto;font-size:.85rem;color:var(--muted)}
+.calpick span{margin-right:8px}
+.seg{font:inherit;font-size:.85rem;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:4px 10px;cursor:pointer}
+.seg:first-of-type{border-radius:6px 0 0 6px}.seg:last-of-type{border-radius:0 6px 6px 0;border-left:0}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.seg:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.subscribe{margin-top:.6rem;font-size:.95rem}
+.subscribe a{color:var(--accent);font-weight:600}
+.home{font-size:.9rem;color:var(--muted);margin:0 0 8px}
+.home a{color:inherit}
+@media (max-width:520px){.calpick{margin-left:0;width:100%}}
+.tag{font-family:var(--f-display);font-weight:600;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:1px 8px;border-radius:3px}
+.sold{font-family:var(--f-display);font-weight:600;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--surface);background:var(--muted);padding:1px 8px;border-radius:3px}
+.meta a{color:var(--muted)}
+.empty{color:var(--muted);font-style:italic}
+.films h2{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:1.8rem;margin:44px 0 6px}
+.films p.lead{color:var(--muted);margin:0 0 12px;font-size:.95rem}
+.film{padding:12px 0;border-top:1px solid var(--line)}
+.film h3{margin:0;font-size:1.05rem}
+.film h3 a{color:var(--ink)}
+.film p{margin:4px 0 0;font-size:.92rem;max-width:65ch}
+.film .runs{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);margin-top:4px}
+footer{color:var(--muted);font-size:.85rem;margin-top:36px;border-top:1px solid var(--line);padding-top:12px}
+footer a{color:inherit}
+@media (max-width:420px){.day{grid-template-columns:52px 1fr;gap:10px}.stub .num{font-size:1.6rem}.show{grid-template-columns:62px 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="home"><a href="../">← Culture calendar</a></p>
+  <h1>The Fox <span>Nov 2 – 29</span></h1>
+  <p class="sub">Every screening at the Fox Theatre, 2236 Queen St. E, for the next four weeks. Titles link to the Fox’s page for tickets. Listings as of Nov 2, 2026; check <a href="https://www.foxtheatre.ca/whats-on/now-showing/">foxtheatre.ca</a> for changes.</p>
+  <p class="subscribe"><a href="webcal://safetydept.github.io/culture-calendar/fox/fox.ics">Subscribe to every screening</a> in Apple Calendar; it updates itself each week. Or <a href="fox.ics">download the .ics</a>.</p>
+</header>
+
+<div class="controls" role="group" aria-label="Filter screenings">
+  <button class="chip" id="f-all" data-f="all" aria-pressed="true">Everything</button>
+  <button class="chip" id="f-rep" data-f="rep" aria-pressed="false">Repertory &amp; events</button>
+  <button class="chip" id="f-new" data-f="new" aria-pressed="false">New releases</button>
+  <button class="chip" id="f-eve" data-f="eve" aria-pressed="false">After 6 pm</button>
+  <div class="calpick" role="group" aria-label="Calendar app for Add to calendar">
+    <span>Add to</span>
+    <button class="seg" id="c-ics" data-c="ics" aria-pressed="true">iCal</button>
+    <button class="seg" id="c-google" data-c="google" aria-pressed="false">Google</button>
+  </div>
+</div>
+
+<main id="cal"></main>
+
+<section class="films" id="films">
+  <h2>On the bill</h2>
+  <p class="lead">Every film playing in this window, with its dates.</p>
+  <div id="filmlist"></div>
+</section>
+
+<footer>Times are Toronto time. “Add to calendar” gives you an iCal event (Apple Calendar, Outlook) by default, or a Google Calendar event if you switch the toggle. Sold-out flags come from the Fox’s film pages. Refreshed every Monday.</footer>
+</div>
+
+<script>
+const F={
+ "wicker":["Wicker",2026,105,"new","A tender love story and a deadpan comic fable about marriage, sex, and a man made of basketry.","Alex Huston Fischer & Eleanor Wilson"],
+ "once-upon-a-time-in-harlem":["Once Upon a Time in Harlem",2026,100,"new","William Greaves’s posthumous documentary built around a 1972 reunion party of Harlem Renaissance figures he filmed.","William Greaves & David Greaves"],
+ "the-history-of-concrete":["The History of Concrete",2026,101,"new","John Wilson (How To with John Wilson) tries to make a Hallmark-formula documentary and wanders somewhere much stranger.","John Wilson"],
+ "restoration-the-devils":["Restoration: The Devils",1971,114,"rep","Ken Russell’s once-banned historical horror with Vanessa Redgrave and Oliver Reed, newly restored.","Ken Russell"],
+ "unsubculture-presents-samsara":["Unsubculture presents: Samsara",2011,120,"rep","Ron Fricke’s wordless 70mm-shot odyssey across 25 countries, hosted as an evening event.","Ron Fricke"],
+ "sons":["& Sons",2026,120,"new","Bill Nighy as a celebrated, reclusive novelist reckoning with his sons. Adapted from David Gilbert’s novel.","Pablo Trapero"],
+ "naza":["NAZA",2026,80,"new","Documentary from the makers of No Other Land; Special Jury Prize winner at Venice.","Yuval Abraham & Rachel Szor"],
+ "you-can-see-everything":["You Can See Everything",2026,174,"new","Nathan Fielder and Lance Oppenheim follow a notorious figure in the final weeks before prison.","Nathan Fielder & Lance Oppenheim"],
+ "exhibition-on-screen-james-mcneill-whistler":["Exhibition on Screen: James McNeill Whistler",2026,90,"rep","Art documentary on the painter and provocateur.","David Bickerstaff"],
+ "grlish-your-name":["grlish: Your Name",2016,106,"rep","Makoto Shinkai’s anime romance in a 10th-anniversary 4K remaster, presented by grlish.","Makoto Shinkai"],
+ "magicland":["MagicLand",null,null,"rep","First feature from Toronto’s Jaymz Bee, co-directed with Jason J. Brown and co-written with poet Robert Priest.","Jaymz Bee & Jason J. Brown"],
+ "slumber-party-the-devil-wears-prada":["Slumber Party: The Devil Wears Prada",2006,109,"rep","Pyjamas encouraged.","David Frankel"],
+ "the-room-w-greg-sestero":["The Room w/ Greg Sestero",2003,99,"rep","The cult disaster classic with Greg Sestero appearing live.","Tommy Wiseau"],
+ "a-talent-for-murder":["A Talent for Murder",2026,106,"new","Helen Mirren as Patricia Highsmith.","Anton Corbijn"],
+ "restoration-wild-at-heart":["Restoration: Wild at Heart",1990,124,"rep","David Lynch’s lurid road-movie romance, restored.","David Lynch"],
+ "wildwood":["Wildwood",2026,132,"new","Stop-motion animated fantasy adventure set in a hidden forest.","Travis Knight"],
+ "primetime":["Primetime",2026,110,"new","Lance Oppenheim’s drama starring Robert Pattinson.","Lance Oppenheim"],
+ "staff-pick-a-hard-days-night":["Staff Pick: A Hard Day’s Night",1964,88,"rep","Richard Lester’s Beatles romp.","Richard Lester"],
+ "de-gaulle-resistance":["De Gaulle: Résistance",2026,160,"new","June 1940: France signs the armistice and one officer refuses to accept it.","Antonin Baudry"],
+ "warren-millers-days-off":["Warren Miller’s Days Off",null,null,"rep","The 77th Warren Miller ski and snowboard film, hosted by Katie Burrell.",""],
+ "two-seasons-two-strangers-director-qa":["Two Seasons, Two Strangers + Director Q&A",null,null,"rep","Special screening with director Sho Miyake in person.","Sho Miyake"],
+ "sense-and-sensibility-2026":["Sense and Sensibility",2026,132,"new","New Focus Features / Working Title adaptation of Austen.","Georgia Oakley"],
+ "the-only-living-pickpocket-in-new-york":["The Only Living Pickpocket in New York",2026,88,"new","John Turturro as an aging pickpocket working the city.","Noah Segan"],
+ "the-zone-blade-runner-2049":["The Zone: Blade Runner 2049",2017,164,"rep","Denis Villeneuve’s sequel on the big screen.","Denis Villeneuve"],
+ "drawn-in-the-girl-who-leapt-through-time":["Drawn In: The Girl Who Leapt Through Time",2006,98,"rep","Mamoru Hosoda’s time-skipping anime, part of the Drawn In series.","Mamoru Hosoda"],
+ "club-kid":["Club Kid",2026,126,"new","Jordan Firstman’s debut feature as a hard-partying New York club promoter.","Jordan Firstman"],
+ "restoration-the-piano":["Restoration: The Piano",1993,120,"rep","Jane Campion’s Palme d’Or winner, restored.","Jane Campion"],
+ "pulp-fiction":["Pulp Fiction",1994,154,"rep","A themed screening of Tarantino’s classic.","Quentin Tarantino"],
+ "golden-age-the-big-sleep":["Golden Age: The Big Sleep",1946,116,"rep","Howard Hawks’s noir with Bogart and Bacall.","Howard Hawks"]
+};
+const S={
+"2":["15:50 wicker","18:30 once-upon-a-time-in-harlem","21:00 the-history-of-concrete"],
+"3":["15:45 once-upon-a-time-in-harlem","18:20 wicker","21:00 restoration-the-devils !"],
+"4":["15:00 wicker","18:30 unsubculture-presents-samsara","21:15 restoration-the-devils"],
+"5":["15:30 wicker"],
+"6":["15:45 sons","18:30 naza","20:45 you-can-see-everything"],
+"7":["13:30 exhibition-on-screen-james-mcneill-whistler","15:45 sons","18:30 naza","20:45 you-can-see-everything"],
+"8":["11:30 sons","14:15 grlish-your-name","18:00 naza","20:00 you-can-see-everything"],
+"9":["16:45 naza","19:00 magicland"],
+"10":["15:30 sons","18:20 naza","20:30 you-can-see-everything"],
+"11":["16:15 naza","18:30 slumber-party-the-devil-wears-prada","21:15 you-can-see-everything"],
+"12":["15:15 naza","17:15 you-can-see-everything","21:00 the-room-w-greg-sestero !"],
+"13":["15:30 a-talent-for-murder","18:00 you-can-see-everything","21:30 restoration-wild-at-heart"],
+"14":["12:00 wildwood","18:00 you-can-see-everything","21:30 primetime"],
+"15":["12:45 wildwood","15:45 staff-pick-a-hard-days-night","18:00 a-talent-for-murder","20:30 primetime"],
+"16":["15:30 a-talent-for-murder","18:00 you-can-see-everything","21:30 primetime"],
+"17":["15:30 de-gaulle-resistance","19:00 warren-millers-days-off","21:30 restoration-wild-at-heart"],
+"18":["15:00 de-gaulle-resistance","18:30 two-seasons-two-strangers-director-qa","21:30 primetime"],
+"19":["15:00 a-talent-for-murder","17:30 de-gaulle-resistance","21:00 warren-millers-days-off"],
+"20":["12:40 wildwood","15:40 sense-and-sensibility-2026","18:40 the-only-living-pickpocket-in-new-york","21:00 the-zone-blade-runner-2049"],
+"21":["15:00 wildwood","18:00 sense-and-sensibility-2026","21:00 the-room-w-greg-sestero !"],
+"22":["14:45 wildwood","17:50 sense-and-sensibility-2026","21:30 the-room-w-greg-sestero"],
+"23":["18:20 sense-and-sensibility-2026","21:20 the-only-living-pickpocket-in-new-york"],
+"24":["15:20 the-only-living-pickpocket-in-new-york","17:45 wildwood","20:45 you-can-see-everything"],
+"25":["15:15 sense-and-sensibility-2026","18:20 the-only-living-pickpocket-in-new-york","20:40 you-can-see-everything"],
+"26":["18:00 sense-and-sensibility-2026","21:10 drawn-in-the-girl-who-leapt-through-time"],
+"27":["12:30 club-kid","15:30 sense-and-sensibility-2026","18:30 club-kid","21:30 restoration-the-devils"],
+"28":["12:00 club-kid","15:00 restoration-the-piano","18:00 club-kid","21:30 pulp-fiction"],
+"29":["12:45 golden-age-the-big-sleep","15:30 club-kid","18:20 sense-and-sensibility-2026","21:30 club-kid"]
+};
+const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const pad=n=>String(n).padStart(2,"0");
+const fmt12=t=>{let[h,m]=t.split(":").map(Number);const ap=h>=12?"pm":"am";h=h%12||12;return `${h}:${pad(m)} ${ap}`};
+const URL_BASE="https://www.foxtheatre.ca/movies/";
+function gcal(day,t,slug){
+  const f=F[slug];const[h,m]=t.split(":").map(Number);const mins=(f[2]||120);
+  const s=new Date(2026,10,day,h,m);const e=new Date(s.getTime()+mins*60000);
+  const st=d=>`${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
+  const q=new URLSearchParams({action:"TEMPLATE",text:f[0]+" at the Fox",dates:st(s)+"/"+st(e),ctz:"America/Toronto",location:"Fox Theatre, 2236 Queen St E, Toronto, ON",details:URL_BASE+slug+"/"});
+  return "https://calendar.google.com/calendar/render?"+q.toString();
+}
+let calApp="ics";
+try{calApp=localStorage.getItem("fox-cal")||"ics"}catch(e){}
+function icsHref(day,t,slug){return `ics/2026${pad(11)}${pad(day)}-${t.replace(":","")}-${slug}.ics`}
+let filter="all";
+try{filter=localStorage.getItem("fox-filter")||"all"}catch(e){}
+const now=new Date();
+const todayNum=(now.getFullYear()===2026&&now.getMonth()===10)?now.getDate():null;
+
+function keep(slug,t){
+  if(filter==="all")return true;
+  if(filter==="eve")return Number(t.split(":")[0])>=18;
+  return F[slug][3]===filter;
+}
+function render(){
+  document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===filter));
+  document.querySelectorAll(".seg").forEach(b=>b.setAttribute("aria-pressed",b.dataset.c===calApp));
+  document.querySelectorAll(".seg").forEach(b=>b.setAttribute("aria-pressed",b.dataset.c===calApp));
+  const cal=document.getElementById("cal");cal.innerHTML="";
+  const weeks=[[2,8],[9,15],[16,22],[23,29]];
+  weeks.forEach(([a,b])=>{
+    const w=document.createElement("section");w.className="week";
+    w.innerHTML=`<h2>Week of Nov ${a}</h2>`;
+    for(let d=a;d<=b;d++){
+      if(todayNum&&d<todayNum)continue;
+      const shows=(S[d]||[]).map(x=>x.split(" ")).filter(([t,s])=>keep(s,t));
+      const row=document.createElement("div");row.className="day"+(d===todayNum?" today":"");
+      const dow=DOW[new Date(2026,10,d).getDay()];
+      row.innerHTML=`<div class="stub"><div class="dow">${dow}</div><div class="num">${d}</div></div>`;
+      const bill=document.createElement("div");bill.className="bill";
+      if(!shows.length)bill.innerHTML=`<div class="empty">Nothing in this filter</div>`;
+      shows.forEach(([t,slug,flag])=>{
+        const f=F[slug];
+        const bits=[];
+        if(f[5])bits.push(`<span class="dir">dir. ${f[5]}</span>`);
+        if(f[1])bits.push(f[1]);if(f[2])bits.push(f[2]+" min");
+        bill.insertAdjacentHTML("beforeend",`<div class="show"><div class="time">${fmt12(t)}</div><div><a class="title" href="${URL_BASE+slug}/">${f[0]}</a><div class="meta">${f[3]==="rep"?'<span class="tag">Rep / event</span>':""}${flag==="!"?'<span class="sold">Sold out</span>':""}<span>${bits.join(" · ")}</span><a href="${calApp==="google"?gcal(d,t,slug):icsHref(d,t,slug)}">Add to calendar</a></div></div></div>`);
+      });
+      row.appendChild(bill);w.appendChild(row);
+    }
+    if(w.querySelectorAll(".day").length)cal.appendChild(w);
+  });
+  const fl=document.getElementById("filmlist");fl.innerHTML="";
+  const runs={};Object.entries(S).forEach(([d,arr])=>arr.forEach(x=>{const s=x.split(" ")[1];(runs[s]=runs[s]||new Set()).add(Number(d))}));
+  Object.keys(F).filter(s=>runs[s]&&(filter==="all"||filter==="eve"||F[s][3]===filter)).forEach(s=>{
+    const f=F[s];const ds=[...runs[s]].sort((a,b)=>a-b);
+    fl.insertAdjacentHTML("beforeend",`<div class="film"><h3><a href="${URL_BASE+s}/">${f[0]}</a></h3>${f[5]?`<div class="runs">Directed by ${f[5]}</div>`:""}<p>${f[4]}</p><div class="runs">Nov ${ds.join(", ")}</div></div>`);
+  });
+}
+document.querySelectorAll(".seg").forEach(b=>b.addEventListener("click",()=>{calApp=b.dataset.c;try{localStorage.setItem("fox-cal",calApp)}catch(e){}render()}));
+document.querySelectorAll(".seg").forEach(b=>b.addEventListener("click",()=>{calApp=b.dataset.c;try{localStorage.setItem("fox-cal",calApp)}catch(e){}render()}));
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.f;try{localStorage.setItem("fox-filter",filter)}catch(e){}render()}));
+render();
+</script>
+</body>
+</html>

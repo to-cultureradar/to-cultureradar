@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Toronto Culture Radar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a monthly field guide — short intro on taste, a "don't miss" strip, then one list per discipline with dates on a left rail */
+:root{
+  --bg:#f3f4ef; --surface:#ffffff; --ink:#1d2421; --muted:#66706b; --line:#dde1da;
+  --accent:#2f6b57; --accent-soft:#e2eee8; --hot:#b4532a;
+  --f-display:"Fraunces",Georgia,serif;
+  --f-body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121614; --surface:#1a201d; --ink:#e9eee9; --muted:#9aa59f; --line:#2c3531;
+  --accent:#7cc4a6; --accent-soft:#1f3229; --hot:#e48c63; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121614; --surface:#1a201d; --ink:#e9eee9; --muted:#9aa59f; --line:#2c3531;
+  --accent:#7cc4a6; --accent-soft:#1f3229; --hot:#e48c63; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px}
+.wrap{max-width:760px;margin:0 auto}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(2.2rem,8vw,3.2rem);line-height:1;margin:.3rem 0 .6rem;text-wrap:balance}
+.intro{max-width:62ch;color:var(--muted);margin:0}
+.intro a{color:var(--accent)}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding-block:10px;z-index:5;border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.chip{font:inherit;font-size:.9rem;font-weight:700;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.chip:focus-visible,a:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+h2{font-family:var(--f-display);font-weight:600;font-size:1.6rem;margin:36px 0 4px}
+.sec-note{color:var(--muted);font-size:.92rem;margin:0 0 8px}
+.item{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.when{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.item h3{margin:0;font-size:1.08rem;line-height:1.3}
+.item h3 a{color:var(--ink);text-decoration:none}
+.item h3 a:hover{color:var(--accent);text-decoration:underline}
+.where{font-size:.88rem;color:var(--muted);margin-top:2px}
+.why{margin:6px 0 0;font-size:.95rem;max-width:62ch}
+.pill{display:inline-block;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border-radius:3px;margin-left:6px;vertical-align:2px}
+.pick{background:var(--hot);color:var(--surface)}
+.free{background:var(--accent-soft);color:var(--accent)}
+.tour{border:1px solid var(--muted);color:var(--muted)}
+.min{min-width:0}
+.home{font-size:.9rem;color:var(--muted);margin:0 0 8px}
+.home a{color:inherit}
+footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer a{color:inherit}
+@media (max-width:440px){.item{grid-template-columns:1fr;gap:4px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="home"><a href="../">← Culture calendar</a></p>
+  <div class="eyebrow">Edition · November 2026 · updated Nov 2</div>
+  <h1>Toronto Culture Radar</h1>
+  <p class="intro">Picks for the month in film, art, music, and theatre, chosen around your Letterboxd: Mekas, Chambers, Mettler, and Tarkovsky up top, plus a deep five-star list of visual music, abstract animation, essay films, and Canadian experimental work. Fox Theatre showtimes live on the <a href="../fox/">Fox calendar</a>; only its standouts appear here. Check each venue before you go.</p>
+</header>
+
+<nav class="nav" role="group" aria-label="Show category">
+  <button class="chip" data-c="all" aria-pressed="true">All</button>
+  <button class="chip" data-c="film" aria-pressed="false">Film</button>
+  <button class="chip" data-c="art" aria-pressed="false">Art</button>
+  <button class="chip" data-c="music" aria-pressed="false">Music</button>
+  <button class="chip" data-c="theatre" aria-pressed="false">Theatre</button>
+  <button class="chip" data-c="pick" aria-pressed="false">Top picks only</button>
+</nav>
+
+<main id="list"></main>
+
+<footer>Built from venue listings and The Seventh Art’s Toronto calendar on Nov 2, 2026. A new edition replaces this one at the start of each month. Tags: <b>Top pick</b> matches your ratings most closely, <b>Free</b> needs no ticket, <b>Touring</b> is a travelling exhibition or show passing through.</footer>
+</div>
+
+<script>
+const SRC={
+ seventh:"https://theseventhart.org/whats-on/",tiff:"https://tiff.net/",pp:"https://www.thepowerplant.org/",
+ moca:"https://moca.ca/",ago:"https://ago.ca/exhibitions",rom:"https://www.rom.on.ca/",fox:"../fox/",
+ efosa:"https://efosa.ca/toronto-concerts-november-2026/",exclaim:"https://exclaim.ca/music/article/toronto-s-4-can-t-miss-concerts-including-geese-and-angine-de-poitrine-november-2-8-2026",
+ theatre:"https://thetorontotheatreguide.substack.com/p/the-toronto-theatre-guide-november",ss:"https://myscena.org/newswire/newswire-soundstreams-announces-2026-27-season/"
+};
+// [category, when, title, where, why, link, tags]
+const E=[
+ ["film","Nov 22","Night on the Galactic Railroad (35mm)","TIFF Lightbox · recorded intro by Masaaki Yuasa","A film you gave five stars, on 35mm, as part of the animation season Yuasa is guest-curating.",SRC.seventh,["pick"]],
+ ["film","Dec 7","A Portrait of Arshile + Donation, with Atom Egoyan","Robarts Library · UofT Pop-Up Cinematheque","Egoyan’s short on 35mm and a DCP of his play Donation, with Egoyan in person.",SRC.seventh,["pick","free"]],
+ ["film","Nov 11","Wavelengths: THEATER and its doubles","TIFF Lightbox","Contemporary experimental films about performance, curated by Jacob Korczynski for the Wavelengths strand.",SRC.seventh,["pick"]],
+ ["film","Thursdays","Direct Animation Club","University of Toronto · Rhayne Vermette","A free weekly cameraless 16mm workshop: scratching, painting, and drawing on film in the McLaren and Lye tradition.",SRC.seventh,["free"]],
+ ["film","Nov 26","Fantastic Planet (35mm)","TIFF Lightbox · intro by Mark Jones","Laloux’s psychedelic cutout-animation landmark on film, part of the same animation season.",SRC.seventh,[]],
+ ["film","Nov 23","A Rustling of Leaves (16mm)","Robarts Library · UofT Pop-Up Cinematheque","Nettie Wild’s documentary on the Philippine insurgency, on 16mm.",SRC.seventh,["free"]],
+ ["film","Nov 26–28","Bleeding Edge Fest","Paradise Theatre","Third edition of the underground feature festival, with new work by Louise Weard, Rob Tregenza (Fast), and Toronto’s Adrian Murray (Pocket Mirror).",SRC.seventh,[]],
+ ["film","Nov 22","The War Game + Smoke ’Em If You Got ’Em","Market Video","Peter Watkins’s banned faux-documentary, from a month-long post-nuclear series (Threads plays Nov 15).",SRC.seventh,[]],
+ ["film","Nov 5–15","Film noir written by women (35mm)","TIFF Lightbox","A short 35mm series: The Hitch-Hiker, Secret Beyond the Door, Sorry, Wrong Number, and more.",SRC.seventh,[]],
+ ["film","Nov 4","Unsubculture presents: Samsara","Fox Theatre","Ron Fricke’s wordless 70mm-shot world-montage, presented as an evening event.",SRC.fox,[]],
+ ["film","Nov 18","Two Seasons, Two Strangers + Q&A","Fox Theatre","Sho Miyake in person with his new film.",SRC.fox,[]],
+ ["film","Nov 27","Restoration: The Devils","Fox Theatre","Ken Russell’s restored 1971 film, back after two sold-out shows.",SRC.fox,[]],
+ ["art","To Mar 21","Sharon Lockhart: Fogo","The Power Plant","Lockhart makes durational, structural films. This show comes out of her time on Fogo Island, and it sits squarely in your Snow and Chambers territory.",SRC.pp,["pick"]],
+ ["art","To Feb 14","Beverly Glenn-Copeland: Light of the Heavens","MOCA Toronto · South Stairwell","A sound and light installation from the Canadian ambient pioneer behind Keyboard Fantasies.",SRC.moca,["pick"]],
+ ["art","To Feb 14","Delcy Morelos: Ombligo · Bharti Kher: Bones","MOCA Toronto","MOCA’s fall season: Morelos’s large earth-and-spice environments alongside Kher’s new sculpture.",SRC.moca,[]],
+ ["art","To spring 2027","Dawoud Bey","Art Gallery of Ontario","Landscape-based work built around a video that retraces the Richmond Slave Trail.",SRC.ago,[]],
+ ["art","To Mar 21","Zadie Xa with Benito Mayor Vallejo","The Power Plant","An immersive installation on ancestry, whales, and oceanic memory.",SRC.pp,[]],
+ ["art","To Jan 3","Psychedelics: Art. Culture. Science.","Royal Ontario Museum","A big-ticket survey that closes in early January, so it’s worth doing this month or next.",SRC.rom,["tour"]],
+ ["art","To Feb 2027","Sunday Best","Art Gallery of Ontario","Black diasporic style and self-fashioning from the 1880s to today. It opens here before travelling to Philadelphia.",SRC.ago,["tour"]],
+ ["art","To spring 2027","Melissa Auf der Maur: My ’90s Photographs","Art Gallery of Ontario","More than 200 photos from the bassist’s years on tour with ’90s alt-rock bands.",SRC.ago,[]],
+ ["music","Nov 18","Shackleton","Rivoli","Sam Shackleton’s polyrhythmic, dub-haunted electronics in a small room.",SRC.efosa,["pick"]],
+ ["music","Nov 26","Bonobo","Scotiabank Arena","Downtempo-to-dance electronic, in the same lineage as Boards of Canada and DJ Shadow, but an arena show.",SRC.efosa,[]],
+ ["music","Nov 5","Angine de Poitrine","History","A masked Québécois duo playing microtonal, loop-driven instrumental rock.",SRC.exclaim,[]],
+ ["music","Nov 26","Takuya Nakamura","The Opera House","Jazz trumpet over electronic production.",SRC.efosa,[]],
+ ["music","Feb 27","Next Soundstreams: Angels Unawares","Metropolitan United Church","Nothing from your subscription this month. MacMillan conducts his own oratorio next.",SRC.ss,[]],
+ ["theatre","To Nov 29","De Profundis: Oscar Wilde in Jail","Soulpepper · Michael Young Theatre","Wilde’s prison letter, with the role shared by Damien Atkins and Rick Miller (a multimedia theatre-maker).",SRC.theatre,[]],
+ ["theatre","To Nov 29","Macbeth (solo)","Crow’s Theatre · Studio","A 90-minute one-performer Macbeth reset in the tech industry.",SRC.theatre,[]],
+ ["theatre","To Nov 22","Goodnight Desdemona (Good Morning Juliet)","Canadian Stage · Bluma Appel","A 40th-anniversary revival of Ann-Marie MacDonald’s comedy.",SRC.theatre,[]],
+ ["theatre","To Dec 13","Rogers v. Rogers","Berkeley Street · Crow’s with Canadian Stage","Tom Rooney in a drama drawn from the Rogers boardroom fight.",SRC.theatre,[]],
+ ["theatre","To Nov 15","Lemons Lemons Lemons Lemons Lemons","The Assembly Theatre","A two-hander set in a world with a daily word limit.",SRC.theatre,[]]
+];
+const SEC={film:["Film","Repertory, experimental, and special screenings beyond the Fox."],art:["Art","Exhibitions on now, including touring shows."],music:["Music","Concerts this month, weighted toward electronic and experimental."],theatre:["Theatre","What’s running, with closing dates."]};
+let cat="all";
+try{cat=localStorage.getItem("radar-cat")||"all"}catch(e){}
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+function render(){
+  document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.c===cat));
+  const L=document.getElementById("list");L.innerHTML="";
+  Object.keys(SEC).forEach(k=>{
+    const rows=E.filter(e=>e[0]===k&&(cat==="all"||cat===k||(cat==="pick"&&e[6].includes("pick"))));
+    if(!rows.length)return;
+    const s=document.createElement("section");
+    s.innerHTML=`<h2>${SEC[k][0]}</h2><p class="sec-note">${SEC[k][1]}</p>`;
+    rows.forEach(([c,w,t,where,why,link,tags])=>{
+      const pills=(tags.includes("pick")?'<span class="pill pick">Top pick</span>':"")+(tags.includes("free")?'<span class="pill free">Free</span>':"")+(tags.includes("tour")?'<span class="pill tour">Touring</span>':"");
+      s.insertAdjacentHTML("beforeend",`<div class="item"><div class="when">${esc(w)}</div><div class="min"><h3><a href="${link}">${esc(t)}</a>${pills}</h3><div class="where">${esc(where)}</div><p class="why">${esc(why)}</p></div></div>`);
+    });
+    L.appendChild(s);
+  });
+}
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{cat=b.dataset.c;try{localStorage.setItem("radar-cat",cat)}catch(e){}render()}));
+render();
+</script>
+</body>
+</html>

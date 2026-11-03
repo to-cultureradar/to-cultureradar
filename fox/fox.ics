@@ -1,0 +1,1089 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fox Theatre Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fox Theatre screenings
+X-WR-TIMEZONE:America/Toronto
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261102T1550-wicker@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261102T155000
+DTEND;TZID=America/Toronto:20261102T173500
+SUMMARY:Wicker at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Alex Huston Fischer & Eleanor Wilson\n2026 · 105
+  min\nA tender love story and a deadpan comic fable about marriage\, sex\
+ , and a man made of basketry.\nTickets: https://www.foxtheatre.ca/movies/
+ wicker/
+URL:https://www.foxtheatre.ca/movies/wicker/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261102T1830-once-upon-a-time-in-harlem@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261102T183000
+DTEND;TZID=America/Toronto:20261102T201000
+SUMMARY:Once Upon a Time in Harlem at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by William Greaves & David Greaves\n2026 · 100 min\
+ nWilliam Greaves’s posthumous documentary built around a 1972 reunion p
+ arty of Harlem Renaissance figures he filmed.\nTickets: https://www.foxth
+ eatre.ca/movies/once-upon-a-time-in-harlem/
+URL:https://www.foxtheatre.ca/movies/once-upon-a-time-in-harlem/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261102T2100-the-history-of-concrete@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261102T210000
+DTEND;TZID=America/Toronto:20261102T224100
+SUMMARY:The History of Concrete at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by John Wilson\n2026 · 101 min\nJohn Wilson (How To
+  with John Wilson) tries to make a Hallmark-formula documentary and wande
+ rs somewhere much stranger.\nTickets: https://www.foxtheatre.ca/movies/th
+ e-history-of-concrete/
+URL:https://www.foxtheatre.ca/movies/the-history-of-concrete/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261103T1545-once-upon-a-time-in-harlem@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261103T154500
+DTEND;TZID=America/Toronto:20261103T172500
+SUMMARY:Once Upon a Time in Harlem at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by William Greaves & David Greaves\n2026 · 100 min\
+ nWilliam Greaves’s posthumous documentary built around a 1972 reunion p
+ arty of Harlem Renaissance figures he filmed.\nTickets: https://www.foxth
+ eatre.ca/movies/once-upon-a-time-in-harlem/
+URL:https://www.foxtheatre.ca/movies/once-upon-a-time-in-harlem/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261103T1820-wicker@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261103T182000
+DTEND;TZID=America/Toronto:20261103T200500
+SUMMARY:Wicker at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Alex Huston Fischer & Eleanor Wilson\n2026 · 105
+  min\nA tender love story and a deadpan comic fable about marriage\, sex\
+ , and a man made of basketry.\nTickets: https://www.foxtheatre.ca/movies/
+ wicker/
+URL:https://www.foxtheatre.ca/movies/wicker/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261103T2100-restoration-the-devils@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261103T210000
+DTEND;TZID=America/Toronto:20261103T225400
+SUMMARY:Restoration: The Devils at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Ken Russell\n1971 · 114 min\nKen Russell’s onc
+ e-banned historical horror with Vanessa Redgrave and Oliver Reed\, newly 
+ restored.\nTickets: https://www.foxtheatre.ca/movies/restoration-the-devi
+ ls/
+URL:https://www.foxtheatre.ca/movies/restoration-the-devils/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1500-wicker@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261104T150000
+DTEND;TZID=America/Toronto:20261104T164500
+SUMMARY:Wicker at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Alex Huston Fischer & Eleanor Wilson\n2026 · 105
+  min\nA tender love story and a deadpan comic fable about marriage\, sex\
+ , and a man made of basketry.\nTickets: https://www.foxtheatre.ca/movies/
+ wicker/
+URL:https://www.foxtheatre.ca/movies/wicker/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1830-unsubculture-presents-samsara@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261104T183000
+DTEND;TZID=America/Toronto:20261104T203000
+SUMMARY:Unsubculture presents: Samsara at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Ron Fricke\n2011 · 120 min\nRon Fricke’s wordl
+ ess 70mm-shot odyssey across 25 countries\, hosted as an evening event.\n
+ Tickets: https://www.foxtheatre.ca/movies/unsubculture-presents-samsara/
+URL:https://www.foxtheatre.ca/movies/unsubculture-presents-samsara/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T2115-restoration-the-devils@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261104T211500
+DTEND;TZID=America/Toronto:20261104T230900
+SUMMARY:Restoration: The Devils at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Ken Russell\n1971 · 114 min\nKen Russell’s onc
+ e-banned historical horror with Vanessa Redgrave and Oliver Reed\, newly 
+ restored.\nTickets: https://www.foxtheatre.ca/movies/restoration-the-devi
+ ls/
+URL:https://www.foxtheatre.ca/movies/restoration-the-devils/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261105T1530-wicker@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261105T153000
+DTEND;TZID=America/Toronto:20261105T171500
+SUMMARY:Wicker at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Alex Huston Fischer & Eleanor Wilson\n2026 · 105
+  min\nA tender love story and a deadpan comic fable about marriage\, sex\
+ , and a man made of basketry.\nTickets: https://www.foxtheatre.ca/movies/
+ wicker/
+URL:https://www.foxtheatre.ca/movies/wicker/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261106T1545-sons@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261106T154500
+DTEND;TZID=America/Toronto:20261106T174500
+SUMMARY:& Sons at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Pablo Trapero\n2026 · 120 min\nBill Nighy as a c
+ elebrated\, reclusive novelist reckoning with his sons. Adapted from Davi
+ d Gilbert’s novel.\nTickets: https://www.foxtheatre.ca/movies/sons/
+URL:https://www.foxtheatre.ca/movies/sons/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261106T1830-naza@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261106T183000
+DTEND;TZID=America/Toronto:20261106T195000
+SUMMARY:NAZA at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Yuval Abraham & Rachel Szor\n2026 · 80 min\nDocu
+ mentary from the makers of No Other Land\; Special Jury Prize winner at V
+ enice.\nTickets: https://www.foxtheatre.ca/movies/naza/
+URL:https://www.foxtheatre.ca/movies/naza/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261106T2045-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261106T204500
+DTEND;TZID=America/Toronto:20261106T233900
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261107T1330-exhibition-on-screen-james-mcneill-whistler@fox-calenda
+ r
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261107T133000
+DTEND;TZID=America/Toronto:20261107T150000
+SUMMARY:Exhibition on Screen: James McNeill Whistler at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by David Bickerstaff\n2026 · 90 min\nArt documentar
+ y on the painter and provocateur.\nTickets: https://www.foxtheatre.ca/mov
+ ies/exhibition-on-screen-james-mcneill-whistler/
+URL:https://www.foxtheatre.ca/movies/exhibition-on-screen-james-mcneill-w
+ histler/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261107T1545-sons@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261107T154500
+DTEND;TZID=America/Toronto:20261107T174500
+SUMMARY:& Sons at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Pablo Trapero\n2026 · 120 min\nBill Nighy as a c
+ elebrated\, reclusive novelist reckoning with his sons. Adapted from Davi
+ d Gilbert’s novel.\nTickets: https://www.foxtheatre.ca/movies/sons/
+URL:https://www.foxtheatre.ca/movies/sons/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261107T1830-naza@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261107T183000
+DTEND;TZID=America/Toronto:20261107T195000
+SUMMARY:NAZA at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Yuval Abraham & Rachel Szor\n2026 · 80 min\nDocu
+ mentary from the makers of No Other Land\; Special Jury Prize winner at V
+ enice.\nTickets: https://www.foxtheatre.ca/movies/naza/
+URL:https://www.foxtheatre.ca/movies/naza/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261107T2045-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261107T204500
+DTEND;TZID=America/Toronto:20261107T233900
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261108T1130-sons@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261108T113000
+DTEND;TZID=America/Toronto:20261108T133000
+SUMMARY:& Sons at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Pablo Trapero\n2026 · 120 min\nBill Nighy as a c
+ elebrated\, reclusive novelist reckoning with his sons. Adapted from Davi
+ d Gilbert’s novel.\nTickets: https://www.foxtheatre.ca/movies/sons/
+URL:https://www.foxtheatre.ca/movies/sons/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261108T1415-grlish-your-name@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261108T141500
+DTEND;TZID=America/Toronto:20261108T160100
+SUMMARY:grlish: Your Name at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Makoto Shinkai\n2016 · 106 min\nMakoto Shinkai
+ ’s anime romance in a 10th-anniversary 4K remaster\, presented by grlis
+ h.\nTickets: https://www.foxtheatre.ca/movies/grlish-your-name/
+URL:https://www.foxtheatre.ca/movies/grlish-your-name/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261108T1800-naza@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261108T180000
+DTEND;TZID=America/Toronto:20261108T192000
+SUMMARY:NAZA at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Yuval Abraham & Rachel Szor\n2026 · 80 min\nDocu
+ mentary from the makers of No Other Land\; Special Jury Prize winner at V
+ enice.\nTickets: https://www.foxtheatre.ca/movies/naza/
+URL:https://www.foxtheatre.ca/movies/naza/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261108T2000-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261108T200000
+DTEND;TZID=America/Toronto:20261108T225400
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261109T1645-naza@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261109T164500
+DTEND;TZID=America/Toronto:20261109T180500
+SUMMARY:NAZA at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Yuval Abraham & Rachel Szor\n2026 · 80 min\nDocu
+ mentary from the makers of No Other Land\; Special Jury Prize winner at V
+ enice.\nTickets: https://www.foxtheatre.ca/movies/naza/
+URL:https://www.foxtheatre.ca/movies/naza/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261109T1900-magicland@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261109T190000
+DTEND;TZID=America/Toronto:20261109T210000
+SUMMARY:MagicLand at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Jaymz Bee & Jason J. Brown\nFirst feature from To
+ ronto’s Jaymz Bee\, co-directed with Jason J. Brown and co-written with
+  poet Robert Priest.\nTickets: https://www.foxtheatre.ca/movies/magicland
+ /
+URL:https://www.foxtheatre.ca/movies/magicland/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261110T1530-sons@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261110T153000
+DTEND;TZID=America/Toronto:20261110T173000
+SUMMARY:& Sons at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Pablo Trapero\n2026 · 120 min\nBill Nighy as a c
+ elebrated\, reclusive novelist reckoning with his sons. Adapted from Davi
+ d Gilbert’s novel.\nTickets: https://www.foxtheatre.ca/movies/sons/
+URL:https://www.foxtheatre.ca/movies/sons/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261110T1820-naza@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261110T182000
+DTEND;TZID=America/Toronto:20261110T194000
+SUMMARY:NAZA at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Yuval Abraham & Rachel Szor\n2026 · 80 min\nDocu
+ mentary from the makers of No Other Land\; Special Jury Prize winner at V
+ enice.\nTickets: https://www.foxtheatre.ca/movies/naza/
+URL:https://www.foxtheatre.ca/movies/naza/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261110T2030-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261110T203000
+DTEND;TZID=America/Toronto:20261110T232400
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261111T1615-naza@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261111T161500
+DTEND;TZID=America/Toronto:20261111T173500
+SUMMARY:NAZA at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Yuval Abraham & Rachel Szor\n2026 · 80 min\nDocu
+ mentary from the makers of No Other Land\; Special Jury Prize winner at V
+ enice.\nTickets: https://www.foxtheatre.ca/movies/naza/
+URL:https://www.foxtheatre.ca/movies/naza/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261111T1830-slumber-party-the-devil-wears-prada@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261111T183000
+DTEND;TZID=America/Toronto:20261111T201900
+SUMMARY:Slumber Party: The Devil Wears Prada at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by David Frankel\n2006 · 109 min\nPyjamas encourage
+ d.\nTickets: https://www.foxtheatre.ca/movies/slumber-party-the-devil-wea
+ rs-prada/
+URL:https://www.foxtheatre.ca/movies/slumber-party-the-devil-wears-prada/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261111T2115-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261111T211500
+DTEND;TZID=America/Toronto:20261112T000900
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261112T1515-naza@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261112T151500
+DTEND;TZID=America/Toronto:20261112T163500
+SUMMARY:NAZA at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Yuval Abraham & Rachel Szor\n2026 · 80 min\nDocu
+ mentary from the makers of No Other Land\; Special Jury Prize winner at V
+ enice.\nTickets: https://www.foxtheatre.ca/movies/naza/
+URL:https://www.foxtheatre.ca/movies/naza/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261112T1715-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261112T171500
+DTEND;TZID=America/Toronto:20261112T200900
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261112T2100-the-room-w-greg-sestero@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261112T210000
+DTEND;TZID=America/Toronto:20261112T223900
+SUMMARY:The Room w/ Greg Sestero at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Tommy Wiseau\n2003 · 99 min\nThe cult disaster c
+ lassic with Greg Sestero appearing live.\nTickets: https://www.foxtheatre
+ .ca/movies/the-room-w-greg-sestero/
+URL:https://www.foxtheatre.ca/movies/the-room-w-greg-sestero/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T1530-a-talent-for-murder@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261113T153000
+DTEND;TZID=America/Toronto:20261113T171600
+SUMMARY:A Talent for Murder at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Anton Corbijn\n2026 · 106 min\nHelen Mirren as P
+ atricia Highsmith.\nTickets: https://www.foxtheatre.ca/movies/a-talent-fo
+ r-murder/
+URL:https://www.foxtheatre.ca/movies/a-talent-for-murder/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T1800-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261113T180000
+DTEND;TZID=America/Toronto:20261113T205400
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T2130-restoration-wild-at-heart@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261113T213000
+DTEND;TZID=America/Toronto:20261113T233400
+SUMMARY:Restoration: Wild at Heart at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by David Lynch\n1990 · 124 min\nDavid Lynch’s lur
+ id road-movie romance\, restored.\nTickets: https://www.foxtheatre.ca/mov
+ ies/restoration-wild-at-heart/
+URL:https://www.foxtheatre.ca/movies/restoration-wild-at-heart/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1200-wildwood@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261114T120000
+DTEND;TZID=America/Toronto:20261114T141200
+SUMMARY:Wildwood at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Travis Knight\n2026 · 132 min\nStop-motion anima
+ ted fantasy adventure set in a hidden forest.\nTickets: https://www.foxth
+ eatre.ca/movies/wildwood/
+URL:https://www.foxtheatre.ca/movies/wildwood/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1800-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261114T180000
+DTEND;TZID=America/Toronto:20261114T205400
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T2130-primetime@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261114T213000
+DTEND;TZID=America/Toronto:20261114T232000
+SUMMARY:Primetime at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Lance Oppenheim\n2026 · 110 min\nLance Oppenheim
+ ’s drama starring Robert Pattinson.\nTickets: https://www.foxtheatre.ca
+ /movies/primetime/
+URL:https://www.foxtheatre.ca/movies/primetime/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1245-wildwood@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261115T124500
+DTEND;TZID=America/Toronto:20261115T145700
+SUMMARY:Wildwood at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Travis Knight\n2026 · 132 min\nStop-motion anima
+ ted fantasy adventure set in a hidden forest.\nTickets: https://www.foxth
+ eatre.ca/movies/wildwood/
+URL:https://www.foxtheatre.ca/movies/wildwood/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1545-staff-pick-a-hard-days-night@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261115T154500
+DTEND;TZID=America/Toronto:20261115T171300
+SUMMARY:Staff Pick: A Hard Day’s Night at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Richard Lester\n1964 · 88 min\nRichard Lester’
+ s Beatles romp.\nTickets: https://www.foxtheatre.ca/movies/staff-pick-a-h
+ ard-days-night/
+URL:https://www.foxtheatre.ca/movies/staff-pick-a-hard-days-night/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1800-a-talent-for-murder@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261115T180000
+DTEND;TZID=America/Toronto:20261115T194600
+SUMMARY:A Talent for Murder at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Anton Corbijn\n2026 · 106 min\nHelen Mirren as P
+ atricia Highsmith.\nTickets: https://www.foxtheatre.ca/movies/a-talent-fo
+ r-murder/
+URL:https://www.foxtheatre.ca/movies/a-talent-for-murder/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T2030-primetime@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261115T203000
+DTEND;TZID=America/Toronto:20261115T222000
+SUMMARY:Primetime at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Lance Oppenheim\n2026 · 110 min\nLance Oppenheim
+ ’s drama starring Robert Pattinson.\nTickets: https://www.foxtheatre.ca
+ /movies/primetime/
+URL:https://www.foxtheatre.ca/movies/primetime/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261116T1530-a-talent-for-murder@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261116T153000
+DTEND;TZID=America/Toronto:20261116T171600
+SUMMARY:A Talent for Murder at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Anton Corbijn\n2026 · 106 min\nHelen Mirren as P
+ atricia Highsmith.\nTickets: https://www.foxtheatre.ca/movies/a-talent-fo
+ r-murder/
+URL:https://www.foxtheatre.ca/movies/a-talent-for-murder/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261116T1800-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261116T180000
+DTEND;TZID=America/Toronto:20261116T205400
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261116T2130-primetime@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261116T213000
+DTEND;TZID=America/Toronto:20261116T232000
+SUMMARY:Primetime at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Lance Oppenheim\n2026 · 110 min\nLance Oppenheim
+ ’s drama starring Robert Pattinson.\nTickets: https://www.foxtheatre.ca
+ /movies/primetime/
+URL:https://www.foxtheatre.ca/movies/primetime/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261117T1530-de-gaulle-resistance@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261117T153000
+DTEND;TZID=America/Toronto:20261117T181000
+SUMMARY:De Gaulle: Résistance at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Antonin Baudry\n2026 · 160 min\nJune 1940: Franc
+ e signs the armistice and one officer refuses to accept it.\nTickets: htt
+ ps://www.foxtheatre.ca/movies/de-gaulle-resistance/
+URL:https://www.foxtheatre.ca/movies/de-gaulle-resistance/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261117T1900-warren-millers-days-off@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261117T190000
+DTEND;TZID=America/Toronto:20261117T210000
+SUMMARY:Warren Miller’s Days Off at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:The 77th Warren Miller ski and snowboard film\, hosted by Kat
+ ie Burrell.\nTickets: https://www.foxtheatre.ca/movies/warren-millers-day
+ s-off/
+URL:https://www.foxtheatre.ca/movies/warren-millers-days-off/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261117T2130-restoration-wild-at-heart@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261117T213000
+DTEND;TZID=America/Toronto:20261117T233400
+SUMMARY:Restoration: Wild at Heart at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by David Lynch\n1990 · 124 min\nDavid Lynch’s lur
+ id road-movie romance\, restored.\nTickets: https://www.foxtheatre.ca/mov
+ ies/restoration-wild-at-heart/
+URL:https://www.foxtheatre.ca/movies/restoration-wild-at-heart/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261118T1500-de-gaulle-resistance@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261118T150000
+DTEND;TZID=America/Toronto:20261118T174000
+SUMMARY:De Gaulle: Résistance at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Antonin Baudry\n2026 · 160 min\nJune 1940: Franc
+ e signs the armistice and one officer refuses to accept it.\nTickets: htt
+ ps://www.foxtheatre.ca/movies/de-gaulle-resistance/
+URL:https://www.foxtheatre.ca/movies/de-gaulle-resistance/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261118T1830-two-seasons-two-strangers-director-qa@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261118T183000
+DTEND;TZID=America/Toronto:20261118T203000
+SUMMARY:Two Seasons\, Two Strangers + Director Q&A at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Sho Miyake\nSpecial screening with director Sho M
+ iyake in person.\nTickets: https://www.foxtheatre.ca/movies/two-seasons-t
+ wo-strangers-director-qa/
+URL:https://www.foxtheatre.ca/movies/two-seasons-two-strangers-director-q
+ a/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261118T2130-primetime@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261118T213000
+DTEND;TZID=America/Toronto:20261118T232000
+SUMMARY:Primetime at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Lance Oppenheim\n2026 · 110 min\nLance Oppenheim
+ ’s drama starring Robert Pattinson.\nTickets: https://www.foxtheatre.ca
+ /movies/primetime/
+URL:https://www.foxtheatre.ca/movies/primetime/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261119T1500-a-talent-for-murder@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261119T150000
+DTEND;TZID=America/Toronto:20261119T164600
+SUMMARY:A Talent for Murder at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Anton Corbijn\n2026 · 106 min\nHelen Mirren as P
+ atricia Highsmith.\nTickets: https://www.foxtheatre.ca/movies/a-talent-fo
+ r-murder/
+URL:https://www.foxtheatre.ca/movies/a-talent-for-murder/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261119T1730-de-gaulle-resistance@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261119T173000
+DTEND;TZID=America/Toronto:20261119T201000
+SUMMARY:De Gaulle: Résistance at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Antonin Baudry\n2026 · 160 min\nJune 1940: Franc
+ e signs the armistice and one officer refuses to accept it.\nTickets: htt
+ ps://www.foxtheatre.ca/movies/de-gaulle-resistance/
+URL:https://www.foxtheatre.ca/movies/de-gaulle-resistance/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261119T2100-warren-millers-days-off@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261119T210000
+DTEND;TZID=America/Toronto:20261119T230000
+SUMMARY:Warren Miller’s Days Off at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:The 77th Warren Miller ski and snowboard film\, hosted by Kat
+ ie Burrell.\nTickets: https://www.foxtheatre.ca/movies/warren-millers-day
+ s-off/
+URL:https://www.foxtheatre.ca/movies/warren-millers-days-off/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1240-wildwood@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261120T124000
+DTEND;TZID=America/Toronto:20261120T145200
+SUMMARY:Wildwood at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Travis Knight\n2026 · 132 min\nStop-motion anima
+ ted fantasy adventure set in a hidden forest.\nTickets: https://www.foxth
+ eatre.ca/movies/wildwood/
+URL:https://www.foxtheatre.ca/movies/wildwood/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1540-sense-and-sensibility-2026@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261120T154000
+DTEND;TZID=America/Toronto:20261120T175200
+SUMMARY:Sense and Sensibility at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Georgia Oakley\n2026 · 132 min\nNew Focus Featur
+ es / Working Title adaptation of Austen.\nTickets: https://www.foxtheatre
+ .ca/movies/sense-and-sensibility-2026/
+URL:https://www.foxtheatre.ca/movies/sense-and-sensibility-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1840-the-only-living-pickpocket-in-new-york@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261120T184000
+DTEND;TZID=America/Toronto:20261120T200800
+SUMMARY:The Only Living Pickpocket in New York at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Noah Segan\n2026 · 88 min\nJohn Turturro as an a
+ ging pickpocket working the city.\nTickets: https://www.foxtheatre.ca/mov
+ ies/the-only-living-pickpocket-in-new-york/
+URL:https://www.foxtheatre.ca/movies/the-only-living-pickpocket-in-new-yo
+ rk/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T2100-the-zone-blade-runner-2049@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261120T210000
+DTEND;TZID=America/Toronto:20261120T234400
+SUMMARY:The Zone: Blade Runner 2049 at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Denis Villeneuve\n2017 · 164 min\nDenis Villeneu
+ ve’s sequel on the big screen.\nTickets: https://www.foxtheatre.ca/movi
+ es/the-zone-blade-runner-2049/
+URL:https://www.foxtheatre.ca/movies/the-zone-blade-runner-2049/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1500-wildwood@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261121T150000
+DTEND;TZID=America/Toronto:20261121T171200
+SUMMARY:Wildwood at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Travis Knight\n2026 · 132 min\nStop-motion anima
+ ted fantasy adventure set in a hidden forest.\nTickets: https://www.foxth
+ eatre.ca/movies/wildwood/
+URL:https://www.foxtheatre.ca/movies/wildwood/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1800-sense-and-sensibility-2026@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261121T180000
+DTEND;TZID=America/Toronto:20261121T201200
+SUMMARY:Sense and Sensibility at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Georgia Oakley\n2026 · 132 min\nNew Focus Featur
+ es / Working Title adaptation of Austen.\nTickets: https://www.foxtheatre
+ .ca/movies/sense-and-sensibility-2026/
+URL:https://www.foxtheatre.ca/movies/sense-and-sensibility-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T2100-the-room-w-greg-sestero@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261121T210000
+DTEND;TZID=America/Toronto:20261121T223900
+SUMMARY:The Room w/ Greg Sestero at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Tommy Wiseau\n2003 · 99 min\nThe cult disaster c
+ lassic with Greg Sestero appearing live.\nTickets: https://www.foxtheatre
+ .ca/movies/the-room-w-greg-sestero/
+URL:https://www.foxtheatre.ca/movies/the-room-w-greg-sestero/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1445-wildwood@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261122T144500
+DTEND;TZID=America/Toronto:20261122T165700
+SUMMARY:Wildwood at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Travis Knight\n2026 · 132 min\nStop-motion anima
+ ted fantasy adventure set in a hidden forest.\nTickets: https://www.foxth
+ eatre.ca/movies/wildwood/
+URL:https://www.foxtheatre.ca/movies/wildwood/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1750-sense-and-sensibility-2026@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261122T175000
+DTEND;TZID=America/Toronto:20261122T200200
+SUMMARY:Sense and Sensibility at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Georgia Oakley\n2026 · 132 min\nNew Focus Featur
+ es / Working Title adaptation of Austen.\nTickets: https://www.foxtheatre
+ .ca/movies/sense-and-sensibility-2026/
+URL:https://www.foxtheatre.ca/movies/sense-and-sensibility-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T2130-the-room-w-greg-sestero@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261122T213000
+DTEND;TZID=America/Toronto:20261122T230900
+SUMMARY:The Room w/ Greg Sestero at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Tommy Wiseau\n2003 · 99 min\nThe cult disaster c
+ lassic with Greg Sestero appearing live.\nTickets: https://www.foxtheatre
+ .ca/movies/the-room-w-greg-sestero/
+URL:https://www.foxtheatre.ca/movies/the-room-w-greg-sestero/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261123T1820-sense-and-sensibility-2026@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261123T182000
+DTEND;TZID=America/Toronto:20261123T203200
+SUMMARY:Sense and Sensibility at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Georgia Oakley\n2026 · 132 min\nNew Focus Featur
+ es / Working Title adaptation of Austen.\nTickets: https://www.foxtheatre
+ .ca/movies/sense-and-sensibility-2026/
+URL:https://www.foxtheatre.ca/movies/sense-and-sensibility-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261123T2120-the-only-living-pickpocket-in-new-york@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261123T212000
+DTEND;TZID=America/Toronto:20261123T224800
+SUMMARY:The Only Living Pickpocket in New York at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Noah Segan\n2026 · 88 min\nJohn Turturro as an a
+ ging pickpocket working the city.\nTickets: https://www.foxtheatre.ca/mov
+ ies/the-only-living-pickpocket-in-new-york/
+URL:https://www.foxtheatre.ca/movies/the-only-living-pickpocket-in-new-yo
+ rk/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261124T1520-the-only-living-pickpocket-in-new-york@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261124T152000
+DTEND;TZID=America/Toronto:20261124T164800
+SUMMARY:The Only Living Pickpocket in New York at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Noah Segan\n2026 · 88 min\nJohn Turturro as an a
+ ging pickpocket working the city.\nTickets: https://www.foxtheatre.ca/mov
+ ies/the-only-living-pickpocket-in-new-york/
+URL:https://www.foxtheatre.ca/movies/the-only-living-pickpocket-in-new-yo
+ rk/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261124T1745-wildwood@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261124T174500
+DTEND;TZID=America/Toronto:20261124T195700
+SUMMARY:Wildwood at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Travis Knight\n2026 · 132 min\nStop-motion anima
+ ted fantasy adventure set in a hidden forest.\nTickets: https://www.foxth
+ eatre.ca/movies/wildwood/
+URL:https://www.foxtheatre.ca/movies/wildwood/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261124T2045-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261124T204500
+DTEND;TZID=America/Toronto:20261124T233900
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T1515-sense-and-sensibility-2026@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261125T151500
+DTEND;TZID=America/Toronto:20261125T172700
+SUMMARY:Sense and Sensibility at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Georgia Oakley\n2026 · 132 min\nNew Focus Featur
+ es / Working Title adaptation of Austen.\nTickets: https://www.foxtheatre
+ .ca/movies/sense-and-sensibility-2026/
+URL:https://www.foxtheatre.ca/movies/sense-and-sensibility-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T1820-the-only-living-pickpocket-in-new-york@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261125T182000
+DTEND;TZID=America/Toronto:20261125T194800
+SUMMARY:The Only Living Pickpocket in New York at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Noah Segan\n2026 · 88 min\nJohn Turturro as an a
+ ging pickpocket working the city.\nTickets: https://www.foxtheatre.ca/mov
+ ies/the-only-living-pickpocket-in-new-york/
+URL:https://www.foxtheatre.ca/movies/the-only-living-pickpocket-in-new-yo
+ rk/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T2040-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261125T204000
+DTEND;TZID=America/Toronto:20261125T233400
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T1800-sense-and-sensibility-2026@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261126T180000
+DTEND;TZID=America/Toronto:20261126T201200
+SUMMARY:Sense and Sensibility at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Georgia Oakley\n2026 · 132 min\nNew Focus Featur
+ es / Working Title adaptation of Austen.\nTickets: https://www.foxtheatre
+ .ca/movies/sense-and-sensibility-2026/
+URL:https://www.foxtheatre.ca/movies/sense-and-sensibility-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T2110-drawn-in-the-girl-who-leapt-through-time@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261126T211000
+DTEND;TZID=America/Toronto:20261126T224800
+SUMMARY:Drawn In: The Girl Who Leapt Through Time at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Mamoru Hosoda\n2006 · 98 min\nMamoru Hosoda’s 
+ time-skipping anime\, part of the Drawn In series.\nTickets: https://www.
+ foxtheatre.ca/movies/drawn-in-the-girl-who-leapt-through-time/
+URL:https://www.foxtheatre.ca/movies/drawn-in-the-girl-who-leapt-through-
+ time/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261127T1230-club-kid@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261127T123000
+DTEND;TZID=America/Toronto:20261127T143600
+SUMMARY:Club Kid at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 126 min\nJordan Firstman
+ ’s debut feature as a hard-partying New York club promoter.\nTickets: h
+ ttps://www.foxtheatre.ca/movies/club-kid/
+URL:https://www.foxtheatre.ca/movies/club-kid/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261127T1530-sense-and-sensibility-2026@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261127T153000
+DTEND;TZID=America/Toronto:20261127T174200
+SUMMARY:Sense and Sensibility at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Georgia Oakley\n2026 · 132 min\nNew Focus Featur
+ es / Working Title adaptation of Austen.\nTickets: https://www.foxtheatre
+ .ca/movies/sense-and-sensibility-2026/
+URL:https://www.foxtheatre.ca/movies/sense-and-sensibility-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261127T1830-club-kid@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261127T183000
+DTEND;TZID=America/Toronto:20261127T203600
+SUMMARY:Club Kid at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 126 min\nJordan Firstman
+ ’s debut feature as a hard-partying New York club promoter.\nTickets: h
+ ttps://www.foxtheatre.ca/movies/club-kid/
+URL:https://www.foxtheatre.ca/movies/club-kid/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261127T2130-restoration-the-devils@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261127T213000
+DTEND;TZID=America/Toronto:20261127T232400
+SUMMARY:Restoration: The Devils at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Ken Russell\n1971 · 114 min\nKen Russell’s onc
+ e-banned historical horror with Vanessa Redgrave and Oliver Reed\, newly 
+ restored.\nTickets: https://www.foxtheatre.ca/movies/restoration-the-devi
+ ls/
+URL:https://www.foxtheatre.ca/movies/restoration-the-devils/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261128T1200-club-kid@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261128T120000
+DTEND;TZID=America/Toronto:20261128T140600
+SUMMARY:Club Kid at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 126 min\nJordan Firstman
+ ’s debut feature as a hard-partying New York club promoter.\nTickets: h
+ ttps://www.foxtheatre.ca/movies/club-kid/
+URL:https://www.foxtheatre.ca/movies/club-kid/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261128T1500-restoration-the-piano@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261128T150000
+DTEND;TZID=America/Toronto:20261128T170000
+SUMMARY:Restoration: The Piano at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Jane Campion\n1993 · 120 min\nJane Campion’s P
+ alme d’Or winner\, restored.\nTickets: https://www.foxtheatre.ca/movies
+ /restoration-the-piano/
+URL:https://www.foxtheatre.ca/movies/restoration-the-piano/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261128T1800-club-kid@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261128T180000
+DTEND;TZID=America/Toronto:20261128T200600
+SUMMARY:Club Kid at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 126 min\nJordan Firstman
+ ’s debut feature as a hard-partying New York club promoter.\nTickets: h
+ ttps://www.foxtheatre.ca/movies/club-kid/
+URL:https://www.foxtheatre.ca/movies/club-kid/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261128T2130-pulp-fiction@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261128T213000
+DTEND;TZID=America/Toronto:20261129T000400
+SUMMARY:Pulp Fiction at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Quentin Tarantino\n1994 · 154 min\nA themed scre
+ ening of Tarantino’s classic.\nTickets: https://www.foxtheatre.ca/movie
+ s/pulp-fiction/
+URL:https://www.foxtheatre.ca/movies/pulp-fiction/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129T1245-golden-age-the-big-sleep@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261129T124500
+DTEND;TZID=America/Toronto:20261129T144100
+SUMMARY:Golden Age: The Big Sleep at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Howard Hawks\n1946 · 116 min\nHoward Hawks’s n
+ oir with Bogart and Bacall.\nTickets: https://www.foxtheatre.ca/movies/go
+ lden-age-the-big-sleep/
+URL:https://www.foxtheatre.ca/movies/golden-age-the-big-sleep/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129T1530-club-kid@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261129T153000
+DTEND;TZID=America/Toronto:20261129T173600
+SUMMARY:Club Kid at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 126 min\nJordan Firstman
+ ’s debut feature as a hard-partying New York club promoter.\nTickets: h
+ ttps://www.foxtheatre.ca/movies/club-kid/
+URL:https://www.foxtheatre.ca/movies/club-kid/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129T1820-sense-and-sensibility-2026@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261129T182000
+DTEND;TZID=America/Toronto:20261129T203200
+SUMMARY:Sense and Sensibility at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Georgia Oakley\n2026 · 132 min\nNew Focus Featur
+ es / Working Title adaptation of Austen.\nTickets: https://www.foxtheatre
+ .ca/movies/sense-and-sensibility-2026/
+URL:https://www.foxtheatre.ca/movies/sense-and-sensibility-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129T2130-club-kid@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261129T213000
+DTEND;TZID=America/Toronto:20261129T233600
+SUMMARY:Club Kid at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 126 min\nJordan Firstman
+ ’s debut feature as a hard-partying New York club promoter.\nTickets: h
+ ttps://www.foxtheatre.ca/movies/club-kid/
+URL:https://www.foxtheatre.ca/movies/club-kid/
+END:VEVENT
+END:VCALENDAR

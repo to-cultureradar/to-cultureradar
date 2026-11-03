@@ -83,7 +83,7 @@ footer a{color:inherit}
 <body>
 <div class="wrap">
 <header>
-  <p class="home"><a href="/Culture-calendar/">← T.O. Culture Calendar</a></p>
+  <p class="home"><a href="/Culture-calendar/">← T.O. Culture Calendar</a> · <a href="/Culture-calendar/fox/archive/">Past weeks</a></p>
   <h1>The Fox <span>Nov 2 – 29</span></h1>
   <p class="sub">Every screening at the Fox Theatre, 2236 Queen St. E, for the next four weeks. Titles link to the Fox’s page for tickets. Listings as of Nov 2, 2026; check <a href="https://www.foxtheatre.ca/whats-on/now-showing/">foxtheatre.ca</a> for changes.</p>
   <p class="subscribe"><a href="webcal://safetydept.github.io/Culture-calendar/fox/fox.ics">Subscribe to every screening</a> in Apple Calendar; it updates itself each week. Or <a href="fox.ics">download the .ics</a>.</p>
@@ -233,7 +233,6 @@ function render(){
     fl.insertAdjacentHTML("beforeend",`<div class="film"><h3><a href="${URL_BASE+s}/">${f[0]}</a></h3>${f[5]?`<div class="runs">Directed by ${f[5]}</div>`:""}<p>${f[4]}</p><div class="runs">Nov ${ds.join(", ")}</div></div>`);
   });
 }
-document.querySelectorAll(".seg").forEach(b=>b.addEventListener("click",()=>{calApp=b.dataset.c;try{localStorage.setItem("fox-cal",calApp)}catch(e){}render()}));
 document.querySelectorAll(".seg").forEach(b=>b.addEventListener("click",()=>{calApp=b.dataset.c;try{localStorage.setItem("fox-cal",calApp)}catch(e){}render()}));
 document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.f;try{localStorage.setItem("fox-filter",filter)}catch(e){}render()}));
 render();

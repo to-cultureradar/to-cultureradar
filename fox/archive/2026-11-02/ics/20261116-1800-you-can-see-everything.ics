@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fox Theatre Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261116T1800-you-can-see-everything@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261116T180000
+DTEND;TZID=America/Toronto:20261116T205400
+SUMMARY:You Can See Everything at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Nathan Fielder & Lance Oppenheim\n2026 · 174 min
+ \nNathan Fielder and Lance Oppenheim follow a notorious figure in the fin
+ al weeks before prison.\nTickets: https://www.foxtheatre.ca/movies/you-ca
+ n-see-everything/
+URL:https://www.foxtheatre.ca/movies/you-can-see-everything/
+END:VEVENT
+END:VCALENDAR

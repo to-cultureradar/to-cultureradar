@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fox Theatre Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261120T1840-the-only-living-pickpocket-in-new-york@fox-calendar
+DTSTAMP:20261103T014613Z
+DTSTART;TZID=America/Toronto:20261120T184000
+DTEND;TZID=America/Toronto:20261120T200800
+SUMMARY:The Only Living Pickpocket in New York at the Fox
+LOCATION:Fox Theatre\, 2236 Queen St E\, Toronto\, ON M4E 1G2
+DESCRIPTION:Directed by Noah Segan\n2026 · 88 min\nJohn Turturro as an a
+ ging pickpocket working the city.\nTickets: https://www.foxtheatre.ca/mov
+ ies/the-only-living-pickpocket-in-new-york/
+URL:https://www.foxtheatre.ca/movies/the-only-living-pickpocket-in-new-yo
+ rk/
+END:VEVENT
+END:VCALENDAR

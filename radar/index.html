@@ -82,6 +82,7 @@ const SRC={
  seventh:"https://theseventhart.org/whats-on/",tiff:"https://tiff.net/",pp:"https://www.thepowerplant.org/",
  moca:"https://moca.ca/",ago:"https://ago.ca/exhibitions",rom:"https://www.rom.on.ca/",fox:"../fox/",
  efosa:"https://efosa.ca/toronto-concerts-november-2026/",exclaim:"https://exclaim.ca/music/article/toronto-s-4-can-t-miss-concerts-including-geese-and-angine-de-poitrine-november-2-8-2026",
+ ra:"https://ra.co/events/ca/toronto",gotl:"https://www.getonthelist.ca/toronto-house-music-events",
  theatre:"https://thetorontotheatreguide.substack.com/p/the-toronto-theatre-guide-november",ss:"https://myscena.org/newswire/newswire-soundstreams-announces-2026-27-season/"
 };
 // [category, when, title, where, why, link, tags]
@@ -106,6 +107,13 @@ const E=[
  ["art","To Jan 3","Psychedelics: Art. Culture. Science.","Royal Ontario Museum","A big survey of psychedelics in art, culture, and science. It closes in early January, so plan for this month or next.",SRC.rom,["tour"]],
  ["art","To Feb 2027","Sunday Best","Art Gallery of Ontario","Black diasporic style and self-fashioning from the 1880s to today. It opens here before travelling to Philadelphia.",SRC.ago,["tour"]],
  ["art","To spring 2027","Melissa Auf der Maur: My ’90s Photographs","Art Gallery of Ontario","More than 200 photos from the bassist’s years on tour with ’90s alt-rock bands.",SRC.ago,[]],
+ ["music","Nov 6","Kerri Chandler (open to close)","Apollo · 131 McCormack St.","The New Jersey deep-house pioneer plays the whole night, so expect long, warm, soulful sets rather than a quick headline slot.",SRC.ra,[]],
+ ["music","Nov 6","Benji B + Immigrant Muscle","Standard Time","The BBC selector and Deviation founder, known for sets that move between house, broken beat, jazz, and UK club music.",SRC.ra,[]],
+ ["music","Nov 7","FORMAT × Standard Time: Altinbas, Measure Divide, anise","Standard Time","Dub and minimal techno in one of the city’s best small rooms. The deep, hypnotic end of the club calendar.",SRC.ra,["pick"]],
+ ["music","Nov 7","Roots of House: Osunlade","Sound Machine","The Yoruba Soul founder, whose spiritual, Afro-leaning deep house has been a touchstone for two decades.",SRC.gotl,[]],
+ ["music","Nov 13","DJ Tennis","Coda","The Life and Death label boss plays melodic, slightly melancholy house and techno.",SRC.efosa,[]],
+ ["music","Nov 14","Love Only: Eddie C + Kiki Lefreak","Bambi’s","Eddie C’s slow, edit-heavy disco and house, a Canadian favourite, in a tiny basement room.",SRC.gotl,[]],
+ ["music","Nov 20","Invisible City: Ryan Spencer + Todd Modes","Bambi’s","The Toronto label behind cult reissues of Canadian dance and boogie records, playing deep cuts.",SRC.gotl,[]],
  ["music","Nov 26","Bonobo","Scotiabank Arena","Downtempo-to-dance electronic, for fans of Boards of Canada or DJ Shadow, though this one is an arena show.",SRC.efosa,[]],
  ["music","Nov 5","Angine de Poitrine","History","A masked Québécois duo playing microtonal, loop-driven instrumental rock.",SRC.exclaim,[]],
  ["music","Nov 26","Takuya Nakamura","The Opera House","Jazz trumpet over electronic production.",SRC.efosa,[]],
@@ -116,7 +124,7 @@ const E=[
  ["theatre","To Dec 13","Rogers v. Rogers","Berkeley Street · Crow’s with Canadian Stage","Tom Rooney in a drama drawn from the Rogers boardroom fight.",SRC.theatre,[]],
  ["theatre","To Nov 15","Lemons Lemons Lemons Lemons Lemons","The Assembly Theatre","A two-hander set in a world with a daily word limit.",SRC.theatre,[]]
 ];
-const SEC={film:["Film","Repertory, experimental, and special screenings beyond the Fox."],art:["Art","Exhibitions on now, including touring shows."],music:["Music","Concerts this month, weighted toward electronic and experimental."],theatre:["Theatre","What’s running, with closing dates."]};
+const SEC={film:["Film","Repertory, experimental, and special screenings beyond the Fox."],art:["Art","Exhibitions on now, including touring shows."],music:["Music","Concerts and club nights, weighted toward deep house, dub techno, and electronic music."],theatre:["Theatre","What’s running, with closing dates."]};
 let cat="all";
 try{cat=localStorage.getItem("radar-cat")||"all"}catch(e){}
 const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");

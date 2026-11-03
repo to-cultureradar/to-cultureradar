@@ -100,7 +100,7 @@ def pick(r, i, n, month):
 <div class='strip mono'><span>{CAT[cat]}</span><span>Pick {i:02d}/{n:02d} · {html.escape(month)}</span></div>
 <div style='margin-top:54px'><span class='stamp mast' style='font-size:{150 if len(big)<8 else 108}px'>{html.escape(big)}</span></div>
 <div class='title' style='font-size:{100 if len(title)<26 else 80 if len(title)<44 else 64}px;margin-top:60px'>{html.escape(title)}</div>
-<div class=mono style='margin-top:28px;font-size:26px;line-height:1.7'><span class=hl>{html.escape(where)}</span></div>
+<div class=mono style='margin-top:28px;font-size:26px;line-height:1.7'><span class=hl>{html.escape(where)}{' · Free' if 'free' in r[6] else ''}</span></div>
 <div class=thin style='margin-top:34px'></div>
 <div style='font-size:42px;line-height:1.3;margin-top:24px;max-width:27ch'>{html.escape(desc)}</div>
 <div class='foot mast' style='font-size:210px;color:{c};-webkit-text-stroke:5px {BLACK};margin-bottom:18px;line-height:.8'>{CAT[cat]}</div>
@@ -113,7 +113,7 @@ def closing(month, total):
 <div class='mast mis' style='font-size:330px;margin-top:60px;--c:{INK["art"]}'>+{total}</div>
 <div class='mast' style='font-size:150px'>more listings</div>
 <div class=rule style='margin-top:36px'></div>
-<div style='font-size:46px;line-height:1.25;margin-top:24px;max-width:21ch;font-weight:600'>Repertory and experimental film, exhibitions, concerts, and theatre, with ticket links.</div>
+<div style='font-size:46px;line-height:1.25;margin-top:24px;max-width:21ch;font-weight:600'>Film, exhibitions, club nights, theatre, talks, and walks, with ticket links.</div>
 <div class='foot' style='background:{BLACK};color:{INK["art"]};padding:26px 30px;display:flex;justify-content:space-between;align-items:baseline'>
 <span class=mast style='font-size:84px;text-transform:lowercase'>{SITE}</span><span class=mono style='color:{PAPER}'>Link in bio</span></div></div>""",
         bg=INK["film"])
@@ -190,7 +190,7 @@ def main():
     cap = [f"Culture Radar T.O., {month}. {len(picks)} picks:", ""]
     for r in picks:
         cap.append(f"{r[1]} · {r[2]} · {r[3].split(' · ')[0]}")
-    cap += ["", f"Plus {len(rows) - len(picks)} more listings, from film and club nights to talks, walks, and day trips, with ticket links. Link in bio.", "", f"Full guide: {SITE}", "", "#toronto #torontofilm #torontoart #torontoevents"]
+    cap += ["", f"Plus {len(rows) - len(picks)} more listings, from film and club nights to talks and walks, with ticket links. Link in bio.", "", f"Full guide: {SITE}", "", "#toronto #torontofilm #torontoart #torontoevents"]
     open(os.path.join(out, "caption.txt"), "w", encoding="utf8").write("\n".join(cap) + "\n")
     print(f"{len(jobs)} images + caption -> {out}")
 

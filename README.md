@@ -1,6 +1,6 @@
 # Culture Calendar
 
-A small static site, published with GitHub Pages at https://safetydept.github.io/culture-calendar/
+A small static site, published with GitHub Pages at https://safetydept.github.io/Culture-calendar/
 
 - `index.html` — home page linking the two calendars
 - `fox/index.html` — Fox Theatre screenings for the next four weeks. Data lives in the `F` (films) and `S` (schedule) objects in the page script.

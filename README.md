@@ -2,15 +2,17 @@
 
 A small static site, published with GitHub Pages at https://cultureradar.to/
 
-- `index.html` — home page linking the two calendars
+- `index.html` — the home page: Culture Radar T.O., a monthly list of picks. Data lives in the `E` array in the page script; the masthead’s `.issue` block holds the edition month and date. Picks, tabs, counts, and sections are all built from `E`.
+- `links/index.html` — Culture Calendar T.O., a secondary page linking the Radar, the Fox, and both archives (served at /links/).
 - `fox/index.html` — Fox Theatre screenings for the next four weeks. Data lives in the `F` (films) and `S` (schedule) objects in the page script.
 - `fox/ics/` and `fox/fox.ics` — iCal files, one per showing plus a subscribable feed. Generated from the page data; never edit by hand.
-- `radar/index.html` — Culture Radar T.O., a monthly list of picks. Data lives in the `E` array in the page script; the masthead’s `.issue` block holds the edition month and date. Picks, tabs, counts, and sections are all built from `E`.
+- `radar/index.html` — redirect only: the Radar used to live at /radar/ and now lives at the site root.
 - `assets/fonts.css` + `assets/fonts/` — self-hosted typefaces (Archivo, Newsreader, IBM Plex Mono; SIL Open Font License) shared by every page.
 - `radar/archive/` — one folder per edition (`YYYY-MM/`) plus an index. Generated; never edit by hand.
-- `tools/archive_radar.py` — run after every change to `radar/index.html`: copies the edition into `radar/archive/<month>/` and rebuilds the archive index (`python3 tools/archive_radar.py`).
+- `tools/archive_radar.py` — run after every change to the Radar (`index.html`): copies the edition into `radar/archive/<month>/` and rebuilds the archive index (`python3 tools/archive_radar.py`).
 - `fox/archive/` — one folder per weekly Fox snapshot (`YYYY-MM-DD/`, with its iCal files) plus an index. Generated; never edit by hand.
 - `tools/archive_fox.py` — run after every weekly refresh of `fox/index.html` (`python3 tools/archive_fox.py`).
+- `tools/social/make_kit.py` — renders the Instagram kit (carousel, weekly story, caption) from the Radar: `python3 tools/social/make_kit.py OUTDIR --week-start YYYY-MM-DD`
 - `tools/make_ics.py` — rebuilds the iCal files: `python3 tools/make_ics.py fox/index.html fox/ics fox/fox.ics YEAR MONTH`
 
 Both pages are refreshed by scheduled Claude tasks: the Fox page every Monday, the Radar on the 1st of each month.

@@ -1,6 +1,6 @@
 """Copy the current Culture Radar T.O. edition into the archive and rebuild the archive index.
 
-Run from the repo root after every change to radar/index.html:
+Run from the repo root after every change to index.html (the Radar, served at the site root):
     python3 tools/archive_radar.py
 
 - Reads the edition month from the `.issue` block (<strong>November 2026</strong>).
@@ -15,7 +15,7 @@ from datetime import datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "/"
-RADAR = os.path.join(ROOT, "radar", "index.html")
+RADAR = os.path.join(ROOT, "index.html")
 ARCH = os.path.join(ROOT, "radar", "archive")
 
 BANNER_CSS = (
@@ -44,7 +44,7 @@ def archive_copy(page, label):
     page = page.replace("</style>", BANNER_CSS + "\n</style>", 1)
     banner = (
         f'<p class="archived">Archived edition · {html.escape(label)} · '
-        f'<a href="{BASE}radar/">Current edition →</a> · <a href="{BASE}radar/archive/">All editions</a></p>'
+        f'<a href="{BASE}">Current edition →</a> · <a href="{BASE}radar/archive/">All editions</a></p>'
     )
     page = re.sub(r'(<div class="topbar">.*?</div>)', r"\1\n" + banner, page, count=1, flags=re.S)
     # keep per-edition filter memory separate from the live page

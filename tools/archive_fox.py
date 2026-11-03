@@ -61,11 +61,11 @@ def build_index(current):
                     f'<span class="ct">{n} screenings</span><span class="pk">Listings as of {when.strftime("%B %-d, %Y")}</span></a>')
     tpl = open(os.path.join(ROOT, "tools", "archive_index_template.html"), encoding="utf8").read()
     out = (tpl.replace("<title>Radar Archive</title>", "<title>Fox Archive</title>")
-              .replace('content="Every past edition of Culture Radar T.O.."', 'content="Every past week of the Fox Theatre calendar."')
+              .replace('content="Every past edition of Culture Radar T.O."', 'content="Every past week of the Fox Theatre calendar."')
               .replace("<h1>Radar <span>Archive</span></h1>", "<h1>The Fox <span>Archive</span></h1>")
               .replace("Every edition of Culture Radar T.O., kept as it stood at the end of its month.",
                        "Every weekly Fox Theatre calendar, kept as it stood when it was published. Each week covers the four weeks from its listing date.")
-              .replace(f'href="{BASE}radar/">Current edition →', f'href="{BASE}fox/">Current week →')
+              .replace(f'href="{BASE}">Current edition →', f'href="{BASE}fox/">Current week →')
               .replace("A new edition is added at the start of each month.", "A new week is added every Monday.")
               .replace("{{EDITIONS}}", "\n".join(rows)))
     open(os.path.join(ARCH, "index.html"), "w", encoding="utf8").write(out)

@@ -2,7 +2,7 @@
 
     python3 tools/social/make_kit.py OUTDIR [--week-start YYYY-MM-DD]
 
-Reads the picks and listings from radar/index.html and writes:
+Reads the picks and listings from index.html (the Radar) and writes:
   OUTDIR/feed-00-cover.png … feed-NN-*.png   (1080×1350 carousel: cover, one slide per pick, closing slide)
   OUTDIR/story-this-week.png                  (1080×1920, events in the 7 days from --week-start)
   OUTDIR/caption.txt                          (carousel caption)
@@ -16,7 +16,7 @@ MON = {m: i for i, m in enumerate(["Jan","Feb","Mar","Apr","May","Jun","Jul","Au
 CAT = {"film": "Film", "art": "Art", "music": "Music", "theatre": "Theatre"}
 
 def load():
-    page = open(os.path.join(ROOT, "radar", "index.html"), encoding="utf8").read()
+    page = open(os.path.join(ROOT, "index.html"), encoding="utf8").read()
     month = re.search(r'class="issue[^"]*"><strong>([A-Z][a-z]+ \d{4})</strong>', page).group(1)
     rows = []
     for m in re.finditer(r'^ (\["(?:film|art|music|theatre)".*\]),?$', page, re.M):

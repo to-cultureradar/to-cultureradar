@@ -102,7 +102,7 @@ def pick(r, i, n, month):
 <div class='title' style='font-size:{100 if len(title)<26 else 80 if len(title)<44 else 64}px;margin-top:60px'>{html.escape(title)}</div>
 <div class=mono style='margin-top:28px;font-size:26px;line-height:1.7'><span class=hl>{html.escape(where)}{' · Free' if 'free' in r[6] else ''}</span></div>
 <div class=thin style='margin-top:34px'></div>
-<div style='font-size:42px;line-height:1.3;margin-top:24px;max-width:27ch'>{html.escape(desc)}</div>
+<div style='font-size:{42 if len(desc) < 150 else 36}px;line-height:1.3;margin-top:24px;max-width:27ch'>{html.escape(desc)}</div>
 <div class='foot mast' style='font-size:210px;color:{c};-webkit-text-stroke:5px {BLACK};margin-bottom:18px;line-height:.8'>{CAT[cat]}</div>
 <div class='stub mono'><span>Tickets & details</span><span>{SITE}</span></div></div>""",
         c=c, dots="dots fade")

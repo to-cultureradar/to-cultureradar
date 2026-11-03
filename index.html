@@ -4,36 +4,49 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Culture Calendar</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<meta name="description" content="What’s on in Toronto: a monthly guide to film, art, music, and theatre, and every screening at the Fox Theatre.">
+<link rel="stylesheet" href="assets/fonts.css">
 <style>
-/* Layout: two big doors — the weekly Fox board and the monthly Radar */
-:root{--bg:#f3f4ef;--surface:#fff;--ink:#1d2421;--muted:#66706b;--line:#dde1da;--fox:#8c1c2b;--radar:#2f6b57;
-  --f-display:"Fraunces",Georgia,serif;--f-body:"Atkinson Hyperlegible",system-ui,sans-serif}
-@media (prefers-color-scheme:dark){:root{--bg:#121614;--surface:#1a201d;--ink:#e9eee9;--muted:#9aa59f;--line:#2c3531;--fox:#e0707f;--radar:#7cc4a6;color-scheme:dark}}
+/* Layout: a front page with two ledger entries, same type system as the Radar */
+:root{
+  --paper:#fafaf7; --ink:#15171a; --soft:#5d6168; --rule:#dcdcd5; --rule-strong:#15171a; --accent:#2340c8; --tint:#eef0fb;
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif; --f-text:"Newsreader",Georgia,serif; --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#111214;--ink:#ecebe6;--soft:#9a9ca1;--rule:#2c2e32;--rule-strong:#ecebe6;--accent:#9cb0ff;--tint:#1b2033;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#111214;--ink:#ecebe6;--soft:#9a9ca1;--rule:#2c2e32;--rule-strong:#ecebe6;--accent:#9cb0ff;--tint:#1b2033;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);line-height:1.5;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 56px}
-.wrap{max-width:760px;margin:0 auto}
-h1{font-family:var(--f-display);font-weight:800;font-size:clamp(2.4rem,9vw,3.6rem);line-height:1;margin:0 0 .5rem}
-p.lead{color:var(--muted);max-width:56ch;margin:0 0 28px}
-.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.door{display:block;text-decoration:none;color:inherit;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:20px}
-.door:hover,.door:focus-visible{border-color:currentColor;outline:none}
-.door h2{font-family:var(--f-display);font-size:1.6rem;margin:0 0 4px}
-.door.fox h2{color:var(--fox)}.door.radar h2{color:var(--radar)}
-.door p{margin:0;color:var(--muted)}
-.cadence{display:inline-block;margin-top:12px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-footer{margin-top:36px;color:var(--muted);font-size:.85rem}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-text);font-size:18px;line-height:1.45;
+  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-block:0 72px}
+.wrap{max-width:1040px;margin:0 auto}
+.topbar{display:flex;justify-content:space-between;gap:16px;padding-block:14px;border-bottom:1px solid var(--rule);font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}
+h1{margin:0;padding-block:44px 24px;border-bottom:3px solid var(--rule-strong);font-family:var(--f-display);font-stretch:62%;font-weight:900;font-size:clamp(3.4rem,12vw,7.4rem);line-height:.86;text-transform:uppercase}
+.lead{max-width:52ch;margin:20px 0 36px;font-size:19px}
+.entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 24px;align-items:end;padding-block:28px;border-bottom:1px solid var(--rule);text-decoration:none;color:inherit}
+.entry:first-of-type{border-top:1px solid var(--rule)}
+.entry h2{margin:0;font-family:var(--f-display);font-stretch:62%;font-weight:900;font-size:clamp(2.4rem,7vw,4rem);line-height:.95;text-transform:uppercase}
+.entry p{margin:8px 0 0;max-width:52ch;font-size:17px}
+.entry .when{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);text-align:right}
+.entry .go{display:block;margin-top:6px;font-family:var(--f-display);font-weight:700;font-size:28px;color:var(--accent)}
+.entry:hover h2,.entry:focus-visible h2{color:var(--accent)}
+.entry:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+footer{margin-top:56px;padding-top:14px;border-top:3px solid var(--rule-strong);font-family:var(--f-mono);font-size:12.5px;color:var(--soft)}
+@media (max-width:640px){.entry{grid-template-columns:1fr}.entry .when{text-align:left}}
+@media (prefers-reduced-motion:no-preference){.entry h2{transition:color .15s}}
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="topbar"><span>Toronto</span><span>Est. November 2026</span></div>
   <h1>Culture Calendar</h1>
-  <p class="lead">What’s worth leaving the house for in Toronto: a monthly pick of film, art, music, and theatre, and every screening at the Fox Theatre.</p>
-  <div class="doors">
-    <a class="door radar" href="radar/"><h2>T.O. Culture Radar</h2><p>Picks for the month across repertory and experimental film, exhibitions, concerts, and theatre.</p><span class="cadence">Updated the 1st of each month</span></a>
-    <a class="door fox" href="fox/"><h2>The Fox</h2><p>Every screening at the Fox Theatre for the next four weeks, with directors, filters, and iCal or Google calendar links.</p><span class="cadence">Updated Mondays</span></a>
-  </div>
+  <p class="lead">What’s on in Toronto: a monthly guide to film, art, music, and theatre, and every screening at the Fox Theatre.</p>
+  <a class="entry" href="radar/">
+    <div><h2>T.O. Culture Radar</h2><p>Repertory and experimental film, exhibitions, club nights, concerts, and theatre for the month ahead.</p></div>
+    <div class="when">New edition on the 1st<span class="go" aria-hidden="true">→</span></div>
+  </a>
+  <a class="entry" href="fox/">
+    <div><h2>The Fox</h2><p>Every screening at the Fox Theatre for the next four weeks, with directors and calendar links.</p></div>
+    <div class="when">Updated Mondays<span class="go" aria-hidden="true">→</span></div>
+  </a>
   <footer>Listings are gathered from venue websites. Check with the venue before you go.</footer>
 </div>
 </body>

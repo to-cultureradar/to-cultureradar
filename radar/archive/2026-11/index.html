@@ -65,7 +65,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .tab sup{font-family:var(--f-mono);font-weight:400;font-size:11px;margin-left:3px}
 .tab[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--ink)}
 .tab:hover{color:var(--ink)}
-.toggle{margin-left:auto;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;background:none;border:1px solid var(--rule);color:var(--soft);padding:5px 10px;cursor:pointer}
+.toggles{margin-left:auto;display:flex;flex-wrap:wrap;gap:8px}
+.seg{display:inline-flex}
+.seg .toggle+.toggle{border-left:0}
+.toggle{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;background:none;border:1px solid var(--rule);color:var(--soft);padding:5px 10px;cursor:pointer}
 .toggle[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 section.cat{margin-top:44px}
 .cat h2{display:flex;align-items:baseline;gap:12px;margin:0;padding-bottom:10px;border-bottom:2px solid var(--rule-strong);font-family:var(--f-display);font-stretch:62%;font-weight:900;font-size:clamp(2.2rem,6vw,3.2rem);line-height:1;text-transform:uppercase}
@@ -95,7 +98,8 @@ footer a{text-underline-offset:3px}
   .issue{text-align:left}
   .row{grid-template-columns:64px minmax(0,1fr);gap:14px}
   .date .n{font-size:22px}.date .n.sm{font-size:16px}
-  .toggle{margin-left:0}
+  .toggles{margin-left:0}
+  .tabs{position:static}
 }
 @media (prefers-reduced-motion:no-preference){.pickcard,.tab{transition:background .15s,color .15s}}
 .archived{margin:0;padding-block:10px;border-bottom:1px solid var(--rule);font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}.archived a{color:var(--accent)}
@@ -107,7 +111,7 @@ footer a{text-underline-offset:3px}
 <p class="archived">Archived edition · November 2026 · <a href="/">Current edition →</a> · <a href="/radar/archive/">All editions</a></p>
 <header class="mast">
   <h1>Culture Radar <span>Toronto</span></h1>
-  <div class="issue eyebrow"><strong>November 2026</strong>Edition updated Nov 2</div>
+  <div class="issue eyebrow"><strong>November 2026</strong>Edition updated Nov 3</div>
 </header>
 <p class="intro">A monthly guide to film, art, music, theatre, and other upcoming events.</p>
 
@@ -119,7 +123,7 @@ footer a{text-underline-offset:3px}
 <nav class="tabs" aria-label="Filter listings" id="tabs"></nav>
 <main id="list"></main>
 
-<footer><span>Compiled from online sources on Nov 2, 2026. A new edition replaces this one at the start of each month.</span><span><a href="/radar/archive/">Archive</a> · <a href="/links/">Links</a> · <a href="/fox/">The Fox calendar</a> · <a href="https://www.instagram.com/cultureradar.to/" target="_blank" rel="noopener">Instagram</a></span></footer>
+<footer><span>Compiled from online sources on Nov 3, 2026. A new edition replaces this one at the start of each month.</span><span><a href="/radar/archive/">Archive</a> · <a href="/links/">Links</a> · <a href="/fox/">The Fox calendar</a> · <a href="https://www.instagram.com/cultureradar.to/" target="_blank" rel="noopener">Instagram</a></span></footer>
 </div>
 <script>
 const SRC={
@@ -168,17 +172,51 @@ const E=[
  ["theatre","To Nov 29","Macbeth (solo)","Crow’s Theatre · Studio","Ninety minutes, one performer, and Macbeth reset in the tech industry.",SRC.theatre,[]],
  ["theatre","To Nov 22","Goodnight Desdemona (Good Morning Juliet)","Canadian Stage · Bluma Appel","Ann-Marie MacDonald’s comedy, 40 years on.",SRC.theatre,[]],
  ["theatre","To Dec 13","Rogers v. Rogers","Berkeley Street · Crow’s with Canadian Stage","Tom Rooney in a drama drawn from the Rogers family boardroom fight.",SRC.theatre,[]],
- ["theatre","To Nov 15","Lemons Lemons Lemons Lemons Lemons","The Assembly Theatre","A two-hander set in a world where everyone gets 140 words a day.",SRC.theatre,[]]
+ ["theatre","To Nov 15","Lemons Lemons Lemons Lemons Lemons","The Assembly Theatre","A two-hander set in a world where everyone gets 140 words a day.",SRC.theatre,[]],
+ ["talks", "Nov 9", "Changing the Narrative: Toronto’s Indigenous–Settler History", "Toronto Reference Library", "A panel discussion on how the city’s Indigenous and settler history is told. 6:30 pm.", "https://tpl.bibliocommons.com/v2/events/6a8dad66aafa6100295ef816", ["free"]],
+ ["talks", "Nov 9", "Signs of Struggle: Ana Mendieta, Feminism, and the Uses of Ambiguity", "Munk School · U of T", "A talk on the Cuban American artist’s work and the ways it has been read. 4 pm.", "https://munkschool.utoronto.ca/event/signs-struggle-ana-mendieta-feminism-and-uses-ambiguity", []],
+ ["talks", "Nov 10", "Toronto Book Awards", "Toronto Reference Library", "The city’s book prize is announced; Ali Hassan hosts. 7 pm.", "https://www.eventbrite.ca/e/2026-toronto-book-awards-prize-ceremony-tickets-1994019096796", []],
+ ["talks", "Nov 16", "Jody Wilson-Raybould + Roshan Danesh", "Appel Salon · Toronto Reference Library", "The former attorney general and her co-author on leadership built on connection, with Farah Nasser. Registration is full; a rush line opens on the night.", "https://www.eventbrite.ca/e/the-connection-oriented-leader-ft-jody-wilson-raybould-and-roshan-danesh-tickets-1996809112809", ["free", "sold"]],
+ ["talks", "Nov 18", "Rachel Cusk with Sheila Heti", "Appel Salon · Toronto Reference Library", "Cusk on her new novel, Life of M, in which a writer studies the life of a film star. Registration is full; rush seats are released at 6:45 pm.", "https://www.eventbrite.ca/e/rachel-cusk-life-of-m-tickets-1998362692608", ["free", "sold"]],
+ ["talks", "Nov 20", "Anishinaabemowin revitalization: Rochelle Allan", "U of T Indigenous Research Network", "A lunchtime talk on reviving the language at home, in community, and at the university. Noon.", "https://irn.utoronto.ca/events/lunch-learn-reflections-on-anishinaabemowin-revitalization-home-university-and-everything-in-between/", []],
+ ["talks", "Nov 24", "Jeff Chang: Bruce Lee and the Making of Asian America", "Appel Salon · Toronto Reference Library", "The author of Can’t Stop Won’t Stop on his Bruce Lee biography, with Vinh Nguyen, on Lee’s birthday. Registration required.", "https://www.eventbrite.ca/e/jeff-chang-bruce-lee-and-the-making-of-asian-america-tickets-1995715782629", ["free"]],
+ ["outdoors", "Saturdays", "Brick Works site tours", "Evergreen Brick Works", "Public tours of the former quarry and brickworks in the Don Valley.", "https://www.evergreen.ca/evergreen-brick-work/activities/site-tours/", ["free"]],
+ ["outdoors", "Nov 8", "November birding walk", "High Park Nature Centre · 375 Colborne Lodge Dr.", "A beginner-friendly two-hour walk for the chickadees, nuthatches, and woodpeckers that stay for winter. Pay what you can; binoculars to borrow. 10 am.", "https://events.humanitix.com/november-birding-walk-high-park-fa26", []],
+ ["outdoors", "Nov 21", "Necropolis and Riverdale Farm walk", "Toronto Field Naturalists · Castle Frank station", "A 5 km nature and heritage loop through Cabbagetown, the 1850 Necropolis, and Riverdale Farm, led by Ellen Schwartzel. 10 am.", "https://torontofieldnaturalists.org/TFN-events/public-walk-necropolis-and-riverdale-farm/", []],
+ ["festivals", "Nov 13–15", "Toronto Antiquarian Book Fair", "OCAD U Waterfront · 130 Queens Quay E.", "Rare-book and manuscript dealers for a weekend at OCAD’s waterfront campus; $20 covers all three days.", "https://tabf.abac.org/", []],
+ ["daytrips", "To Jan 3", "Camille Turner: Hometown Queen", "Art Gallery of Hamilton", "The first full survey of Turner’s 30-year practice, including Worthy, a new installation about her father’s childhood on a former Jamaican plantation. Lakeshore West GO to Hamilton.", "https://www.artgalleryofhamilton.com/exhibition/camille-turner/", ["tour"]],
+ ["daytrips", "To Mar 21", "Portraits as Portals", "Art Gallery of Hamilton", "Psychic mediums give readings of portraits whose artists are unknown.", "https://www.artgalleryofhamilton.com/exhibition/portraits-as-portals/", ["free"]],
+ ["daytrips", "To Feb 14", "Zoe Ann Cardinal Cire: In Plains Air", "Robert McLaughlin Gallery · Oshawa", "New paintings from the artist’s ancestral territories in Treaty 6 that rework plein-air painting through Cree worldviews. Lakeshore East GO to Oshawa.", "https://rmg.on.ca/exhibitions/", ["free"]],
+ ["daytrips", "Nov 21", "Nightfall opening", "Robert McLaughlin Gallery · Oshawa", "A group show on the shift from day to night opens with a reception, 4–7 pm.", "https://rmg.on.ca/exhibitions/", ["free"]]
 ];
-const CATS=[["film","Film"],["art","Art"],["music","Music"],["theatre","Theatre"]];
+const CATS=[["film","Film"],["art","Art"],["music","Music"],["theatre","Theatre"],["talks","Talks"],["outdoors","Outdoors"],["festivals","Festivals"],["daytrips","Day trips"]];
+const CATNAME=Object.fromEntries(CATS);
 const MON={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
-let cat="all", freeOnly=false;
+let cat="all", freeOnly=false, when="any";
 try{cat=localStorage.getItem("radar-arch-cat")||"all";freeOnly=localStorage.getItem("radar-arch-free")==="1"}catch(e){}
-if(!["all","film","art","music","theatre"].includes(cat))cat="all";
+if(cat!=="all"&&!CATNAME[cat])cat="all";
+try{when=sessionStorage.getItem("radar-when")||"any"}catch(e){}
+if(!["any","week","weekend"].includes(when))when="any";
+// Date windows for the This week / This weekend filters. Year is inferred from the edition month.
+const ED=(()=>{const t=document.querySelector(".issue strong").textContent.split(" ");return {m:MON[t[0].slice(0,3)],y:+t[1]}})();
+const day0=d=>new Date(d.getFullYear(),d.getMonth(),d.getDate());
+const mkd=(mo,d)=>new Date(ED.y+(mo<ED.m-6?1:0),mo-1,d);
+function span(w){
+  let wk=w.match(/^(Sun|Mon|Tues|Wednes|Thurs|Fri|Satur)days/);if(wk)return {weekly:["Sun","Mon","Tues","Wednes","Thurs","Fri","Satur"].indexOf(wk[1])};
+  let m=w.match(/^To ([A-Z][a-z]{2}) (\d+)/);if(m)return {a:new Date(0),b:mkd(MON[m[1]],+m[2])};
+  m=w.match(/^([A-Z][a-z]{2}) (\d+)(?:–(?:([A-Z][a-z]{2}) )?(\d+))?/);if(!m)return null;
+  const a=mkd(MON[m[1]],+m[2]);return {a,b:m[4]?mkd(MON[m[3]||m[1]],+m[4]):a};
+}
+function windowFor(k){const t=day0(new Date());if(k==="week"){const e=new Date(t);e.setDate(t.getDate()+6);return [t,e]}
+  const dow=t.getDay(),f=new Date(t);f.setDate(t.getDate()+(dow===0?-2:(5-dow+7)%7));if(dow===6)f.setDate(t.getDate()-1);const e=new Date(f);e.setDate(f.getDate()+2);return [f<t?t:f,e]}
+function inWhen(w){if(when==="any")return true;const sp=span(w);if(!sp)return false;const [a,b]=windowFor(when);
+  if(sp.weekly!=null){for(let d=new Date(a);d<=b;d.setDate(d.getDate()+1))if(d.getDay()===sp.weekly)return true;return false}
+  return sp.a<=b&&sp.b>=a}
+const keep=e=>(!freeOnly||e[6].includes("free"))&&inWhen(e[1]);
 const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
 function parts(w){
   let m=w.match(/^To (.+)$/); if(m) return {m:"Until",n:m[1],sm:true};
-  if(/^Thursdays/.test(w)) return {m:"Weekly",n:"Thu",sm:false};
+  m=w.match(/^(Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)days/); if(m) return {m:"Weekly",n:m[1].slice(0,3),sm:false};
   m=w.match(/^([A-Z][a-z]{2}) (.+)$/); if(m) return {m:m[1],n:m[2],sm:m[2].length>3};
   return {m:"",n:w,sm:true};
 }
@@ -187,13 +225,14 @@ const ext=u=>/^https?:/.test(u);
 function flags(t){return (t.includes("pick")?'<span class="flag pick">Pick</span>':"")+(t.includes("free")?'<span class="flag free">Free</span>':"")+(t.includes("tour")?'<span class="flag tour">Touring</span>':"")+(t.includes("sold")?'<span class="flag sold">Sold out</span>':"");}
 function renderPicks(){
   const P=E.filter(e=>e[6].includes("pick")).sort((a,b)=>key(a[1])-key(b[1]));
-  document.getElementById("picks").innerHTML=P.map(([c,w,t,where,,link])=>`<a class="pickcard" href="${esc(link)}"${ext(link)?' target="_blank" rel="noopener"':''}><span class="d">${esc(w)} · ${esc(c==="theatre"?"Theatre":c[0].toUpperCase()+c.slice(1))}</span><span class="t">${esc(t)}</span><span class="v">${esc(where.split(" · ")[0])}</span></a>`).join("");
+  document.getElementById("picks").innerHTML=P.map(([c,w,t,where,,link])=>`<a class="pickcard" href="${esc(link)}"${ext(link)?' target="_blank" rel="noopener"':''}><span class="d">${esc(w)} · ${esc(CATNAME[c]||c)}</span><span class="t">${esc(t)}</span><span class="v">${esc(where.split(" · ")[0])}</span></a>`).join("");
 }
 function renderTabs(){
-  const n=k=>E.filter(e=>(k==="all"||e[0]===k)&&(!freeOnly||e[6].includes("free"))).length;
+  const n=k=>E.filter(e=>(k==="all"||e[0]===k)&&keep(e)).length;
   const T=[["all","Everything"],...CATS];
-  document.getElementById("tabs").innerHTML=T.map(([k,l])=>`<button class="tab" type="button" data-c="${k}" aria-pressed="${cat===k}">${l}<sup>${n(k)}</sup></button>`).join("")+`<button class="toggle" type="button" id="free" aria-pressed="${freeOnly}">Free only</button>`;
+  document.getElementById("tabs").innerHTML=T.map(([k,l])=>`<button class="tab" type="button" data-c="${k}" aria-pressed="${cat===k}">${l}<sup>${n(k)}</sup></button>`).join("")+`<span class="toggles"><span class="seg" role="group" aria-label="When">${[["any","Any time"],["week","This week"],["weekend","This weekend"]].map(([k,l])=>`<button class="toggle" type="button" data-w="${k}" aria-pressed="${when===k}">${l}</button>`).join("")}</span><button class="toggle" type="button" id="free" aria-pressed="${freeOnly}">Free only</button></span>`;
   document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{cat=b.dataset.c;try{localStorage.setItem("radar-arch-cat",cat)}catch(e){}render()}));
+  document.querySelectorAll("[data-w]").forEach(b=>b.addEventListener("click",()=>{when=b.dataset.w;try{sessionStorage.setItem("radar-when",when)}catch(e){}render()}));
   document.getElementById("free").addEventListener("click",()=>{freeOnly=!freeOnly;try{localStorage.setItem("radar-arch-free",freeOnly?"1":"0")}catch(e){}render()});
 }
 function render(){
@@ -202,14 +241,14 @@ function render(){
   let shown=0;
   CATS.forEach(([k,label])=>{
     if(cat!=="all"&&cat!==k)return;
-    const rows=E.filter(e=>e[0]===k&&(!freeOnly||e[6].includes("free"))).sort((a,b)=>key(a[1])-key(b[1]));
+    const rows=E.filter(e=>e[0]===k&&keep(e)).sort((a,b)=>key(a[1])-key(b[1]));
     if(!rows.length)return;
     shown+=rows.length;
     const s=document.createElement("section");s.className="cat";s.id=k;
     s.innerHTML=`<h2>${label}<small>${rows.length} listings</small></h2>`+rows.map(([c,w,t,where,why,link,tags])=>{const d=parts(w);return `<article class="row${tags.includes("sold")?" is-sold":""}"><div class="date"><span class="m">${esc(d.m)}</span><span class="n${d.sm?" sm":""}">${esc(d.n)}</span></div><div class="body"><h3><a href="${esc(link)}"${ext(link)?' target="_blank" rel="noopener"':''}>${esc(t)}</a>${ext(link)?'<span class="arrow" aria-hidden="true">↗</span>':''}</h3><div class="meta"><span>${esc(where)}</span>${flags(tags)}</div><p>${esc(why)}</p></div></article>`}).join("");
     L.appendChild(s);
   });
-  if(!shown)L.innerHTML='<p class="empty">Nothing free in this section this month.</p>';
+  if(!shown)L.innerHTML='<p class="empty">Nothing matches these filters.</p>';
 }
 renderPicks();render();
 </script>

@@ -14,13 +14,14 @@ import os, re, sys, json, html, asyncio, datetime as dt
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FONTS = os.path.join(ROOT, "assets", "fonts")
 MON = {m: i for i, m in enumerate(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"], 1)}
-CAT = {"film": "Film", "art": "Art", "music": "Music", "theatre": "Theatre"}
+CAT = {"film": "Film", "art": "Art", "music": "Music", "theatre": "Theatre", "talks": "Talks", "outdoors": "Outdoors", "festivals": "Festivals", "daytrips": "Day trips"}
+CORE = ["film", "art", "music", "theatre"]  # the four chips on the cover and preview card
 
 def load():
     page = open(os.path.join(ROOT, "index.html"), encoding="utf8").read()
     month = re.search(r'class="issue[^"]*"><strong>([A-Z][a-z]+ \d{4})</strong>', page).group(1)
     rows = []
-    for m in re.finditer(r'^ (\["(?:film|art|music|theatre)".*\]),?$', page, re.M):
+    for m in re.finditer(r'^ (\["(?:film|art|music|theatre|talks|outdoors|festivals|daytrips)".*\]),?$', page, re.M):
         line = re.sub(r",SRC\.\w+,", ',"",', m.group(1))
         try:
             rows.append(json.loads(line))
@@ -38,7 +39,8 @@ def key(w, year):
 HANDLE = "@cultureradar.to"
 SITE = "cultureradar.to"
 # 90s alt-weekly look: newsprint, halftone, misregistered spot colour, one bright ink per section
-INK = {"film": "#ff2e88", "art": "#ffd600", "music": "#00b2ff", "theatre": "#ff5a1f"}
+INK = {"film": "#ff2e88", "art": "#ffd600", "music": "#00b2ff", "theatre": "#ff5a1f",
+       "talks": "#a66bff", "outdoors": "#33c463", "festivals": "#ff4f4f", "daytrips": "#00c9b1"}
 PAPER, BLACK = "#f3eddc", "#111111"
 
 CSS = f"""
@@ -75,7 +77,7 @@ def issue_no(month):
 
 def cover(month, n):
     mname = month.split()[0]
-    chips = "".join(f"<span class=mono style='background:{INK[k]};padding:10px 16px;border:3px solid {BLACK}'>{CAT[k]}</span>" for k in CAT)
+    chips = "".join(f"<span class=mono style='background:{INK[k]};padding:10px 16px;border:3px solid {BLACK}'>{CAT[k]}</span>" for k in CORE)
     return shell(1080, 1350, f"""<div class=frame>
 <div class='strip mono'><span>Toronto · Free</span><span>No. {issue_no(month)} · {html.escape(month)}</span></div>
 <div class='mast mis' style='font-size:300px;margin-top:44px;--c:{INK["film"]}'>Culture</div>
@@ -132,7 +134,7 @@ def story(rows, start):
         f"<div class=mono style='font-size:20px;margin-top:10px'>{html.escape(r[3].split(' · ')[0])}{' · <b>Sold out</b>' if 'sold' in r[6] else ''}</div></div></div>"
         for r in wk)
     rng = f"{start.strftime('%b')} {start.day}–{end.day}" if start.month == end.month else f"{start.strftime('%b')} {start.day}–{end.strftime('%b')} {end.day}"
-    legend = "".join(f"<span style='display:inline-flex;align-items:center;gap:8px'><i style='width:22px;height:22px;background:{INK[k]};border:3px solid {BLACK};display:inline-block'></i>{CAT[k]}</span>" for k in CAT)
+    legend = "".join(f"<span style='display:inline-flex;align-items:center;gap:8px'><i style='width:22px;height:22px;background:{INK[k]};border:3px solid {BLACK};display:inline-block'></i>{CAT[k]}</span>" for k in CAT if any(r[0] == k for r in wk))
     return shell(1080, 1920, f"""<div class=frame style='inset:110px 56px'>
 <div class='strip mono'><span>{HANDLE}</span><span>{rng}</span></div>
 <div class='mast mis' style='font-size:230px;margin-top:34px;--c:{INK["film"]}'>This week</div>
@@ -144,7 +146,7 @@ def story(rows, start):
 
 def og_card(month=None, n=None):
     """1200×630 link-preview image (Open Graph), same look as the cover. Evergreen: no month or count."""
-    chips = "".join(f"<span class=mono style='background:{INK[k]};padding:8px 14px;border:3px solid {BLACK};font-size:20px'>{CAT[k]}</span>" for k in CAT)
+    chips = "".join(f"<span class=mono style='background:{INK[k]};padding:8px 14px;border:3px solid {BLACK};font-size:20px'>{CAT[k]}</span>" for k in CORE)
     return shell(1200, 630, f"""<div class=frame style='inset:44px 52px'>
 <div class='strip mono' style='font-size:20px'><span>Toronto · Free</span><span>New edition on the 1st</span></div>
 <div style='display:flex;align-items:flex-end;gap:26px;margin-top:30px'>
@@ -188,7 +190,7 @@ def main():
     cap = [f"Culture Radar T.O., {month}. {len(picks)} picks:", ""]
     for r in picks:
         cap.append(f"{r[1]} · {r[2]} · {r[3].split(' · ')[0]}")
-    cap += ["", f"Plus {len(rows) - len(picks)} more listings across film, art, music, and theatre, with ticket links. Link in bio.", "", f"Full guide: {SITE}", "", "#toronto #torontofilm #torontoart #torontoevents"]
+    cap += ["", f"Plus {len(rows) - len(picks)} more listings, from film and club nights to talks, walks, and day trips, with ticket links. Link in bio.", "", f"Full guide: {SITE}", "", "#toronto #torontofilm #torontoart #torontoevents"]
     open(os.path.join(out, "caption.txt"), "w", encoding="utf8").write("\n".join(cap) + "\n")
     print(f"{len(jobs)} images + caption -> {out}")
 

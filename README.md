@@ -13,7 +13,7 @@ A small static site, published with GitHub Pages at https://cultureradar.to/
 - `fox/archive/` — one folder per weekly Fox snapshot (`YYYY-MM-DD/`, with its iCal files) plus an index. Generated; never edit by hand.
 - `tools/archive_fox.py` — run after every weekly refresh of `fox/index.html` (`python3 tools/archive_fox.py`).
 - `tools/social/make_kit.py` — renders the Instagram kit (carousel, weekly story, caption) from the Radar, plus the link-preview image every page uses (`assets/social/og.png`): `python3 tools/social/make_kit.py OUTDIR --week-start YYYY-MM-DD --og assets/social/og.png`
-- `tools/social/make_fox_og.py` — renders the Fox page’s link-preview image (`assets/social/og-fox.png`) from the current date range and schedule; run after every weekly refresh.
+- `tools/social/make_fox_og.py` — renders the Fox page’s evergreen link-preview image (`assets/social/og-fox.png`); only needs re-running if the design changes.
 - `tools/make_ics.py` — rebuilds the iCal files: `python3 tools/make_ics.py fox/index.html fox/ics fox/fox.ics YEAR MONTH`
 
 Both pages are refreshed by scheduled Claude tasks: the Fox page every Monday, the Radar on the 1st of each month.

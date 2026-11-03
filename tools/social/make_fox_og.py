@@ -1,9 +1,8 @@
-"""Render the Fox page's 1200×630 link-preview image (Open Graph).
+"""Render the Fox page's 1200×630 link-preview image (Open Graph). Evergreen: no dates or counts.
 
     python3 tools/social/make_fox_og.py            # writes assets/social/og-fox.png
 
-Reads the date range from the <h1> span and counts films and screenings in the S schedule
-of fox/index.html, so run it after every weekly refresh. Uses the Fox page's own palette.
+Uses the Fox page's own palette. Only needs re-running if the design changes.
 """
 import os, re, html, asyncio
 
@@ -35,8 +34,8 @@ body{{width:1200px;height:630px;background:{BG};color:{INK};font-family:Newsread
 <div style='position:absolute;inset:52px 60px 48px 82px;display:flex;flex-direction:column'>
   <div class=mono style='color:{MUTED};display:flex;justify-content:space-between'><span>Fox Theatre · 2236 Queen St. E</span><span>Updated Mondays</span></div>
   <div class=disp style='font-size:200px;margin-top:34px'>The Fox</div>
-  <div class=disp style='font-size:150px;color:{ACCENT};margin-top:6px'>{html.escape(rng)}</div>
-  <div style='font-size:34px;margin-top:26px;color:{INK}'>Every screening for the next four weeks: {films} films, {shows} showtimes.</div>
+  <div class=disp style='font-size:150px;color:{ACCENT};margin-top:6px'>Every screening</div>
+  <div style='font-size:34px;margin-top:26px;color:{INK}'>The next four weeks at the Fox Theatre, with directors and calendar links.</div>
   <div style='margin-top:auto;display:flex;gap:10px;align-items:center'>
     <span class='chip on'>Everything</span><span class=chip>Repertory &amp; events</span><span class=chip>New releases</span>
     <span class=mono style='margin-left:auto;color:{INK}'>cultureradar.to/fox</span>
@@ -55,7 +54,7 @@ async def render(path, d):
         await pg.screenshot(path=path); os.remove(tmp); await b.close()
 
 if __name__ == "__main__":
-    rng, films, shows = data()
+    rng, films, shows = data()  # kept for reference; the card itself is evergreen
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     asyncio.run(render(OUT, doc(rng, films, shows)))
-    print(f"Fox preview: {rng}, {films} films, {shows} showtimes -> {OUT}")
+    print(f"Fox preview (evergreen) -> {OUT}")

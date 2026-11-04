@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TIFF Lightbox Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261113T1800-sorry-wrong-number@tiff-calendar
+DTSTAMP:20261104T013530Z
+DTSTART;TZID=America/Toronto:20261113T180000
+DTEND;TZID=America/Toronto:20261113T192900
+SUMMARY:Sorry\, Wrong Number at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Anatole Litvak\n1948 · 89 min\nSecret Beyond the
+  Door: The Women Who Wrote Noir\nBarbara Stanwyck\, bedridden\, overhears
+  a murder plot on a crossed phone line.\nTickets: https://tiff.net/events
+ /sorry-wrong-number
+URL:https://tiff.net/events/sorry-wrong-number
+END:VEVENT
+END:VCALENDAR

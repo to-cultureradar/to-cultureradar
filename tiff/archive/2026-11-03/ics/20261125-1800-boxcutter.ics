@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TIFF Lightbox Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261125T1800-boxcutter@tiff-calendar
+DTSTAMP:20261104T013530Z
+DTSTART;TZID=America/Toronto:20261125T180000
+DTEND;TZID=America/Toronto:20261125T193400
+SUMMARY:Boxcutter with Vibe Arts at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Reza Dahya\n2024 · 94 min\nSpecial Programming\n
+ Reza Dahya’s Toronto feature about an aspiring rapper chasing his stole
+ n laptop\, with a new short\, presented with Vibe Arts.\nTickets: https:/
+ /tiff.net/events/boxcutter-with-vibe-arts
+URL:https://tiff.net/events/boxcutter-with-vibe-arts
+END:VEVENT
+END:VCALENDAR

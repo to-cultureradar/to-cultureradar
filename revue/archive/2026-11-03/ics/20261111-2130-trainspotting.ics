@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Revue Cinema Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261111T2130-trainspotting@revue-calendar
+DTSTAMP:20261104T032804Z
+DTSTART;TZID=America/Toronto:20261111T213000
+DTEND;TZID=America/Toronto:20261111T230400
+SUMMARY:Trainspotting at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Danny Boyle\n1996 · 94 min\nPsych-Out Cinema\nIr
+ vine Welsh’s Edinburgh heroin users\, in a new restoration.\nTickets: h
+ ttps://revuecinema.ca/films/psych-out-cinema-trainspotting-1996-new-4k-re
+ storation/
+URL:https://revuecinema.ca/films/psych-out-cinema-trainspotting-1996-new-
+ 4k-restoration/
+END:VEVENT
+END:VCALENDAR

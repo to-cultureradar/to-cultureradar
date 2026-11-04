@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Revue Cinema Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261123T2130-the-edge@revue-calendar
+DTSTAMP:20261104T032804Z
+DTSTART;TZID=America/Toronto:20261123T213000
+DTEND;TZID=America/Toronto:20261123T232700
+SUMMARY:The Edge at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Lee Tamahori\n1997 · 117 min\nWhen Animals Attac
+ k\nThree men stranded in the Alaskan wilderness\, a bear\, and mounting d
+ istrust.\nTickets: https://revuecinema.ca/films/when-animals-attack-the-e
+ dge-1997-presented-on-35mm/
+URL:https://revuecinema.ca/films/when-animals-attack-the-edge-1997-presen
+ ted-on-35mm/
+END:VEVENT
+END:VCALENDAR

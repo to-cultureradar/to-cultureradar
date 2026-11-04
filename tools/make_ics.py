@@ -5,7 +5,8 @@ Usage: python3 tools/make_ics.py fox/index.html fox/ics fox/fox.ics YEAR MONTH [
 For tiff, each F entry carries its own ticket URL at index 7."""
 html,outdir,feed,year,month=sys.argv[1],sys.argv[2],sys.argv[3],int(sys.argv[4]),int(sys.argv[5])
 VENUES={"fox":dict(name="the Fox",loc="Fox Theatre, 2236 Queen St E, Toronto, ON M4E 1G2",cal="Fox Theatre screenings",prod="Fox Theatre Calendar",uid="fox-calendar"),
-        "tiff":dict(name="TIFF Lightbox",loc="TIFF Lightbox, 350 King St W, Toronto, ON M5V 3X5",cal="TIFF Lightbox screenings",prod="TIFF Lightbox Calendar",uid="tiff-calendar")}
+        "tiff":dict(name="TIFF Lightbox",loc="TIFF Lightbox, 350 King St W, Toronto, ON M5V 3X5",cal="TIFF Lightbox screenings",prod="TIFF Lightbox Calendar",uid="tiff-calendar"),
+        "revue":dict(name="the Revue",loc="Revue Cinema, 400 Roncesvalles Ave, Toronto, ON M6R 2M9",cal="Revue Cinema screenings",prod="Revue Cinema Calendar",uid="revue-calendar")}
 V=VENUES[sys.argv[6] if len(sys.argv)>6 else "fox"]
 link=lambda slug,f:(f[7] if len(f)>7 and f[7] else "https://www.foxtheatre.ca/movies/"+slug+"/")
 h=open(html,encoding="utf8").read()

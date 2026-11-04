@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Revue Cinema Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261114T1900-days-of-being-wild@revue-calendar
+DTSTAMP:20261104T032804Z
+DTSTART;TZID=America/Toronto:20261114T190000
+DTEND;TZID=America/Toronto:20261114T203400
+SUMMARY:Days of Being Wild at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Wong Kar-wai\n1990 · 94 min\nDestination Love\nA
+  Hong Kong playboy learns the woman who raised him is not his mother.\nTi
+ ckets: https://revuecinema.ca/films/destination-love-days-of-being-wild-1
+ 990-new-4k-restoration/
+URL:https://revuecinema.ca/films/destination-love-days-of-being-wild-1990
+ -new-4k-restoration/
+END:VEVENT
+END:VCALENDAR

@@ -184,66 +184,72 @@ const F={
  "ra-the-gymnasts-of-fisherman-colony":["The Gymnasts of Fisherman Colony", null, null, "partner", "", "", "Reel Asian Film Festival", "https://www.reelasian.com/festival-events/the-gymnasts-of-fisherman-colony/", ""],
  "ra-unsung-voices-15":["Unsung Voices 15 (Shorts)", null, null, "partner", "", "", "Reel Asian Film Festival", "https://www.reelasian.com/festival-events/unsung-voices-15/", ""]
 };
-// S: day of November → ["HH:MM slug", …]
+// S: "YYYY-MM-DD" → ["HH:MM slug", …] (" !" after the slug marks sold out)
+// WEEK0: the Monday that starts the four-week window (update it with the listings date)
 const S={
-"3":["18:00 your-mother", "18:10 fatherland", "18:30 4-months", "19:30 la-bola-negra", "20:15 possible-love", "20:45 fjord"],
-"4":["15:45 possible-love", "16:00 fatherland", "16:00 la-bola-negra", "16:15 fjord", "18:15 making-marie-antoinette", "19:15 fatherland", "19:30 possible-love", "19:45 la-bola-negra", "20:30 possible-love", "21:30 your-mother"],
-"5":["16:00 fjord", "16:20 la-bola-negra", "17:30 the-hitch-hiker", "19:30 possible-love", "19:45 fatherland", "20:00 la-bola-negra", "21:50 your-mother"],
-"6":["18:00 the-big-sleep"],
-"7":["14:00 my-name-is-julia-ross", "17:00 secret-beyond-the-door"],
-"8":["14:00 invisible-beauty", "14:30 the-unsuspected", "18:00 the-file-on-thelma-jordon"],
-"10":["18:30 smash-grab"],
-"11":["18:00 tomson-highway", "18:30 theater-and-its-doubles"],
-"12":["17:30 ra-parts-and-labour", "18:30 memory", "19:45 ra-hearing"],
-"13":["11:30 club-kid", "14:15 club-kid", "17:15 ra-the-banquet", "18:00 ra-alphabet-soup", "18:00 sorry-wrong-number", "20:15 ra-10s-across-the-borders", "20:20 club-kid", "20:45 ra-what-blooms-what-lingers", "21:45 club-kid"],
-"14":["10:00 ra-film-club", "10:00 ra-muyi", "12:00 ra-views-from-the-pier", "12:10 club-kid", "12:15 ra-brunch-with-a-depressed-zombie", "13:00 the-big-sleep", "14:45 ra-advanced-lessons-in-second-guessing", "15:30 ra-strong-son", "15:35 club-kid", "17:15 ra-pinball", "18:00 ra-the-bryce-lee-story", "19:00 club-kid", "20:00 ra-spoiled-rotten-sour", "20:45 ra-no-good-men", "22:00 club-kid"],
-"15":["13:00 ra-unsung-voices-15", "13:45 club-kid", "15:00 the-unsuspected", "16:15 ra-the-gymnasts-of-fisherman-colony", "16:30 club-kid", "18:30 sudden-fear", "19:00 ra-sunburn", "19:30 club-kid", "21:15 club-kid"],
-"17":["18:30 small-slow-but-steady", "19:30 club-kid"],
-"18":["16:15 club-kid", "18:30 messy-legends", "19:00 club-kid", "21:45 club-kid"],
-"19":["16:15 club-kid", "19:00 club-kid", "19:30 the-king-and-the-mockingbird", "21:45 club-kid"],
-"20":["12:30 paper-tiger", "13:00 club-kid", "15:15 paper-tiger", "16:00 club-kid", "18:00 akira", "18:45 club-kid", "19:00 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
-"21":["13:00 club-kid", "13:15 paper-tiger", "14:00 pinocchio", "15:45 club-kid", "16:00 paper-tiger", "16:30 castle-of-cagliostro", "19:00 paper-tiger", "19:15 club-kid", "21:45 paper-tiger", "22:00 club-kid"],
-"22":["12:00 paper-tiger", "13:15 club-kid", "14:00 night-on-the-galactic-railroad", "14:45 paper-tiger", "16:00 club-kid", "17:00 the-girl-who-leapt-through-time", "18:45 club-kid", "19:30 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
-"24":["18:00 paper-tiger", "18:30 akira", "18:45 club-kid"],
-"25":["16:30 paper-tiger", "17:00 club-kid", "18:00 boxcutter", "18:30 the-triplets-of-belleville", "19:15 paper-tiger", "19:45 club-kid", "21:00 club-kid"],
-"26":["16:00 club-kid", "16:15 paper-tiger", "18:30 fantastic-planet", "18:45 club-kid", "19:00 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
-"28":["14:00 masaaki-yuasa"]
+"2026-11-03":["18:00 your-mother", "18:10 fatherland", "18:30 4-months", "19:30 la-bola-negra", "20:15 possible-love", "20:45 fjord"],
+"2026-11-04":["15:45 possible-love", "16:00 fatherland", "16:00 la-bola-negra", "16:15 fjord", "18:15 making-marie-antoinette", "19:15 fatherland", "19:30 possible-love", "19:45 la-bola-negra", "20:30 possible-love", "21:30 your-mother"],
+"2026-11-05":["16:00 fjord", "16:20 la-bola-negra", "17:30 the-hitch-hiker", "19:30 possible-love", "19:45 fatherland", "20:00 la-bola-negra", "21:50 your-mother"],
+"2026-11-06":["18:00 the-big-sleep"],
+"2026-11-07":["14:00 my-name-is-julia-ross", "17:00 secret-beyond-the-door"],
+"2026-11-08":["14:00 invisible-beauty", "14:30 the-unsuspected", "18:00 the-file-on-thelma-jordon"],
+"2026-11-10":["18:30 smash-grab"],
+"2026-11-11":["18:00 tomson-highway", "18:30 theater-and-its-doubles"],
+"2026-11-12":["17:30 ra-parts-and-labour", "18:30 memory", "19:45 ra-hearing"],
+"2026-11-13":["11:30 club-kid", "14:15 club-kid", "17:15 ra-the-banquet", "18:00 ra-alphabet-soup", "18:00 sorry-wrong-number", "20:15 ra-10s-across-the-borders", "20:20 club-kid", "20:45 ra-what-blooms-what-lingers", "21:45 club-kid"],
+"2026-11-14":["10:00 ra-film-club", "10:00 ra-muyi", "12:00 ra-views-from-the-pier", "12:10 club-kid", "12:15 ra-brunch-with-a-depressed-zombie", "13:00 the-big-sleep", "14:45 ra-advanced-lessons-in-second-guessing", "15:30 ra-strong-son", "15:35 club-kid", "17:15 ra-pinball", "18:00 ra-the-bryce-lee-story", "19:00 club-kid", "20:00 ra-spoiled-rotten-sour", "20:45 ra-no-good-men", "22:00 club-kid"],
+"2026-11-15":["13:00 ra-unsung-voices-15", "13:45 club-kid", "15:00 the-unsuspected", "16:15 ra-the-gymnasts-of-fisherman-colony", "16:30 club-kid", "18:30 sudden-fear", "19:00 ra-sunburn", "19:30 club-kid", "21:15 club-kid"],
+"2026-11-17":["18:30 small-slow-but-steady", "19:30 club-kid"],
+"2026-11-18":["16:15 club-kid", "18:30 messy-legends", "19:00 club-kid", "21:45 club-kid"],
+"2026-11-19":["16:15 club-kid", "19:00 club-kid", "19:30 the-king-and-the-mockingbird", "21:45 club-kid"],
+"2026-11-20":["12:30 paper-tiger", "13:00 club-kid", "15:15 paper-tiger", "16:00 club-kid", "18:00 akira", "18:45 club-kid", "19:00 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
+"2026-11-21":["13:00 club-kid", "13:15 paper-tiger", "14:00 pinocchio", "15:45 club-kid", "16:00 paper-tiger", "16:30 castle-of-cagliostro", "19:00 paper-tiger", "19:15 club-kid", "21:45 paper-tiger", "22:00 club-kid"],
+"2026-11-22":["12:00 paper-tiger", "13:15 club-kid", "14:00 night-on-the-galactic-railroad", "14:45 paper-tiger", "16:00 club-kid", "17:00 the-girl-who-leapt-through-time", "18:45 club-kid", "19:30 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
+"2026-11-24":["18:00 paper-tiger", "18:30 akira", "18:45 club-kid"],
+"2026-11-25":["16:30 paper-tiger", "17:00 club-kid", "18:00 boxcutter", "18:30 the-triplets-of-belleville", "19:15 paper-tiger", "19:45 club-kid", "21:00 club-kid"],
+"2026-11-26":["16:00 club-kid", "16:15 paper-tiger", "18:30 fantastic-planet", "18:45 club-kid", "19:00 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
+"2026-11-28":["14:00 masaaki-yuasa"]
 };
-const YEAR=2026, MONTH=10; // JS month index (10 = November)
+const WEEK0="2026-11-02";
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const dOf=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
+const kOf=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const label=d=>`${MON[d.getMonth()]} ${d.getDate()}`;
 const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const pad=n=>String(n).padStart(2,"0");
 const fmt12=t=>{let[h,m]=t.split(":").map(Number);const ap=h>=12?"pm":"am";h=h%12||12;return `${h}:${pad(m)} ${ap}`};
 const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
 const LOC="TIFF Lightbox, 350 King St W, Toronto, ON M5V 3X5";
-function gcal(day,t,slug){
+function gcal(key,t,slug){
   const f=F[slug];const[h,m]=t.split(":").map(Number);const mins=(f[2]||120);
-  const s=new Date(YEAR,MONTH,day,h,m);const e=new Date(s.getTime()+mins*60000);
+  const s=dOf(key);s.setHours(h,m);const e=new Date(s.getTime()+mins*60000);
   const st=d=>`${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
   const q=new URLSearchParams({action:"TEMPLATE",text:f[0]+" at TIFF Lightbox",dates:st(s)+"/"+st(e),ctz:"America/Toronto",location:LOC,details:f[7]});
   return "https://calendar.google.com/calendar/render?"+q.toString();
 }
 let calApp="ics";
 try{calApp=localStorage.getItem("tiff-cal")||"ics"}catch(e){}
-function icsHref(day,t,slug){return `ics/${YEAR}${pad(MONTH+1)}${pad(day)}-${t.replace(":","")}-${slug}.ics`}
+function icsHref(key,t,slug){return `ics/${key.replace(/-/g,"")}-${t.replace(":","")}-${slug}.ics`}
 let filter="all";
 try{filter=localStorage.getItem("tiff-filter")||"all"}catch(e){}
 const now=new Date();
-const todayNum=(now.getFullYear()===YEAR&&now.getMonth()===MONTH)?now.getDate():null;
+const todayKey=kOf(now);
 function keepFilm(slug){return filter==="all"||filter==="eve"||F[slug][3]===filter}
 function keep(slug,t){if(filter==="eve")return Number(t.split(":")[0])>=18;return keepFilm(slug)}
 function render(){
   document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===filter));
   document.querySelectorAll(".seg").forEach(b=>b.setAttribute("aria-pressed",b.dataset.c===calApp));
   const cal=document.getElementById("cal");cal.innerHTML="";
-  [[2,8],[9,15],[16,22],[23,29]].forEach(([a,b])=>{
+  for(let wk=0;wk<4;wk++){
+    const w0=dOf(WEEK0);w0.setDate(w0.getDate()+7*wk);
     const w=document.createElement("section");w.className="week";
-    w.innerHTML=`<h2>Week of Nov ${a}</h2>`;
-    for(let d=a;d<=b;d++){
-      if(todayNum&&d<todayNum)continue;
-      if(!S[d])continue;
-      const shows=S[d].map(x=>x.split(" ")).filter(([t,s])=>keep(s,t));
-      const row=document.createElement("div");row.className="day"+(d===todayNum?" today":"");
-      row.innerHTML=`<div class="stub"><div class="dow">${DOW[new Date(YEAR,MONTH,d).getDay()]}</div><div class="num">${d}</div></div>`;
+    w.innerHTML=`<h2>Week of ${label(w0)}</h2>`;
+    for(let i=0;i<7;i++){
+      const dd=new Date(w0);dd.setDate(w0.getDate()+i);const key=kOf(dd);
+      if(key<todayKey||!S[key])continue;
+      const shows=S[key].map(x=>x.split(" ")).filter(([t,s])=>keep(s,t));
+      const row=document.createElement("div");row.className="day"+(key===todayKey?" today":"");
+      row.innerHTML=`<div class="stub"><div class="dow">${DOW[dd.getDay()]}</div><div class="num">${dd.getDate()}</div></div>`;
       const bill=document.createElement("div");bill.className="bill";
       if(!shows.length)bill.innerHTML=`<div class="empty">Nothing in this filter</div>`;
       shows.forEach(([t,slug,flag])=>{
@@ -252,19 +258,19 @@ function render(){
         if(f[1])bits.push(f[1]);if(f[2])bits.push(f[2]+" min");
         if(f[8])bits.push(`<span class="fmt">${f[8]}</span>`);
         const tag=f[6]?`<span class="tag">${esc(f[6].split(":")[0])}</span>`:(f[3]==="new"?'<span class="tag">New release</span>':"");
-        const add=calApp==="ics"?`<a href="${icsHref(d,t,slug)}">Add to calendar</a>`:`<a href="${gcal(d,t,slug)}" target="_blank" rel="noopener">Add to calendar</a>`;
+        const add=calApp==="ics"?`<a href="${icsHref(key,t,slug)}">Add to calendar</a>`:`<a href="${gcal(key,t,slug)}" target="_blank" rel="noopener">Add to calendar</a>`;
         bill.insertAdjacentHTML("beforeend",`<div class="show"><div class="time">${fmt12(t)}</div><div><a class="title" href="${esc(f[7])}" target="_blank" rel="noopener">${esc(f[0])}</a><div class="meta">${tag}${flag==="!"?'<span class="sold">Sold out</span>':""}${bits.join(" · ")} · ${add}</div></div></div>`);
       });
       row.appendChild(bill);w.appendChild(row);
     }
     if(w.querySelectorAll(".day").length)cal.appendChild(w);
-  });
+  }
   const fl=document.getElementById("filmlist");fl.innerHTML="";
-  const runs={};Object.entries(S).forEach(([d,arr])=>arr.forEach(x=>{const s=x.split(" ")[1];(runs[s]=runs[s]||new Set()).add(Number(d))}));
+  const runs={};Object.entries(S).forEach(([k,arr])=>{if(k<todayKey)return;arr.forEach(x=>{const s=x.split(" ")[1];(runs[s]=runs[s]||new Set()).add(k)})});
   Object.keys(F).filter(s=>runs[s]&&keepFilm(s)).forEach(s=>{
-    const f=F[s];const ds=[...runs[s]].sort((a,b)=>a-b);
+    const f=F[s];const ds=[...runs[s]].sort().map(k=>label(dOf(k)));
     const by=[f[5]?`Directed by ${esc(f[5])}`:"",f[1]||"",f[2]?f[2]+" min":"",f[8]||""].filter(Boolean).join(" · ");
-    fl.insertAdjacentHTML("beforeend",`<div class="film"><h3><a href="${esc(f[7])}" target="_blank" rel="noopener">${esc(f[0])}</a></h3>${f[6]?`<div class="series">${esc(f[6])}</div>`:""}${by?`<div class="runs">${by}</div>`:""}${f[4]?`<p>${esc(f[4])}</p>`:""}<div class="runs">Nov ${ds.join(", ")}</div></div>`);
+    fl.insertAdjacentHTML("beforeend",`<div class="film"><h3><a href="${esc(f[7])}" target="_blank" rel="noopener">${esc(f[0])}</a></h3>${f[6]?`<div class="series">${esc(f[6])}</div>`:""}${by?`<div class="runs">${by}</div>`:""}${f[4]?`<p>${esc(f[4])}</p>`:""}<div class="runs">${ds.join(", ")}</div></div>`);
   });
 }
 document.querySelectorAll(".seg").forEach(b=>b.addEventListener("click",()=>{calApp=b.dataset.c;try{localStorage.setItem("tiff-cal",calApp)}catch(e){}render()}));

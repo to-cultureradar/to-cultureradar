@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TIFF Lightbox Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261108T1400-invisible-beauty@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261108T140000
+DTEND;TZID=America/Toronto:20261108T155500
+SUMMARY:Viola Desmond Day: Invisible Beauty at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Bethann Hardison & Frédéric Tcheng\n2023 · 115
+  min\nSpecial Programming\nBethann Hardison’s documentary about her lif
+ e as a model and activist\, with Hardison and curator Julie Crooks in per
+ son.\nTickets: https://tiff.net/events/viola-desmond-day-invisible-beauty
+ -with-bethann-hardison-and-julie-crooks
+URL:https://tiff.net/events/viola-desmond-day-invisible-beauty-with-betha
+ nn-hardison-and-julie-crooks
+END:VEVENT
+END:VCALENDAR

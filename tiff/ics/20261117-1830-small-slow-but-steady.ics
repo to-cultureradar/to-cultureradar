@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TIFF Lightbox Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261117T1830-small-slow-but-steady@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261117T183000
+DTEND;TZID=America/Toronto:20261117T200900
+SUMMARY:Small\, Slow but Steady with Sho Miyake at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Sho Miyake\n2022 · 99 min\nSpecial Screenings\nM
+ iyake’s drama about a deaf boxer\, with the director in person.\nTicket
+ s: https://tiff.net/events/small-slow-but-steady-with-sho-miyake
+URL:https://tiff.net/events/small-slow-but-steady-with-sho-miyake
+END:VEVENT
+END:VCALENDAR

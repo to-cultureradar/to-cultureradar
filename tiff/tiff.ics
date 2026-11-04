@@ -1,0 +1,1549 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TIFF Lightbox Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TIFF Lightbox screenings
+X-WR-TIMEZONE:America/Toronto
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261103T1800-your-mother@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261103T180000
+DTEND;TZID=America/Toronto:20261103T195200
+SUMMARY:Your Mother Your Mother Your Mother at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Bassam Tariq\n2026 · 112 min\nMahershala Ali as 
+ a devout family man who is also a contract killer\, in a Texas-set action
+  thriller.\nTickets: https://tiff.net/events/your-mother-your-mother-your
+ -mother
+URL:https://tiff.net/events/your-mother-your-mother-your-mother
+END:VEVENT
+BEGIN:VEVENT
+UID:20261103T1810-fatherland@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261103T181000
+DTEND;TZID=America/Toronto:20261103T193200
+SUMMARY:Fatherland at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Pawel Pawlikowski\n2026 · 82 min\nThomas Mann an
+ d his daughter Erika travel through a ruined\, divided Germany.\nTickets:
+  https://tiff.net/events/fatherland
+URL:https://tiff.net/events/fatherland
+END:VEVENT
+BEGIN:VEVENT
+UID:20261103T1830-4-months@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261103T183000
+DTEND;TZID=America/Toronto:20261103T202300
+SUMMARY:4 Months\, 3 Weeks and 2 Days\, with Cameron Bailey at TIFF Light
+ box
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Cristian Mungiu\n2007 · 113 min\nFrom the Collec
+ tion\nMungiu’s Palme d’Or-winning drama about an illegal abortion in 
+ 1987 Bucharest\, introduced by Cameron Bailey\, who leads a discussion af
+ ter.\nTickets: https://tiff.net/events/4-months-3-weeks-and-2-days-with-c
+ ameron-bailey
+URL:https://tiff.net/events/4-months-3-weeks-and-2-days-with-cameron-bail
+ ey
+END:VEVENT
+BEGIN:VEVENT
+UID:20261103T1930-la-bola-negra@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261103T193000
+DTEND;TZID=America/Toronto:20261103T221000
+SUMMARY:La Bola Negra at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Javier Ambrossi & Javier Calvo\n2026 · 160 min\n
+ A musical romance with Penélope Cruz and Glenn Close.\nTickets: https://
+ tiff.net/events/la-bola-negra
+URL:https://tiff.net/events/la-bola-negra
+END:VEVENT
+BEGIN:VEVENT
+UID:20261103T2015-possible-love@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261103T201500
+DTEND;TZID=America/Toronto:20261103T225900
+SUMMARY:Possible Love at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Lee Chang-dong\n2026 · 164 min\nLee Chang-dong
+ ’s first film since Burning: two couples\, class divides\, and the game
+ s they play with each other.\nTickets: https://tiff.net/events/possible-l
+ ove
+URL:https://tiff.net/events/possible-love
+END:VEVENT
+BEGIN:VEVENT
+UID:20261103T2045-fjord@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261103T204500
+DTEND;TZID=America/Toronto:20261103T231100
+SUMMARY:Fjord at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Cristian Mungiu\n2026 · 146 min\nMungiu’s Palm
+ e d’Or winner: a courtroom drama built on a moral dilemma\, with Renate
+  Reinsve and Sebastian Stan.\nTickets: https://tiff.net/events/fjord
+URL:https://tiff.net/events/fjord
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1545-possible-love@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T154500
+DTEND;TZID=America/Toronto:20261104T182900
+SUMMARY:Possible Love at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Lee Chang-dong\n2026 · 164 min\nLee Chang-dong
+ ’s first film since Burning: two couples\, class divides\, and the game
+ s they play with each other.\nTickets: https://tiff.net/events/possible-l
+ ove
+URL:https://tiff.net/events/possible-love
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1600-fatherland@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T160000
+DTEND;TZID=America/Toronto:20261104T172200
+SUMMARY:Fatherland at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Pawel Pawlikowski\n2026 · 82 min\nThomas Mann an
+ d his daughter Erika travel through a ruined\, divided Germany.\nTickets:
+  https://tiff.net/events/fatherland
+URL:https://tiff.net/events/fatherland
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1600-la-bola-negra@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T160000
+DTEND;TZID=America/Toronto:20261104T184000
+SUMMARY:La Bola Negra at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Javier Ambrossi & Javier Calvo\n2026 · 160 min\n
+ A musical romance with Penélope Cruz and Glenn Close.\nTickets: https://
+ tiff.net/events/la-bola-negra
+URL:https://tiff.net/events/la-bola-negra
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1615-fjord@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T161500
+DTEND;TZID=America/Toronto:20261104T184100
+SUMMARY:Fjord at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Cristian Mungiu\n2026 · 146 min\nMungiu’s Palm
+ e d’Or winner: a courtroom drama built on a moral dilemma\, with Renate
+  Reinsve and Sebastian Stan.\nTickets: https://tiff.net/events/fjord
+URL:https://tiff.net/events/fjord
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1815-making-marie-antoinette@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T181500
+DTEND;TZID=America/Toronto:20261104T194100
+SUMMARY:Making Marie Antoinette at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Eleanor Coppola\n86 min\nEleanor Coppola’s behi
+ nd-the-scenes footage from her daughter Sofia’s 2006 film.\nTickets: ht
+ tps://tiff.net/events/making-marie-antoinette
+URL:https://tiff.net/events/making-marie-antoinette
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1915-fatherland@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T191500
+DTEND;TZID=America/Toronto:20261104T203700
+SUMMARY:Fatherland at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Pawel Pawlikowski\n2026 · 82 min\nThomas Mann an
+ d his daughter Erika travel through a ruined\, divided Germany.\nTickets:
+  https://tiff.net/events/fatherland
+URL:https://tiff.net/events/fatherland
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1930-possible-love@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T193000
+DTEND;TZID=America/Toronto:20261104T221400
+SUMMARY:Possible Love at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Lee Chang-dong\n2026 · 164 min\nLee Chang-dong
+ ’s first film since Burning: two couples\, class divides\, and the game
+ s they play with each other.\nTickets: https://tiff.net/events/possible-l
+ ove
+URL:https://tiff.net/events/possible-love
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T1945-la-bola-negra@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T194500
+DTEND;TZID=America/Toronto:20261104T222500
+SUMMARY:La Bola Negra at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Javier Ambrossi & Javier Calvo\n2026 · 160 min\n
+ A musical romance with Penélope Cruz and Glenn Close.\nTickets: https://
+ tiff.net/events/la-bola-negra
+URL:https://tiff.net/events/la-bola-negra
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T2030-possible-love@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T203000
+DTEND;TZID=America/Toronto:20261104T231400
+SUMMARY:Possible Love at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Lee Chang-dong\n2026 · 164 min\nLee Chang-dong
+ ’s first film since Burning: two couples\, class divides\, and the game
+ s they play with each other.\nTickets: https://tiff.net/events/possible-l
+ ove
+URL:https://tiff.net/events/possible-love
+END:VEVENT
+BEGIN:VEVENT
+UID:20261104T2130-your-mother@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261104T213000
+DTEND;TZID=America/Toronto:20261104T232200
+SUMMARY:Your Mother Your Mother Your Mother at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Bassam Tariq\n2026 · 112 min\nMahershala Ali as 
+ a devout family man who is also a contract killer\, in a Texas-set action
+  thriller.\nTickets: https://tiff.net/events/your-mother-your-mother-your
+ -mother
+URL:https://tiff.net/events/your-mother-your-mother-your-mother
+END:VEVENT
+BEGIN:VEVENT
+UID:20261105T1600-fjord@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261105T160000
+DTEND;TZID=America/Toronto:20261105T182600
+SUMMARY:Fjord at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Cristian Mungiu\n2026 · 146 min\nMungiu’s Palm
+ e d’Or winner: a courtroom drama built on a moral dilemma\, with Renate
+  Reinsve and Sebastian Stan.\nTickets: https://tiff.net/events/fjord
+URL:https://tiff.net/events/fjord
+END:VEVENT
+BEGIN:VEVENT
+UID:20261105T1620-la-bola-negra@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261105T162000
+DTEND;TZID=America/Toronto:20261105T190000
+SUMMARY:La Bola Negra at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Javier Ambrossi & Javier Calvo\n2026 · 160 min\n
+ A musical romance with Penélope Cruz and Glenn Close.\nTickets: https://
+ tiff.net/events/la-bola-negra
+URL:https://tiff.net/events/la-bola-negra
+END:VEVENT
+BEGIN:VEVENT
+UID:20261105T1730-the-hitch-hiker@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261105T173000
+DTEND;TZID=America/Toronto:20261105T184100
+SUMMARY:The Hitch-Hiker at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Ida Lupino\n1953 · 71 min\nSecret Beyond the Doo
+ r: The Women Who Wrote Noir\nTwo friends on a fishing trip are taken host
+ age by a drifter in Ida Lupino’s lean thriller.\nTickets: https://tiff.
+ net/events/the-hitch-hiker
+URL:https://tiff.net/events/the-hitch-hiker
+END:VEVENT
+BEGIN:VEVENT
+UID:20261105T1930-possible-love@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261105T193000
+DTEND;TZID=America/Toronto:20261105T221400
+SUMMARY:Possible Love at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Lee Chang-dong\n2026 · 164 min\nLee Chang-dong
+ ’s first film since Burning: two couples\, class divides\, and the game
+ s they play with each other.\nTickets: https://tiff.net/events/possible-l
+ ove
+URL:https://tiff.net/events/possible-love
+END:VEVENT
+BEGIN:VEVENT
+UID:20261105T1945-fatherland@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261105T194500
+DTEND;TZID=America/Toronto:20261105T210700
+SUMMARY:Fatherland at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Pawel Pawlikowski\n2026 · 82 min\nThomas Mann an
+ d his daughter Erika travel through a ruined\, divided Germany.\nTickets:
+  https://tiff.net/events/fatherland
+URL:https://tiff.net/events/fatherland
+END:VEVENT
+BEGIN:VEVENT
+UID:20261105T2000-la-bola-negra@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261105T200000
+DTEND;TZID=America/Toronto:20261105T224000
+SUMMARY:La Bola Negra at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Javier Ambrossi & Javier Calvo\n2026 · 160 min\n
+ A musical romance with Penélope Cruz and Glenn Close.\nTickets: https://
+ tiff.net/events/la-bola-negra
+URL:https://tiff.net/events/la-bola-negra
+END:VEVENT
+BEGIN:VEVENT
+UID:20261105T2150-your-mother@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261105T215000
+DTEND;TZID=America/Toronto:20261105T234200
+SUMMARY:Your Mother Your Mother Your Mother at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Bassam Tariq\n2026 · 112 min\nMahershala Ali as 
+ a devout family man who is also a contract killer\, in a Texas-set action
+  thriller.\nTickets: https://tiff.net/events/your-mother-your-mother-your
+ -mother
+URL:https://tiff.net/events/your-mother-your-mother-your-mother
+END:VEVENT
+BEGIN:VEVENT
+UID:20261106T1800-the-big-sleep@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261106T180000
+DTEND;TZID=America/Toronto:20261106T195400
+SUMMARY:The Big Sleep at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Howard Hawks\n1946 · 114 min\nSecret Beyond the 
+ Door: The Women Who Wrote Noir\nHawks’s Chandler adaptation with Bogart
+  and Bacall\, co-written by Leigh Brackett.\nTickets: https://tiff.net/ev
+ ents/the-big-sleep
+URL:https://tiff.net/events/the-big-sleep
+END:VEVENT
+BEGIN:VEVENT
+UID:20261107T1400-my-name-is-julia-ross@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261107T140000
+DTEND;TZID=America/Toronto:20261107T150500
+SUMMARY:My Name Is Julia Ross at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Joseph H. Lewis\n1945 · 65 min\nSecret Beyond th
+ e Door: The Women Who Wrote Noir\nA woman takes a new job and wakes up li
+ ving someone else’s life.\nTickets: https://tiff.net/events/my-name-is-
+ julia-ross
+URL:https://tiff.net/events/my-name-is-julia-ross
+END:VEVENT
+BEGIN:VEVENT
+UID:20261107T1700-secret-beyond-the-door@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261107T170000
+DTEND;TZID=America/Toronto:20261107T183900
+SUMMARY:Secret Beyond the Door at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Fritz Lang\n1947 · 99 min\nSecret Beyond the Doo
+ r: The Women Who Wrote Noir\nFritz Lang’s gothic Bluebeard noir with Jo
+ an Bennett.\nTickets: https://tiff.net/events/secret-beyond-the-door
+URL:https://tiff.net/events/secret-beyond-the-door
+END:VEVENT
+BEGIN:VEVENT
+UID:20261108T1400-invisible-beauty@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261108T140000
+DTEND;TZID=America/Toronto:20261108T155500
+SUMMARY:Viola Desmond Day: Invisible Beauty at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Bethann Hardison & Frédéric Tcheng\n2023 · 115
+  min\nSpecial Programming\nBethann Hardison’s documentary about her lif
+ e as a model and activist\, with Hardison and curator Julie Crooks in per
+ son.\nTickets: https://tiff.net/events/viola-desmond-day-invisible-beauty
+ -with-bethann-hardison-and-julie-crooks
+URL:https://tiff.net/events/viola-desmond-day-invisible-beauty-with-betha
+ nn-hardison-and-julie-crooks
+END:VEVENT
+BEGIN:VEVENT
+UID:20261108T1430-the-unsuspected@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261108T143000
+DTEND;TZID=America/Toronto:20261108T161300
+SUMMARY:The Unsuspected at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Michael Curtiz\n1947 · 103 min\nSecret Beyond th
+ e Door: The Women Who Wrote Noir\nClaude Rains as a radio host with a mur
+ derous sideline.\nTickets: https://tiff.net/events/the-unsuspected
+URL:https://tiff.net/events/the-unsuspected
+END:VEVENT
+BEGIN:VEVENT
+UID:20261108T1800-the-file-on-thelma-jordon@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261108T180000
+DTEND;TZID=America/Toronto:20261108T194000
+SUMMARY:The File on Thelma Jordon at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Robert Siodmak\n1949 · 100 min\nSecret Beyond th
+ e Door: The Women Who Wrote Noir\nBarbara Stanwyck draws a married assist
+ ant district attorney into a murder case.\nTickets: https://tiff.net/even
+ ts/the-file-on-thelma-jordon
+URL:https://tiff.net/events/the-file-on-thelma-jordon
+END:VEVENT
+BEGIN:VEVENT
+UID:20261110T1830-smash-grab@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261110T183000
+DTEND;TZID=America/Toronto:20261110T195200
+SUMMARY:Smash & Grab: The Rebel Lens of Mike Jones at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Justin Simms\n2026 · 82 min\nSee the North\nJust
+ in Simms’s documentary about filmmaker Mike Jones\, preceded by the 200
+ 0 short Congratulations. Simms in person.\nTickets: https://tiff.net/even
+ ts/smash-grab-the-rebel-lens-of-mike-jones-preceded-by-congratulations
+URL:https://tiff.net/events/smash-grab-the-rebel-lens-of-mike-jones-prece
+ ded-by-congratulations
+END:VEVENT
+BEGIN:VEVENT
+UID:20261111T1800-tomson-highway@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261111T180000
+DTEND;TZID=America/Toronto:20261111T200000
+SUMMARY:Advance Screening: Tomson Highway: Permanent Astonishment at TIFF
+  Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Barbara Todd Hager\nSpecial Programming\nToronto 
+ premiere of Barbara Todd Hager’s documentary about the Cree playwright.
+ \nTickets: https://tiff.net/events/advance-screening-tomson-highway-perma
+ nent-astonishment
+URL:https://tiff.net/events/advance-screening-tomson-highway-permanent-as
+ tonishment
+END:VEVENT
+BEGIN:VEVENT
+UID:20261111T1830-theater-and-its-doubles@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261111T183000
+DTEND;TZID=America/Toronto:20261111T203000
+SUMMARY:Wavelengths: THEATER and its doubles at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:TIFF Wavelengths Presents\nNew and historical experimental sh
+ orts about performance and the stage\, programmed by Jacob Korczynski.\nT
+ ickets: https://tiff.net/events/theater-and-its-doubles
+URL:https://tiff.net/events/theater-and-its-doubles
+END:VEVENT
+BEGIN:VEVENT
+UID:20261112T1730-ra-parts-and-labour@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261112T173000
+DTEND;TZID=America/Toronto:20261112T193000
+SUMMARY:Parts & Labour (Shorts) at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/parts-and-labour/
+URL:https://www.reelasian.com/festival-events/parts-and-labour/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261112T1830-memory@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261112T183000
+DTEND;TZID=America/Toronto:20261112T200800
+SUMMARY:Memory at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Vladlena Sandu\n2025 · 98 min\nMDFF Selects\nVla
+ dlena Sandu’s documentary\, introduced by MDFF Selects co-founder Kazik
+  Radwanski.\nTickets: https://tiff.net/events/memory
+URL:https://tiff.net/events/memory
+END:VEVENT
+BEGIN:VEVENT
+UID:20261112T1945-ra-hearing@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261112T194500
+DTEND;TZID=America/Toronto:20261112T214500
+SUMMARY:Hearing (Thinh Giac) at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/hearing/
+URL:https://www.reelasian.com/festival-events/hearing/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T1130-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T113000
+DTEND;TZID=America/Toronto:20261113T133200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T1415-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T141500
+DTEND;TZID=America/Toronto:20261113T161700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T1715-ra-the-banquet@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T171500
+DTEND;TZID=America/Toronto:20261113T191500
+SUMMARY:The Banquet at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/the-banquet/
+URL:https://www.reelasian.com/festival-events/the-banquet/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T1800-ra-alphabet-soup@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T180000
+DTEND;TZID=America/Toronto:20261113T200000
+SUMMARY:Alphabet Soup (Shorts) at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/alphabet-soup/
+URL:https://www.reelasian.com/festival-events/alphabet-soup/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T1800-sorry-wrong-number@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T180000
+DTEND;TZID=America/Toronto:20261113T192900
+SUMMARY:Sorry\, Wrong Number at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Anatole Litvak\n1948 · 89 min\nSecret Beyond the
+  Door: The Women Who Wrote Noir\nBarbara Stanwyck\, bedridden\, overhears
+  a murder plot on a crossed phone line.\nTickets: https://tiff.net/events
+ /sorry-wrong-number
+URL:https://tiff.net/events/sorry-wrong-number
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T2015-ra-10s-across-the-borders@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T201500
+DTEND;TZID=America/Toronto:20261113T221500
+SUMMARY:10s Across the Borders at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/10s-across-the-borders/
+URL:https://www.reelasian.com/festival-events/10s-across-the-borders/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T2020-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T202000
+DTEND;TZID=America/Toronto:20261113T222200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T2045-ra-what-blooms-what-lingers@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T204500
+DTEND;TZID=America/Toronto:20261113T224500
+SUMMARY:What Blooms\, What Lingers (Shorts) at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/what-blooms-what-lingers/
+URL:https://www.reelasian.com/festival-events/what-blooms-what-lingers/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261113T2145-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261113T214500
+DTEND;TZID=America/Toronto:20261113T234700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1000-ra-film-club@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T100000
+DTEND;TZID=America/Toronto:20261114T120000
+SUMMARY:Film Club at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/film-club/
+URL:https://www.reelasian.com/festival-events/film-club/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1000-ra-muyi@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T100000
+DTEND;TZID=America/Toronto:20261114T120000
+SUMMARY:Muyi at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/muyi/
+URL:https://www.reelasian.com/festival-events/muyi/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1200-ra-views-from-the-pier@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T120000
+DTEND;TZID=America/Toronto:20261114T140000
+SUMMARY:Views from the Pier: Taiwan Shorts at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/views-from-the-pier/
+URL:https://www.reelasian.com/festival-events/views-from-the-pier/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1210-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T121000
+DTEND;TZID=America/Toronto:20261114T141200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1215-ra-brunch-with-a-depressed-zombie@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T121500
+DTEND;TZID=America/Toronto:20261114T141500
+SUMMARY:Brunch with a Depressed Zombie at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/brunch-with-a-depressed-zombie/
+URL:https://www.reelasian.com/festival-events/brunch-with-a-depressed-zom
+ bie/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1300-the-big-sleep@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T130000
+DTEND;TZID=America/Toronto:20261114T145400
+SUMMARY:The Big Sleep at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Howard Hawks\n1946 · 114 min\nSecret Beyond the 
+ Door: The Women Who Wrote Noir\nHawks’s Chandler adaptation with Bogart
+  and Bacall\, co-written by Leigh Brackett.\nTickets: https://tiff.net/ev
+ ents/the-big-sleep
+URL:https://tiff.net/events/the-big-sleep
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1445-ra-advanced-lessons-in-second-guessing@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T144500
+DTEND;TZID=America/Toronto:20261114T164500
+SUMMARY:Advanced Lessons in Second Guessing (Shorts) at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/advanced-lessons-in-second-guessing/
+URL:https://www.reelasian.com/festival-events/advanced-lessons-in-second-
+ guessing/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1530-ra-strong-son@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T153000
+DTEND;TZID=America/Toronto:20261114T173000
+SUMMARY:Strong Son at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/strong-son/
+URL:https://www.reelasian.com/festival-events/strong-son/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1535-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T153500
+DTEND;TZID=America/Toronto:20261114T173700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1715-ra-pinball@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T171500
+DTEND;TZID=America/Toronto:20261114T191500
+SUMMARY:Pinball at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/pinball/
+URL:https://www.reelasian.com/festival-events/pinball/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1800-ra-the-bryce-lee-story@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T180000
+DTEND;TZID=America/Toronto:20261114T200000
+SUMMARY:The Bryce Lee Story at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/the-bryce-lee-story/
+URL:https://www.reelasian.com/festival-events/the-bryce-lee-story/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T1900-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T190000
+DTEND;TZID=America/Toronto:20261114T210200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T2000-ra-spoiled-rotten-sour@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T200000
+DTEND;TZID=America/Toronto:20261114T220000
+SUMMARY:Spoiled\, Rotten\, Sour (Shorts) at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/spoiled-rotten-sour/
+URL:https://www.reelasian.com/festival-events/spoiled-rotten-sour/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T2045-ra-no-good-men@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T204500
+DTEND;TZID=America/Toronto:20261114T224500
+SUMMARY:No Good Men at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/no-good-men/
+URL:https://www.reelasian.com/festival-events/no-good-men/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261114T2200-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261114T220000
+DTEND;TZID=America/Toronto:20261115T000200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1300-ra-unsung-voices-15@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T130000
+DTEND;TZID=America/Toronto:20261115T150000
+SUMMARY:Unsung Voices 15 (Shorts) at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/unsung-voices-15/
+URL:https://www.reelasian.com/festival-events/unsung-voices-15/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1345-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T134500
+DTEND;TZID=America/Toronto:20261115T154700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1500-the-unsuspected@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T150000
+DTEND;TZID=America/Toronto:20261115T164300
+SUMMARY:The Unsuspected at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Michael Curtiz\n1947 · 103 min\nSecret Beyond th
+ e Door: The Women Who Wrote Noir\nClaude Rains as a radio host with a mur
+ derous sideline.\nTickets: https://tiff.net/events/the-unsuspected
+URL:https://tiff.net/events/the-unsuspected
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1615-ra-the-gymnasts-of-fisherman-colony@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T161500
+DTEND;TZID=America/Toronto:20261115T181500
+SUMMARY:The Gymnasts of Fisherman Colony at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/the-gymnasts-of-fisherman-colony/
+URL:https://www.reelasian.com/festival-events/the-gymnasts-of-fisherman-c
+ olony/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1630-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T163000
+DTEND;TZID=America/Toronto:20261115T183200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1830-sudden-fear@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T183000
+DTEND;TZID=America/Toronto:20261115T202100
+SUMMARY:Sudden Fear at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by David Miller\n1952 · 111 min\nSecret Beyond the 
+ Door: The Women Who Wrote Noir\nJoan Crawford as a playwright who learns 
+ her new husband plans to kill her.\nTickets: https://tiff.net/events/sudd
+ en-fear
+URL:https://tiff.net/events/sudden-fear
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1900-ra-sunburn@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T190000
+DTEND;TZID=America/Toronto:20261115T210000
+SUMMARY:Sunburn (Centrepiece Gala) at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Reel Asian Film Festival\nTickets: https://www.reelasian.com/
+ festival-events/sunburn/
+URL:https://www.reelasian.com/festival-events/sunburn/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T1930-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T193000
+DTEND;TZID=America/Toronto:20261115T213200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115T2115-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261115T211500
+DTEND;TZID=America/Toronto:20261115T231700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261117T1830-small-slow-but-steady@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261117T183000
+DTEND;TZID=America/Toronto:20261117T200900
+SUMMARY:Small\, Slow but Steady with Sho Miyake at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Sho Miyake\n2022 · 99 min\nSpecial Screenings\nM
+ iyake’s drama about a deaf boxer\, with the director in person.\nTicket
+ s: https://tiff.net/events/small-slow-but-steady-with-sho-miyake
+URL:https://tiff.net/events/small-slow-but-steady-with-sho-miyake
+END:VEVENT
+BEGIN:VEVENT
+UID:20261117T1930-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261117T193000
+DTEND;TZID=America/Toronto:20261117T213200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261118T1615-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261118T161500
+DTEND;TZID=America/Toronto:20261118T181700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261118T1830-messy-legends@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261118T183000
+DTEND;TZID=America/Toronto:20261118T203000
+SUMMARY:Messy Legends at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Kelly Kay Hurcomb & James Watts\n2025 · 120 min\
+ nTIFF Next Wave Presents\nWayward millennials on a chaotic night out on M
+ ontreal’s Plateau. Co-directors in person.\nTickets: https://tiff.net/e
+ vents/messy-legends
+URL:https://tiff.net/events/messy-legends
+END:VEVENT
+BEGIN:VEVENT
+UID:20261118T1900-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261118T190000
+DTEND;TZID=America/Toronto:20261118T210200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261118T2145-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261118T214500
+DTEND;TZID=America/Toronto:20261118T234700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261119T1615-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261119T161500
+DTEND;TZID=America/Toronto:20261119T181700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261119T1900-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261119T190000
+DTEND;TZID=America/Toronto:20261119T210200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261119T1930-the-king-and-the-mockingbird@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261119T193000
+DTEND;TZID=America/Toronto:20261119T205700
+SUMMARY:The King and the Mockingbird at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Paul Grimault\n1980 · 87 min\nDrawn Universes: V
+ isions in Animation\nPaul Grimault’s hand-drawn French classic\, with a
+  recorded introduction by Masaaki Yuasa.\nTickets: https://tiff.net/event
+ s/the-king-and-the-mockingbird-with-recorded-intro-by-masaaki-yuasa
+URL:https://tiff.net/events/the-king-and-the-mockingbird-with-recorded-in
+ tro-by-masaaki-yuasa
+END:VEVENT
+BEGIN:VEVENT
+UID:20261119T2145-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261119T214500
+DTEND;TZID=America/Toronto:20261119T234700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1230-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T123000
+DTEND;TZID=America/Toronto:20261120T142400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1300-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T130000
+DTEND;TZID=America/Toronto:20261120T150200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1515-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T151500
+DTEND;TZID=America/Toronto:20261120T170900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1600-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T160000
+DTEND;TZID=America/Toronto:20261120T180200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1800-akira@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T180000
+DTEND;TZID=America/Toronto:20261120T200400
+SUMMARY:AKIRA at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Katsuhiro Otomo\n1988 · 124 min\nDrawn Universes
+ : Visions in Animation\nOtomo’s hand-drawn Neo-Tokyo landmark.\nTickets
+ : https://tiff.net/events/akira
+URL:https://tiff.net/events/akira
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1845-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T184500
+DTEND;TZID=America/Toronto:20261120T204700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T1900-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T190000
+DTEND;TZID=America/Toronto:20261120T205400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T2130-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T213000
+DTEND;TZID=America/Toronto:20261120T233200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120T2145-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261120T214500
+DTEND;TZID=America/Toronto:20261120T233900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1300-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T130000
+DTEND;TZID=America/Toronto:20261121T150200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1315-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T131500
+DTEND;TZID=America/Toronto:20261121T150900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1400-pinocchio@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T140000
+DTEND;TZID=America/Toronto:20261121T152700
+SUMMARY:Pinocchio at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Ben Sharpsteen\, Hamilton Luske & others\n1940 ·
+  87 min\nDrawn Universes: Visions in Animation\nDisney’s second animate
+ d feature.\nTickets: https://tiff.net/events/pinocchio
+URL:https://tiff.net/events/pinocchio
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1545-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T154500
+DTEND;TZID=America/Toronto:20261121T174700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1600-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T160000
+DTEND;TZID=America/Toronto:20261121T175400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1630-castle-of-cagliostro@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T163000
+DTEND;TZID=America/Toronto:20261121T181000
+SUMMARY:Lupin the 3rd: The Castle of Cagliostro at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Hayao Miyazaki\n1979 · 100 min\nDrawn Universes:
+  Visions in Animation\nMiyazaki’s first feature\, a caper starring the 
+ gentleman thief Lupin.\nTickets: https://tiff.net/events/lupin-iii-the-ca
+ stle-of-cagliostro
+URL:https://tiff.net/events/lupin-iii-the-castle-of-cagliostro
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1900-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T190000
+DTEND;TZID=America/Toronto:20261121T205400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T1915-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T191500
+DTEND;TZID=America/Toronto:20261121T211700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T2145-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T214500
+DTEND;TZID=America/Toronto:20261121T233900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121T2200-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261121T220000
+DTEND;TZID=America/Toronto:20261122T000200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1200-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T120000
+DTEND;TZID=America/Toronto:20261122T135400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1315-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T131500
+DTEND;TZID=America/Toronto:20261122T151700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1400-night-on-the-galactic-railroad@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T140000
+DTEND;TZID=America/Toronto:20261122T155300
+SUMMARY:Night on the Galactic Railroad at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Gisaburō Sugii\n1985 · 113 min\nDrawn Universes
+ : Visions in Animation\nSugii’s adaptation of Kenji Miyazawa\, with boy
+ s drawn as cats\; recorded intro by Masaaki Yuasa.\nTickets: https://tiff
+ .net/events/night-on-the-galactic-railroad-with-recorded-intro-by-masaaki
+ -yuasa
+URL:https://tiff.net/events/night-on-the-galactic-railroad-with-recorded-
+ intro-by-masaaki-yuasa
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1445-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T144500
+DTEND;TZID=America/Toronto:20261122T163900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1600-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T160000
+DTEND;TZID=America/Toronto:20261122T180200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1700-the-girl-who-leapt-through-time@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T170000
+DTEND;TZID=America/Toronto:20261122T183800
+SUMMARY:The Girl Who Leapt Through Time at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Mamoru Hosoda\n2006 · 98 min\nDrawn Universes: V
+ isions in Animation\nHosoda’s time-travel coming-of-age film.\nTickets:
+  https://tiff.net/events/the-girl-who-leapt-through-time
+URL:https://tiff.net/events/the-girl-who-leapt-through-time
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1845-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T184500
+DTEND;TZID=America/Toronto:20261122T204700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T1930-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T193000
+DTEND;TZID=America/Toronto:20261122T212400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T2130-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T213000
+DTEND;TZID=America/Toronto:20261122T233200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122T2145-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261122T214500
+DTEND;TZID=America/Toronto:20261122T233900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261124T1800-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261124T180000
+DTEND;TZID=America/Toronto:20261124T195400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261124T1830-akira@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261124T183000
+DTEND;TZID=America/Toronto:20261124T203400
+SUMMARY:AKIRA at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Katsuhiro Otomo\n1988 · 124 min\nDrawn Universes
+ : Visions in Animation\nOtomo’s hand-drawn Neo-Tokyo landmark.\nTickets
+ : https://tiff.net/events/akira
+URL:https://tiff.net/events/akira
+END:VEVENT
+BEGIN:VEVENT
+UID:20261124T1845-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261124T184500
+DTEND;TZID=America/Toronto:20261124T204700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T1630-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261125T163000
+DTEND;TZID=America/Toronto:20261125T182400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T1700-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261125T170000
+DTEND;TZID=America/Toronto:20261125T190200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T1800-boxcutter@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261125T180000
+DTEND;TZID=America/Toronto:20261125T193400
+SUMMARY:Boxcutter with Vibe Arts at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Reza Dahya\n2024 · 94 min\nSpecial Programming\n
+ Reza Dahya’s Toronto feature about an aspiring rapper chasing his stole
+ n laptop\, with a new short\, presented with Vibe Arts.\nTickets: https:/
+ /tiff.net/events/boxcutter-with-vibe-arts
+URL:https://tiff.net/events/boxcutter-with-vibe-arts
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T1830-the-triplets-of-belleville@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261125T183000
+DTEND;TZID=America/Toronto:20261125T195000
+SUMMARY:The Triplets of Belleville at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Sylvain Chomet\n2003 · 80 min\nDrawn Universes: 
+ Visions in Animation\nChomet’s near-wordless animated caper\, with a re
+ corded intro by Masaaki Yuasa.\nTickets: https://tiff.net/events/the-trip
+ lets-of-belleville-with-recorded-intro-by-masaaki-yuasa
+URL:https://tiff.net/events/the-triplets-of-belleville-with-recorded-intr
+ o-by-masaaki-yuasa
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T1915-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261125T191500
+DTEND;TZID=America/Toronto:20261125T210900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T1945-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261125T194500
+DTEND;TZID=America/Toronto:20261125T214700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125T2100-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261125T210000
+DTEND;TZID=America/Toronto:20261125T230200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T1600-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261126T160000
+DTEND;TZID=America/Toronto:20261126T180200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T1615-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261126T161500
+DTEND;TZID=America/Toronto:20261126T180900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T1830-fantastic-planet@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261126T183000
+DTEND;TZID=America/Toronto:20261126T194200
+SUMMARY:Fantastic Planet with Mark Jones at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by René Laloux\n1973 · 72 min\nDrawn Universes: Vi
+ sions in Animation\nLaloux and Topor’s cut-out animation of the Draags 
+ and the tiny Oms\, introduced by Mark Jones.\nTickets: https://tiff.net/e
+ vents/fantastic-planet-with-mark-jones
+URL:https://tiff.net/events/fantastic-planet-with-mark-jones
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T1845-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261126T184500
+DTEND;TZID=America/Toronto:20261126T204700
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T1900-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261126T190000
+DTEND;TZID=America/Toronto:20261126T205400
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T2130-club-kid@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261126T213000
+DTEND;TZID=America/Toronto:20261126T233200
+SUMMARY:Club Kid at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Jordan Firstman\n2026 · 122 min\nJordan Firstman
+ ’s debut: a New York club promoter suddenly raising a 10-year-old son h
+ e didn’t know he had.\nTickets: https://tiff.net/events/club-kid
+URL:https://tiff.net/events/club-kid
+END:VEVENT
+BEGIN:VEVENT
+UID:20261126T2145-paper-tiger@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261126T214500
+DTEND;TZID=America/Toronto:20261126T233900
+SUMMARY:Paper Tiger at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by James Gray\n2026 · 114 min\nTwo brothers get cau
+ ght up with the Russian mob\, with Adam Driver\, Miles Teller\, and Scarl
+ ett Johansson.\nTickets: https://tiff.net/events/paper-tiger
+URL:https://tiff.net/events/paper-tiger
+END:VEVENT
+BEGIN:VEVENT
+UID:20261128T1400-masaaki-yuasa@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261128T140000
+DTEND;TZID=America/Toronto:20261128T160000
+SUMMARY:In Conversation With… Masaaki Yuasa at TIFF Lightbox
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Drawn Universes: Visions in Animation\nThe director of Mind G
+ ame and Devilman Crybaby on his work.\nTickets: https://tiff.net/events/i
+ n-conversation-with-masaaki-yuasa
+URL:https://tiff.net/events/in-conversation-with-masaaki-yuasa
+END:VEVENT
+END:VCALENDAR

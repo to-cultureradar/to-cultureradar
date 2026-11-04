@@ -1,8 +1,13 @@
 import re,json,sys,os,datetime as dt
 """S keys may be day numbers (YEAR/MONTH args apply) or "YYYY-MM-DD" strings.
 Build per-showing .ics files and one subscribable feed from the F and S data in fox/index.html.
-Usage: python3 tools/make_ics.py fox/index.html fox/ics fox/fox.ics YEAR MONTH"""
+Usage: python3 tools/make_ics.py fox/index.html fox/ics fox/fox.ics YEAR MONTH [fox|tiff]
+For tiff, each F entry carries its own ticket URL at index 7."""
 html,outdir,feed,year,month=sys.argv[1],sys.argv[2],sys.argv[3],int(sys.argv[4]),int(sys.argv[5])
+VENUES={"fox":dict(name="the Fox",loc="Fox Theatre, 2236 Queen St E, Toronto, ON M4E 1G2",cal="Fox Theatre screenings",prod="Fox Theatre Calendar",uid="fox-calendar"),
+        "tiff":dict(name="TIFF Lightbox",loc="TIFF Lightbox, 350 King St W, Toronto, ON M5V 3X5",cal="TIFF Lightbox screenings",prod="TIFF Lightbox Calendar",uid="tiff-calendar")}
+V=VENUES[sys.argv[6] if len(sys.argv)>6 else "fox"]
+link=lambda slug,f:(f[7] if len(f)>7 and f[7] else "https://www.foxtheatre.ca/movies/"+slug+"/")
 h=open(html,encoding="utf8").read()
 F=json.loads(re.search(r'const F=(\{.*?\n\});',h,re.S).group(1))
 S=json.loads(re.search(r'const S=(\{.*?\n\});',h,re.S).group(1))
@@ -28,17 +33,19 @@ for day,arr in S.items():
         if len(f)>5 and f[5]: desc.append("Directed by "+f[5])
         meta=" · ".join(str(v) for v in [f[1], f"{f[2]} min" if f[2] else None] if v)
         if meta: desc.append(meta)
-        desc.append(f[4]); desc.append("Tickets: https://www.foxtheatre.ca/movies/"+slug+"/")
+        if len(f)>6 and f[6]: desc.append(f[6])
+        if f[4]: desc.append(f[4])
+        desc.append("Tickets: "+link(slug,f))
         name=f"{start:%Y%m%d-%H%M}-{slug}.ics"
-        lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Fox Theatre Calendar//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH"]
+        lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//"+V["prod"]+"//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH"]
         body="\r\n".join(lines)+"\r\n"+TZ
-        ev=["BEGIN:VEVENT",f"UID:{start:%Y%m%dT%H%M}-{slug}@fox-calendar",f"DTSTAMP:{stamp}",
+        ev=["BEGIN:VEVENT",f"UID:{start:%Y%m%dT%H%M}-{slug}@"+V["uid"],f"DTSTAMP:{stamp}",
             f"DTSTART;TZID=America/Toronto:{start:%Y%m%dT%H%M%S}",f"DTEND;TZID=America/Toronto:{end:%Y%m%dT%H%M%S}",
-            "SUMMARY:"+esc(f[0]+" at the Fox"),"LOCATION:"+esc("Fox Theatre, 2236 Queen St E, Toronto, ON M4E 1G2"),
-            "DESCRIPTION:"+esc("\n".join(desc)),"URL:https://www.foxtheatre.ca/movies/"+slug+"/","END:VEVENT","END:VCALENDAR"]
+            "SUMMARY:"+esc(f[0]+" at "+V["name"]),"LOCATION:"+esc(V["loc"]),
+            "DESCRIPTION:"+esc("\n".join(desc)),"URL:"+link(slug,f),"END:VEVENT","END:VCALENDAR"]
         evtxt="\r\n".join(fold(l) for l in ev[:-1])+"\r\n"; events.append(evtxt)
         body+=evtxt+"END:VCALENDAR\r\n"
         open(os.path.join(outdir,name),"w",encoding="utf8",newline="").write(body); n+=1
-hdr="BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Fox Theatre Calendar//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nX-WR-CALNAME:Fox Theatre screenings\r\nX-WR-TIMEZONE:America/Toronto\r\nREFRESH-INTERVAL;VALUE=DURATION:P1D\r\nX-PUBLISHED-TTL:P1D\r\n"
+hdr="BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//"+V["prod"]+"//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nX-WR-CALNAME:"+V["cal"]+"\r\nX-WR-TIMEZONE:America/Toronto\r\nREFRESH-INTERVAL;VALUE=DURATION:P1D\r\nX-PUBLISHED-TTL:P1D\r\n"
 open(feed,"w",encoding="utf8",newline="").write(hdr+TZ+"".join(events)+"END:VCALENDAR\r\n")
 print(n)

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TIFF Lightbox Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261103T1830-4-months@tiff-calendar
+DTSTAMP:20261104T013359Z
+DTSTART;TZID=America/Toronto:20261103T183000
+DTEND;TZID=America/Toronto:20261103T202300
+SUMMARY:4 Months\, 3 Weeks and 2 Days\, with Cameron Bailey at TIFF Light
+ box
+LOCATION:TIFF Lightbox\, 350 King St W\, Toronto\, ON M5V 3X5
+DESCRIPTION:Directed by Cristian Mungiu\n2007 · 113 min\nFrom the Collec
+ tion\nMungiu’s Palme d’Or-winning drama about an illegal abortion in 
+ 1987 Bucharest\, introduced by Cameron Bailey\, who leads a discussion af
+ ter.\nTickets: https://tiff.net/events/4-months-3-weeks-and-2-days-with-c
+ ameron-bailey
+URL:https://tiff.net/events/4-months-3-weeks-and-2-days-with-cameron-bail
+ ey
+END:VEVENT
+END:VCALENDAR

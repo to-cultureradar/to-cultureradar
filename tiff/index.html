@@ -259,7 +259,7 @@ function render(){
         if(f[8])bits.push(`<span class="fmt">${f[8]}</span>`);
         const tag=f[6]?`<span class="tag">${esc(f[6].split(":")[0])}</span>`:(f[3]==="new"?'<span class="tag">New release</span>':"");
         const add=calApp==="ics"?`<a href="${icsHref(key,t,slug)}">Add to calendar</a>`:`<a href="${gcal(key,t,slug)}" target="_blank" rel="noopener">Add to calendar</a>`;
-        bill.insertAdjacentHTML("beforeend",`<div class="show"><div class="time">${fmt12(t)}</div><div><a class="title" href="${esc(f[7])}" target="_blank" rel="noopener">${esc(f[0])}</a><div class="meta">${tag}${flag==="!"?'<span class="sold">Sold out</span>':""}${bits.join(" · ")} · ${add}</div></div></div>`);
+        bill.insertAdjacentHTML("beforeend",`<div class="show"><div class="time">${fmt12(t)}</div><div><a class="title" href="${esc(f[7])}" target="_blank" rel="noopener">${esc(f[0])}</a><div class="meta">${tag}${flag==="!"?'<span class="sold">Sold out · rush may be available</span>':""}${bits.join(" · ")} · ${add}</div></div></div>`);
       });
       row.appendChild(bill);w.appendChild(row);
     }

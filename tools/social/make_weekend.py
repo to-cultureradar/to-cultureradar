@@ -67,7 +67,7 @@ def closing():
 <div class='mast mis' style='font-size:250px;margin-top:70px;--c:{INK["art"]}'>The full</div>
 <div class='mast' style='font-size:250px'>guide</div>
 <div class=rule style='margin-top:36px'></div>
-<div style='font-size:46px;line-height:1.25;margin-top:24px;max-width:22ch;font-weight:600'>The month’s film, art, music, theatre, talks, and walks, plus every screening at the Fox, TIFF Lightbox, and the Revue.</div>
+<div style='font-size:46px;line-height:1.25;margin-top:24px;max-width:22ch;font-weight:600'>The month’s film, art, music, theatre, talks, and walks, plus weekly screening calendars.</div>
 <div class='foot' style='background:{BLACK};color:{INK["art"]};padding:26px 30px;display:flex;justify-content:space-between;align-items:baseline'>
 <span class=mast style='font-size:84px;text-transform:lowercase'>{SITE}</span><span class=mono style='color:{PAPER}'>Link in bio</span></div></div>""",
         bg=INK["music"])

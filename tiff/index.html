@@ -97,8 +97,8 @@ footer a{color:inherit}
 <div class="wrap">
 <header>
   <p class="home"><a href="/links/">← Culture Index Toronto</a></p>
-  <h1>TIFF Lightbox <span>Nov 3 – 29</span></h1>
-  <p class="sub">Every screening at TIFF Lightbox, 350 King St. W, for the next four weeks: Cinematheque series, new releases, special events, and partner festivals. Titles link to the page for tickets. Listings as of Nov 3, 2026; check <a href="https://tiff.net/calendar">tiff.net</a> for changes.</p>
+  <h1>TIFF Lightbox <span>Nov 9 – Dec 6</span></h1>
+  <p class="sub">Every screening at TIFF Lightbox, 350 King St. W, for the next four weeks: Cinematheque series, new releases, special events, and partner festivals. Titles link to the page for tickets. Listings as of Nov 9, 2026; check <a href="https://tiff.net/calendar">tiff.net</a> for changes.</p>
   <p class="subscribe"><a href="webcal://cultureradar.to/tiff/tiff.ics">Subscribe to every screening</a> in Apple Calendar; it updates itself each week. Or <a href="tiff.ics">download the .ics</a>.</p>
 </header>
 
@@ -130,20 +130,12 @@ footer a{color:inherit}
 <script>
 // F: slug → [title, year, runtime, kind (new|cin|special|partner), blurb, director, series, url, format]
 const F={
- "4-months":["4 Months, 3 Weeks and 2 Days, with Cameron Bailey", 2007, 113, "cin", "Mungiu’s Palme d’Or-winning drama about an illegal abortion in 1987 Bucharest, introduced by Cameron Bailey, who leads a discussion after.", "Cristian Mungiu", "From the Collection", "https://tiff.net/events/4-months-3-weeks-and-2-days-with-cameron-bailey", "35mm"],
  "fatherland":["Fatherland", 2026, 82, "new", "Thomas Mann and his daughter Erika travel through a ruined, divided Germany.", "Pawel Pawlikowski", "", "https://tiff.net/events/fatherland", ""],
  "fjord":["Fjord", 2026, 146, "new", "Mungiu’s Palme d’Or winner: a courtroom drama built on a moral dilemma, with Renate Reinsve and Sebastian Stan.", "Cristian Mungiu", "", "https://tiff.net/events/fjord", ""],
  "la-bola-negra":["La Bola Negra", 2026, 160, "new", "A musical romance with Penélope Cruz and Glenn Close.", "Javier Ambrossi & Javier Calvo", "", "https://tiff.net/events/la-bola-negra", ""],
- "possible-love":["Possible Love", 2026, 164, "new", "Lee Chang-dong’s first film since Burning: two couples, class divides, and the games they play with each other.", "Lee Chang-dong", "", "https://tiff.net/events/possible-love", ""],
  "your-mother":["Your Mother Your Mother Your Mother", 2026, 112, "new", "Mahershala Ali as a devout family man who is also a contract killer, in a Texas-set action thriller.", "Bassam Tariq", "", "https://tiff.net/events/your-mother-your-mother-your-mother", ""],
- "making-marie-antoinette":["Making Marie Antoinette", null, 86, "new", "Eleanor Coppola’s behind-the-scenes footage from her daughter Sofia’s 2006 film.", "Eleanor Coppola", "", "https://tiff.net/events/making-marie-antoinette", ""],
- "the-hitch-hiker":["The Hitch-Hiker", 1953, 71, "cin", "Two friends on a fishing trip are taken hostage by a drifter in Ida Lupino’s lean thriller.", "Ida Lupino", "Secret Beyond the Door: The Women Who Wrote Noir", "https://tiff.net/events/the-hitch-hiker", "35mm"],
  "the-big-sleep":["The Big Sleep", 1946, 114, "cin", "Hawks’s Chandler adaptation with Bogart and Bacall, co-written by Leigh Brackett.", "Howard Hawks", "Secret Beyond the Door: The Women Who Wrote Noir", "https://tiff.net/events/the-big-sleep", ""],
- "my-name-is-julia-ross":["My Name Is Julia Ross", 1945, 65, "cin", "A woman takes a new job and wakes up living someone else’s life.", "Joseph H. Lewis", "Secret Beyond the Door: The Women Who Wrote Noir", "https://tiff.net/events/my-name-is-julia-ross", ""],
- "secret-beyond-the-door":["Secret Beyond the Door", 1947, 99, "cin", "Fritz Lang’s gothic Bluebeard noir with Joan Bennett.", "Fritz Lang", "Secret Beyond the Door: The Women Who Wrote Noir", "https://tiff.net/events/secret-beyond-the-door", "35mm"],
- "the-file-on-thelma-jordon":["The File on Thelma Jordon", 1949, 100, "cin", "Barbara Stanwyck draws a married assistant district attorney into a murder case.", "Robert Siodmak", "Secret Beyond the Door: The Women Who Wrote Noir", "https://tiff.net/events/the-file-on-thelma-jordon", "35mm"],
  "the-unsuspected":["The Unsuspected", 1947, 103, "cin", "Claude Rains as a radio host with a murderous sideline.", "Michael Curtiz", "Secret Beyond the Door: The Women Who Wrote Noir", "https://tiff.net/events/the-unsuspected", "35mm"],
- "invisible-beauty":["Viola Desmond Day: Invisible Beauty", 2023, 115, "special", "Bethann Hardison’s documentary about her life as a model and activist, with Hardison and curator Julie Crooks in person.", "Bethann Hardison & Frédéric Tcheng", "Special Programming", "https://tiff.net/events/viola-desmond-day-invisible-beauty-with-bethann-hardison-and-julie-crooks", ""],
  "smash-grab":["Smash & Grab: The Rebel Lens of Mike Jones", 2026, 82, "cin", "Justin Simms’s documentary about filmmaker Mike Jones, preceded by the 2000 short Congratulations. Simms in person.", "Justin Simms", "See the North", "https://tiff.net/events/smash-grab-the-rebel-lens-of-mike-jones-preceded-by-congratulations", ""],
  "tomson-highway":["Advance Screening: Tomson Highway: Permanent Astonishment", null, null, "special", "Toronto premiere of Barbara Todd Hager’s documentary about the Cree playwright.", "Barbara Todd Hager", "Special Programming", "https://tiff.net/events/advance-screening-tomson-highway-permanent-astonishment", ""],
  "theater-and-its-doubles":["Wavelengths: THEATER and its doubles", null, null, "cin", "New and historical experimental shorts about performance and the stage, programmed by Jacob Korczynski.", "", "TIFF Wavelengths Presents", "https://tiff.net/events/theater-and-its-doubles", "16mm"],
@@ -182,35 +174,39 @@ const F={
  "ra-views-from-the-pier":["Views from the Pier: Taiwan Shorts", null, null, "partner", "", "", "Reel Asian Film Festival", "https://www.reelasian.com/festival-events/views-from-the-pier/", ""],
  "ra-sunburn":["Sunburn (Centrepiece Gala)", null, null, "partner", "", "", "Reel Asian Film Festival", "https://www.reelasian.com/festival-events/sunburn/", ""],
  "ra-the-gymnasts-of-fisherman-colony":["The Gymnasts of Fisherman Colony", null, null, "partner", "", "", "Reel Asian Film Festival", "https://www.reelasian.com/festival-events/the-gymnasts-of-fisherman-colony/", ""],
- "ra-unsung-voices-15":["Unsung Voices 15 (Shorts)", null, null, "partner", "", "", "Reel Asian Film Festival", "https://www.reelasian.com/festival-events/unsung-voices-15/", ""]
+ "ra-unsung-voices-15":["Unsung Voices 15 (Shorts)", null, null, "partner", "", "", "Reel Asian Film Festival", "https://www.reelasian.com/festival-events/unsung-voices-15/", ""],
+ "going-global":["Going Global: Inside Canadian Series’ Success on the World Stage", null, null, "special", "Creators of recent Canadian TV hits on developing, financing, and selling their series abroad.", "", "Special Programming", "https://tiff.net/events/going-global-inside-canadian-series-success-on-the-world-stage", ""],
+ "priyanka":["Advance Screening: Priyanka! What’s My Name?", 2026, 44, "special", "World premiere of Simon Paluck’s documentary on drag star Priyanka, with a Q&A with both after.", "Simon Paluck", "Special Programming", "https://tiff.net/events/advance-screening-priyanka-what-s-my-name", ""],
+ "cameron-winter":["Cameron Winter at Carnegie Hall", null, 72, "new", "The Geese frontman’s one-night solo show at Carnegie Hall, filmed by Paul Thomas Anderson.", "Paul Thomas Anderson", "", "https://tiff.net/events/cameron-winter-at-carnegie-hall", "35mm"],
+ "ray-gunn":["Ray Gunn", 2026, 119, "new", "Brad Bird’s animated noir about a private eye taking an odd case in a retro-futuristic city.", "Brad Bird", "", "https://tiff.net/events/ray-gunn", "70mm"]
 };
 // S: "YYYY-MM-DD" → ["HH:MM slug", …] (" !" after the slug marks sold out)
 // WEEK0: the Monday that starts the four-week window (update it with the listings date)
 const S={
-"2026-11-03":["18:00 your-mother", "18:10 fatherland", "18:30 4-months", "19:30 la-bola-negra", "20:15 possible-love", "20:45 fjord"],
-"2026-11-04":["15:45 possible-love", "16:00 fatherland", "16:00 la-bola-negra", "16:15 fjord", "18:15 making-marie-antoinette", "19:15 fatherland", "19:30 possible-love", "19:45 la-bola-negra", "20:30 possible-love", "21:30 your-mother"],
-"2026-11-05":["16:00 fjord", "16:20 la-bola-negra", "17:30 the-hitch-hiker", "19:30 possible-love", "19:45 fatherland", "20:00 la-bola-negra", "21:50 your-mother"],
-"2026-11-06":["18:00 the-big-sleep"],
-"2026-11-07":["14:00 my-name-is-julia-ross", "17:00 secret-beyond-the-door"],
-"2026-11-08":["14:00 invisible-beauty", "14:30 the-unsuspected", "18:00 the-file-on-thelma-jordon"],
-"2026-11-10":["18:30 smash-grab"],
-"2026-11-11":["18:00 tomson-highway", "18:30 theater-and-its-doubles"],
-"2026-11-12":["17:30 ra-parts-and-labour", "18:30 memory", "19:45 ra-hearing"],
+"2026-11-10":["18:00 fatherland", "18:30 smash-grab", "19:30 la-bola-negra", "20:15 fjord", "21:30 your-mother"],
+"2026-11-11":["15:45 la-bola-negra", "16:15 fjord", "16:30 fatherland", "18:00 tomson-highway", "18:30 theater-and-its-doubles", "19:00 fatherland", "19:30 la-bola-negra", "21:00 fatherland", "21:15 fjord", "21:45 your-mother"],
+"2026-11-12":["15:45 fatherland", "15:50 your-mother", "16:00 la-bola-negra", "16:15 fjord", "17:30 ra-parts-and-labour", "18:30 memory", "18:40 your-mother", "19:30 fatherland", "19:45 la-bola-negra", "19:45 ra-hearing", "21:00 fjord", "21:15 your-mother", "21:45 fatherland"],
 "2026-11-13":["11:30 club-kid", "14:15 club-kid", "17:15 ra-the-banquet", "18:00 ra-alphabet-soup", "18:00 sorry-wrong-number", "20:15 ra-10s-across-the-borders", "20:20 club-kid", "20:45 ra-what-blooms-what-lingers", "21:45 club-kid"],
 "2026-11-14":["10:00 ra-film-club", "10:00 ra-muyi", "12:00 ra-views-from-the-pier", "12:10 club-kid", "12:15 ra-brunch-with-a-depressed-zombie", "13:00 the-big-sleep", "14:45 ra-advanced-lessons-in-second-guessing", "15:30 ra-strong-son", "15:35 club-kid", "17:15 ra-pinball", "18:00 ra-the-bryce-lee-story", "19:00 club-kid", "20:00 ra-spoiled-rotten-sour", "20:45 ra-no-good-men", "22:00 club-kid"],
-"2026-11-15":["13:00 ra-unsung-voices-15", "13:45 club-kid", "15:00 the-unsuspected", "16:15 ra-the-gymnasts-of-fisherman-colony", "16:30 club-kid", "18:30 sudden-fear", "19:00 ra-sunburn", "19:30 club-kid", "21:15 club-kid"],
+"2026-11-15":["13:00 ra-unsung-voices-15", "13:45 club-kid", "15:00 the-unsuspected !", "16:15 ra-the-gymnasts-of-fisherman-colony", "16:30 club-kid", "18:30 sudden-fear !", "19:00 ra-sunburn", "19:30 club-kid", "21:15 club-kid"],
 "2026-11-17":["18:30 small-slow-but-steady", "19:30 club-kid"],
 "2026-11-18":["16:15 club-kid", "18:30 messy-legends", "19:00 club-kid", "21:45 club-kid"],
 "2026-11-19":["16:15 club-kid", "19:00 club-kid", "19:30 the-king-and-the-mockingbird", "21:45 club-kid"],
-"2026-11-20":["12:30 paper-tiger", "13:00 club-kid", "15:15 paper-tiger", "16:00 club-kid", "18:00 akira", "18:45 club-kid", "19:00 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
-"2026-11-21":["13:00 club-kid", "13:15 paper-tiger", "14:00 pinocchio", "15:45 club-kid", "16:00 paper-tiger", "16:30 castle-of-cagliostro", "19:00 paper-tiger", "19:15 club-kid", "21:45 paper-tiger", "22:00 club-kid"],
-"2026-11-22":["12:00 paper-tiger", "13:15 club-kid", "14:00 night-on-the-galactic-railroad !", "14:45 paper-tiger", "16:00 club-kid", "17:00 the-girl-who-leapt-through-time", "18:45 club-kid", "19:30 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
+"2026-11-20":["12:30 paper-tiger", "13:00 club-kid", "15:15 paper-tiger", "16:00 club-kid", "18:00 akira !", "18:45 club-kid", "19:00 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
+"2026-11-21":["13:00 club-kid", "13:15 paper-tiger", "14:00 pinocchio", "15:45 club-kid", "16:00 paper-tiger", "16:30 castle-of-cagliostro !", "19:00 paper-tiger", "19:15 club-kid", "21:45 paper-tiger", "22:00 club-kid"],
+"2026-11-22":["12:00 paper-tiger", "13:15 club-kid", "14:00 night-on-the-galactic-railroad !", "14:45 paper-tiger", "16:00 club-kid", "17:00 the-girl-who-leapt-through-time !", "18:45 club-kid", "19:30 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
 "2026-11-24":["18:00 paper-tiger", "18:30 akira", "18:45 club-kid"],
-"2026-11-25":["16:30 paper-tiger", "17:00 club-kid", "18:00 boxcutter", "18:30 the-triplets-of-belleville", "19:15 paper-tiger", "19:45 club-kid", "21:00 club-kid"],
-"2026-11-26":["16:00 club-kid", "16:15 paper-tiger", "18:30 fantastic-planet !", "18:45 club-kid", "19:00 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
-"2026-11-28":["14:00 masaaki-yuasa"]
+"2026-11-25":["16:30 paper-tiger", "17:00 club-kid", "18:00 boxcutter", "18:30 the-triplets-of-belleville !", "19:15 paper-tiger", "19:45 club-kid", "21:00 club-kid"],
+"2026-11-26":["16:00 club-kid", "16:15 paper-tiger", "18:00 going-global", "18:30 fantastic-planet !", "18:45 club-kid", "19:00 paper-tiger", "21:30 club-kid", "21:45 paper-tiger"],
+"2026-11-28":["14:00 masaaki-yuasa"],
+"2026-11-29":["18:00 priyanka"],
+"2026-12-02":["18:45 cameron-winter", "21:00 cameron-winter"],
+"2026-12-03":["19:00 cameron-winter", "21:15 cameron-winter"],
+"2026-12-04":["19:30 ray-gunn"],
+"2026-12-05":["13:30 cameron-winter", "15:30 ray-gunn", "19:00 cameron-winter", "21:15 cameron-winter"],
+"2026-12-06":["19:30 ray-gunn"]
 };
-const WEEK0="2026-11-02";
+const WEEK0="2026-11-09";
 const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const dOf=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
 const kOf=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;

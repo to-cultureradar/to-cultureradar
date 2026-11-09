@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Revue Cinema Calendar, week of November 9, 2026</title>
+<meta name="description" content="Every screening at the Revue Cinema for the next four weeks, with directors, series, formats, and calendar links.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Culture Radar Toronto">
+<meta property="og:title" content="The Revue: Culture Radar Toronto">
+<meta property="og:description" content="Every screening at the Revue Cinema for the next four weeks, with directors, series, formats, and calendar links.">
+<meta property="og:image" content="https://cultureradar.to/assets/social/og-revue.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/fonts.css">
+<style>
+/* Layout: same agenda as the Fox page — week bands, day rows with a date stub, the day's bill on the right */
+:root{
+  --bg:#f3f4f1; --surface:#fdfdfb; --ink:#191c1c; --muted:#5f6866; --line:#d9dedb;
+  --accent:#a12a2f; --accent-soft:#f6e1df; --gold:#a8771f;
+  --f-display:"Archivo","Arial Narrow",Impact,sans-serif;
+  --f-body:"Newsreader",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111615; --surface:#1a201f; --ink:#e9eeec; --muted:#97a3a0; --line:#2d3634;
+  --accent:#ff8a80; --accent-soft:#3a1d1c; --gold:#d6a654; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111615; --surface:#1a201f; --ink:#e9eeec; --muted:#97a3a0; --line:#2d3634;
+  --accent:#ff8a80; --accent-soft:#3a1d1c; --gold:#d6a654; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:760px;margin:0 auto}
+header h1{font-family:var(--f-display);font-stretch:62%;font-weight:800;font-size:clamp(2.4rem,9vw,3.6rem);line-height:.92;letter-spacing:.01em;text-transform:uppercase;margin:0;text-wrap:balance}
+header h1 span{color:var(--accent)}
+.sub{color:var(--muted);margin:.5rem 0 0;font-size:.95rem}
+.sub a{color:inherit}
+.controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;margin-top:14px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.chip{font-family:var(--f-display);font-stretch:75%;font-weight:600;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:3px;padding:5px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.chip:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.week h2{font-family:var(--f-display);font-stretch:75%;font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.95rem;color:var(--muted);margin:28px 0 8px}
+.day{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.day.today .stub{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.stub{border:1.5px solid var(--ink);border-radius:6px;text-align:center;padding:4px 0 6px;align-self:start;background:var(--surface)}
+.stub .dow{font-family:var(--f-display);font-stretch:75%;font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.stub .num{font-family:var(--f-display);font-stretch:62%;font-weight:800;font-size:2rem;line-height:1}
+.bill{display:flex;flex-direction:column;gap:12px;min-width:0}
+.show{display:grid;grid-template-columns:70px 1fr;gap:10px;min-width:0}
+.time{font-family:var(--f-mono);font-size:.85rem;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.title{font-weight:600;color:var(--ink);text-decoration:none;font-size:1.05rem}
+.title:hover{color:var(--accent);text-decoration:underline}
+.meta{font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;margin-top:2px}
+.calpick{display:flex;align-items:center;gap:0;margin-left:auto;font-size:.85rem;color:var(--muted)}
+.calpick span{margin-right:8px}
+.seg{font:inherit;font-size:.85rem;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:4px 10px;cursor:pointer}
+.seg:first-of-type{border-radius:6px 0 0 6px}.seg:last-of-type{border-radius:0 6px 6px 0;border-left:0}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.seg:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.dir{color:var(--ink)}
+@media (max-width:520px){.calpick{margin-left:0;width:100%}}
+.calpick{display:flex;align-items:center;margin-left:auto;font-size:.85rem;color:var(--muted)}
+.calpick span{margin-right:8px}
+.seg{font:inherit;font-size:.85rem;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:4px 10px;cursor:pointer}
+.seg:first-of-type{border-radius:6px 0 0 6px}.seg:last-of-type{border-radius:0 6px 6px 0;border-left:0}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.seg:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.subscribe{margin-top:.6rem;font-size:.95rem}
+.subscribe a{color:var(--accent);font-weight:600}
+.home{font-size:.9rem;color:var(--muted);margin:0 0 8px}
+.home a{color:inherit}
+@media (max-width:520px){.calpick{margin-left:0;width:100%}}
+.tag{font-family:var(--f-display);font-stretch:75%;font-weight:600;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:1px 8px;border-radius:3px}
+.sold{font-family:var(--f-display);font-stretch:75%;font-weight:600;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--surface);background:var(--muted);padding:1px 8px;border-radius:3px}
+.meta a{color:var(--muted)}
+.empty{color:var(--muted);font-style:italic}
+.films h2{font-family:var(--f-display);font-stretch:62%;font-weight:800;text-transform:uppercase;font-size:1.8rem;margin:44px 0 6px}
+.films p.lead{color:var(--muted);margin:0 0 12px;font-size:.95rem}
+.film{padding:12px 0;border-top:1px solid var(--line)}
+.film h3{margin:0;font-size:1.05rem}
+.film h3 a{color:var(--ink)}
+.film p{margin:4px 0 0;font-size:.92rem;max-width:65ch}
+.film .runs{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);margin-top:4px}
+footer{color:var(--muted);font-size:.85rem;margin-top:36px;border-top:1px solid var(--line);padding-top:12px}
+footer a{color:inherit}
+.fnav{display:block;margin-top:8px}
+@media (max-width:420px){.day{grid-template-columns:52px 1fr;gap:10px}.stub .num{font-size:1.6rem}.show{grid-template-columns:62px 1fr}}
+.fmt{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.04em;color:var(--ink);border:1px solid var(--line);padding:0 6px;border-radius:3px}
+.series{font-size:.85rem;color:var(--muted)}
+.archived{margin:0 0 10px;font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}.archived a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="home"><a href="/links/">← Culture Index Toronto</a></p>
+  <p class="archived">Archived week · listings as of November 9, 2026 · <a href="/revue/">Current week →</a> · <a href="/revue/archive/">All weeks</a></p>
+  <h1>The Revue <span>Nov 9 – Dec 6</span></h1>
+  <p class="sub">Every screening at the Revue Cinema, 400 Roncesvalles Ave., for the next four weeks: repertory series, new films, guest events, and festivals. Titles link to the page for tickets. Listings as of Nov 9, 2026; check <a href="https://revuecinema.ca/films/">revuecinema.ca</a> for changes.</p>
+  </header>
+
+<div class="controls" role="group" aria-label="Filter screenings">
+  <button class="chip" data-f="all" aria-pressed="true">Everything</button>
+  <button class="chip" data-f="cin" aria-pressed="false">Repertory &amp; series</button>
+  <button class="chip" data-f="new" aria-pressed="false">New films</button>
+  <button class="chip" data-f="special" aria-pressed="false">Guests &amp; events</button>
+  <button class="chip" data-f="partner" aria-pressed="false">Festivals &amp; rentals</button>
+  <button class="chip" data-f="eve" aria-pressed="false">After 6 pm</button>
+  <div class="calpick" role="group" aria-label="Calendar app for Add to calendar">
+    <span>Add to</span>
+    <button class="seg" data-c="ics" aria-pressed="true">iCal</button>
+    <button class="seg" data-c="google" aria-pressed="false">Google</button>
+  </div>
+</div>
+
+<main id="cal"></main>
+
+<section class="films" id="films">
+  <h2>On the bill</h2>
+  <p class="lead">Every film and event in this window, with its dates.</p>
+  <div id="filmlist"></div>
+</section>
+
+<footer>Times are Toronto time. “Add to calendar” gives you an iCal event (Apple Calendar, Outlook) by default, or a Google Calendar event if you switch the toggle. Private rentals and members-only screenings are left out. Refreshed every Monday.<span class="fnav"><a href="/links/">Index</a> · <a href="/revue/archive/">Past weeks</a> · <a href="/fox/">The Fox</a> · <a href="/tiff/">TIFF Lightbox</a> · <a href="https://www.instagram.com/cultureradar.to/" target="_blank" rel="noopener">Instagram</a></span></footer>
+</div>
+
+<script>
+// F: slug → [title, year, runtime, kind (new|cin (repertory/series)|special (guests)|partner (festivals/rentals)), blurb, director, series, url, format]
+const F={
+ "2046":["2046", 2004, 129, "cin", "Wong Kar-wai’s loose sequel to In the Mood for Love, set partly in the future.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/destination-love-2046/", "4K"],
+ "48-hour":["48 Hour Film Project – Toronto", null, 120, "partner", "Local teams premiere short films made in 48 hours, one group per screening.", "", "48 Hour Film Project", "https://revuecinema.ca/films/the-48-hour-science-fiction-film-project-toronto/", ""],
+ "casino-royale":["Casino Royale", 2006, 144, "cin", "Daniel Craig’s first Bond, in a new restoration.", "Martin Campbell", "Revue Event", "https://revuecinema.ca/films/revue-event-casino-royale-2006-new-4k-restoration/", "4K"],
+ "black-zombie":["Black Zombie", 2026, 90, "new", "A documentary tracing the zombie from Haitian Vodou to Hollywood horror.", "Maya Annik Bedward", "The Black Nerds", "https://revuecinema.ca/films/the-black-nerds-black-zombie-2026/", ""],
+ "trainspotting":["Trainspotting", 1996, 94, "cin", "Irvine Welsh’s Edinburgh heroin users, in a new restoration.", "Danny Boyle", "Psych-Out Cinema", "https://revuecinema.ca/films/psych-out-cinema-trainspotting-1996-new-4k-restoration/", "4K"],
+ "gogol-bordello":["Scream of My Blood: A Gogol Bordello Story", 2025, 99, "new", "Eugene Hütz’s path from Ukraine to New York and the band he built there.", "Eric Weinrib", "Stompbox", "https://revuecinema.ca/films/stompbox-scream-of-my-blood-a-gogol-bordello-story/", ""],
+ "nirvanna-s2a":["Nirvanna the Band the Show: Season 2, episodes 1–4", 2017, 88, "special", "Season two, with Matt, Jay, and surprise guests, Q&As, and prizes.", "Matt Johnson", "Zapruder Films", "https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-show-season-2-episodes-1-4/", ""],
+ "friday-13th":["Friday the 13th", 2009, 97, "cin", "The 2009 remake, on a Friday the 13th.", "Marcus Nispel", "Drunken Cinema", "https://revuecinema.ca/films/drunken-cinema-friday-the-13th-2009-presented-on-35mm/", "35mm"],
+ "nirvanna-s2b":["Nirvanna the Band the Show: Season 2, episodes 5–8", 2017, 88, "special", "The end of season two, with Matt, Jay, and surprise guests.", "Matt Johnson", "Zapruder Films", "https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-show-season-2-episodes-5-8-with-special-guests-in-attendance/", ""],
+ "days-of-being-wild":["Days of Being Wild", 1990, 94, "cin", "A Hong Kong playboy learns the woman who raised him is not his mother.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/destination-love-days-of-being-wild-1990-new-4k-restoration/", "4K"],
+ "ninja-terminator":["Ninja Terminator", 1986, 92, "cin", "Godfrey Ho’s cut-and-paste Hong Kong ninja film, 40 years on.", "Godfrey Ho", "Black Belt Cinema", "https://revuecinema.ca/films/black-belt-cinema-ninja-terminator-40th-anniversary-screening/", "4K"],
+ "elvira-notari":["Elvira Notari: Beyond Silence", 2025, 94, "special", "A documentary on the Neapolitan silent-film director, with director Valerio Ciriaci and a panel.", "Valerio Ciriaci", "Extraordinary Women × U of T", "https://revuecinema.ca/films/an-extraordinary-filmmaker-elvira-notari/", ""],
+ "walk-hard":["Walk Hard: The Dewey Cox Story", 2007, 96, "cin", "A music-biopic parody that runs one singer through every style and excess.", "Jake Kasdan", "Staff Pick of the Month", "https://revuecinema.ca/films/the-staff-pick-of-the-month-walk-hard-the-dewey-cox-story-2007/", ""],
+ "in-the-mood":["In the Mood for Love + In the Mood for Love 2001", 2000, 98, "cin", "Two neighbours in 1962 Hong Kong, with the rarely shown short In the Mood for Love 2001.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/revue-event-in-the-mood-for-love-2000-new-restoration/", "4K"],
+ "final-destination-2":["Final Destination 2", 2003, 90, "cin", "The highway pile-up sequel.", "David R. Ellis", "Not-So Terrible Twos", "https://revuecinema.ca/films/not-so-terrible-twos-final-destination-2-2003/", ""],
+ "chungking-express":["Chungking Express", 1994, 102, "cin", "Two lovesick Hong Kong cops, two stories, one snack bar.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/chungking-express-1994-4k-restoration/", "4K"],
+ "ek-lalka":["Lalka", null, 162, "partner", "A merchant’s unreturned love for an aristocrat in 19th-century Warsaw, after Bolesław Prus.", "Maciej Kawalski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-lalka/", ""],
+ "ek-passenger":["The Passenger Andrzej Munk (Pasażer Andrzej Munk)", null, 84, "partner", "Archival documentary on Polish Film School director Andrzej Munk.", "Michał Bielawski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-passenger-andrzej-munk-pasazer-andrzej-munk/", ""],
+ "ek-dzien":["Dzień Dziecka księdza Jana Kaczkowskiego", null, 110, "partner", "Documentary on Father Jan Kaczkowski, a priest who kept serving others through illness.", "Artur Wierzbicki", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-dzien-dziecka-ksiedza-jana-kaczkowskiego/", ""],
+ "ek-revolution":["Our Revolution (Nasza rewolucja)", null, 125, "partner", "Jacek and Grażyna Kuroń’s flat becomes an opposition hub as martial law arrives.", "Piotr Domalewski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-our-revolution-nasza-rewolucja/", ""],
+ "ek-erupcja":["Erupcja", null, 71, "partner", "A Warsaw holiday turns when a volcano erupts and an old friendship resurfaces.", "Pete Ohs", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-erupcia/", ""],
+ "ek-kumotry":["Double Trouble (Kumotry)", null, 70, "partner", "Documentary on two widows in a Polish village in Romania as their children leave.", "Emilia Śniegoska", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-double-trouble-kumotry/", ""],
+ "ek-heel":["Heel (Dobry chłopiec)", null, 110, "partner", "A couple kidnaps a 19-year-old offender, set on reforming him.", "Jan Komasa", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-heel-dobry-chlopiec/", ""],
+ "ek-hot-spot":["Hot Spot", null, 101, "partner", "A detective in an AI-run near future uncovers a rebel plot during a murder case.", "Agnieszka Smoczyńska", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-hot-spot/", ""],
+ "ek-picasso":["Picasso’s Mermaid (Syrenka Picassa)", 2026, 95, "partner", "A drawing found on a Warsaw apartment wall upends a young woman’s life.", "Janusz Zaorski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-picassos-mermaid-syrenka-picassa/", ""],
+ "ek-fatherland":["Fatherland (Ojczyzna)", null, 82, "partner", "Thomas Mann and daughter Erika drive across divided postwar Germany.", "Paweł Pawlikowski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-fatherland-ojczyzna/", ""],
+ "ek-tell-me":["Tell Me What You Feel (Powiedz mi, co czujesz)", null, 94, "partner", "A struggling painter falls for an art therapist who pays poor people for their tears.", "Łukasz Ronduda", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-tell-me-what-you-feel-powiedz-mi-co-czujesz/", ""],
+ "ek-wild-east":["Wild Wild East (Dziki, dziki wschód)", null, 105, "partner", "A Berlin official’s visit to an eastern Polish town in 1943 sets off a hunt for hidden gold.", "Jan Holoubek", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-wild-wild-east-dziki-dziki-wschod/", ""],
+ "ek-through-the-wall":["Through the Wall (Przez ścianę)", null, 120, "partner", "Two prisoners in a Stalinist jail fall in love through a cell wall, talking in Morse code.", "Maciej Sobieszczański", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-film-festival-through-the-wall-przez-sciane/", ""],
+ "ek-cauliflower":["The Cauliflower of Destiny (Kalafior przeznaczenia)", null, 77, "partner", "A grocery clerk under her mother’s thumb takes advice from a talking cauliflower.", "Anna Urbańczyk", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-cauliflower-of-destiny-kalafior-przeznaczenia/", ""],
+ "new-moon":["The Twilight Saga: New Moon", 2009, 131, "cin", "The second Twilight film, 15 years on.", "Chris Weitz", "Revue Event", "https://revuecinema.ca/films/revue-event-the-twilight-saga-new-moon-15th-anniversary-screening/", ""],
+ "the-edge":["The Edge", 1997, 117, "cin", "Three men stranded in the Alaskan wilderness, a bear, and mounting distrust.", "Lee Tamahori", "When Animals Attack", "https://revuecinema.ca/films/when-animals-attack-the-edge-1997-presented-on-35mm/", "35mm"],
+ "reality-bites":["Reality Bites", 1994, 99, "cin", "Ben Stiller’s first feature, about new graduates in Houston.", "Ben Stiller", "Hold Up!", "https://revuecinema.ca/films/hold-up-reality-bites-1994/", ""],
+ "fight-club":["Fight Club", 1999, 139, "cin", "Fincher’s 1999 film, in a new restoration.", "David Fincher", "Paid in Sweat", "https://revuecinema.ca/films/paid-in-sweat-fight-club-1999-4k-restoration/", "4K"],
+ "begotten":["Begotten", 1990, 72, "cin", "E. Elias Merhige’s wordless black-and-white creation myth, in a new restoration.", "E. Elias Merhige", "Revue Event", "https://revuecinema.ca/films/revue-event-begotten-1991-new-4k-restoration/", "4K"],
+ "gilda":["Gilda", 1946, 110, "cin", "Rita Hayworth in Buenos Aires noir; 80th anniversary, new restoration.", "Charles Vidor", "Designing the Movies", "https://revuecinema.ca/films/designing-the-movies-gilda-1946-new-4k-restoration/", "4K"],
+ "pulse":["Pulse (Kairo)", 2001, 119, "cin", "Kurosawa’s ghost story about loneliness and the internet in Tokyo.", "Kiyoshi Kurosawa", "Nightmare Alley", "https://revuecinema.ca/films/nightmare-alley-pulse-25th-anniversary-screening/", ""],
+ "crash":["Crash", 1996, 100, "cin", "Cronenberg’s J.G. Ballard adaptation, shot in Toronto.", "David Cronenberg", "Neon Dreams", "https://revuecinema.ca/films/neon-dreams-crash-1996-presented-on-35mm/", "35mm"],
+ "cocoon":["Cocoon: One Summer of Girlhood (dubbed)", 2026, 85, "new", "Two schoolgirls are drafted to nurse soldiers in a hidden wartime cave hospital.", "Yukimitsu Ina", "Anime at the Revue", "https://revuecinema.ca/films/anime-at-the-revue-cocoon-one-summer-of-childhood/", ""],
+ "nightmare-before":["The Nightmare Before Christmas", 1993, 76, "cin", "Stop-motion musical in which Halloween Town’s Pumpkin King takes over Christmas.", "Henry Selick", "Throwback Cinema", "https://revuecinema.ca/films/throwback-cinema-the-nightmare-before-christmas/", ""],
+ "batman":["Batman (1966) + Mexican Batwoman double bill", 1966, 190, "cin", "The 1966 Batman feature paired with the 1968 Mexican Batwoman, with an intermission.", "Leslie H. Martinson", "Dumpster Raccoon", "https://revuecinema.ca/films/dumpster-raccoon-batman-66-and-mexican-batwoman-double-bill/", ""],
+ "he-who-gets-slapped":["He Who Gets Slapped", 1924, 72, "special", "Lon Chaney as a scientist turned circus clown, with live piano by Marilyn Lerner.", "Victor Sjöström", "Silent Revue", "https://revuecinema.ca/films/silent-revue-he-who-gets-slapped-1924/", ""],
+ "heated-rivalry":["Heated Rivalry marathon", 2025, 322, "new", "All six episodes of the hockey romance series in one evening, with an intermission.", "Jacob Tierney", "Revue Event", "https://revuecinema.ca/films/revue-event-heated-rivalry-marathon/", ""],
+ "the-fin":["The Fin", 2026, 84, "special", "A civil servant in a ruined future Korea shelters a mutant outcast; director Park Sye-young attends.", "Park Sye-young", "Revue Event", "https://revuecinema.ca/films/revue-event-the-fin-2026-toronto-theatrical-premiere-with-director-park-sye-young-in-attendance/", ""],
+ "rapture":["The Rapture", 1991, 100, "cin", "A telephone operator’s life of empty thrills gives way to religious conversion and a test of faith.", "Michael Tolkin", "35 on 35", "https://revuecinema.ca/films/35-on-35-the-rapture-1991-presented-on-35mm/", "35mm"],
+ "gremlins":["Gremlins", 1984, 106, "cin", "A Christmas pet comes with three rules; breaking them unleashes chaos on a small town.", "Joe Dante", "X-Mas Horror Classics", "https://revuecinema.ca/films/x-mas-horror-classics-gremlins-40th-anniversary-screening/", ""],
+ "black-christmas":["Black Christmas", 1974, 98, "cin", "Sorority sisters are stalked by an anonymous caller over the holidays; a new print.", "Bob Clark", "X-Mas Horror Classics", "https://revuecinema.ca/films/x-mas-horror-classics-black-christmas-presented-on-35mm/", "35mm"],
+ "night-of-the-comet":["Night of the Comet", 1984, 95, "cin", "Two Valley sisters outlast a comet that turned most of Los Angeles to dust or zombies.", "Thom Eberhardt", "X-Mas Horror Classics", "https://revuecinema.ca/films/night-of-the-comet/", "35mm"],
+ "godzilla-minus-zero":["Godzilla Minus Zero", 2026, 135, "new", "Japan rebuilds after war and a Godzilla attack, until a new threat surfaces.", "Takashi Yamazaki", "", "https://revuecinema.ca/films/godzilla-minus-zero/", ""],
+ "die-hard":["Die Hard", 1988, 131, "cin", "The Nakatomi Plaza siege as an interactive drinking-game screening with a holiday pre-show.", "John McTiernan", "Drunken Cinema", "https://revuecinema.ca/films/drunken-cinema-die-hard-1988/", "35mm"],
+ "home-alone":["Home Alone", 1990, 103, "cin", "A boy left behind at Christmas defends the family house from two burglars.", "Chris Columbus", "Christmas Classics", "https://revuecinema.ca/films/christmas-classics-home-alone-1990/", ""]
+};
+// S: "YYYY-MM-DD" → ["HH:MM slug", …] (" !" after the slug marks sold out)
+// WEEK0: the Monday that starts the four-week window (update it with the listings date)
+const S={
+"2026-11-09":["18:30 48-hour", "21:30 casino-royale"],
+"2026-11-10":["18:30 48-hour", "21:30 black-zombie"],
+"2026-11-11":["18:30 48-hour", "21:30 trainspotting"],
+"2026-11-12":["18:30 48-hour", "21:30 gogol-bordello"],
+"2026-11-13":["18:30 nirvanna-s2a !", "21:30 friday-13th"],
+"2026-11-14":["12:00 nirvanna-s2b !", "16:00 48-hour", "19:00 days-of-being-wild", "21:30 ninja-terminator"],
+"2026-11-15":["11:30 elvira-notari", "16:00 48-hour", "19:00 walk-hard"],
+"2026-11-16":["18:30 in-the-mood", "21:30 in-the-mood"],
+"2026-11-17":["19:00 final-destination-2", "21:30 2046"],
+"2026-11-18":["18:00 ek-lalka", "21:30 chungking-express"],
+"2026-11-19":["12:00 ek-passenger", "15:30 ek-dzien", "18:30 ek-revolution", "21:00 ek-erupcja"],
+"2026-11-20":["12:00 ek-kumotry", "15:30 ek-heel", "18:30 ek-lalka", "21:30 ek-hot-spot"],
+"2026-11-21":["16:00 ek-picasso", "18:30 ek-fatherland", "21:00 ek-tell-me"],
+"2026-11-22":["12:00 ek-lalka", "15:30 ek-wild-east", "18:30 ek-through-the-wall", "21:00 ek-cauliflower"],
+"2026-11-23":["18:30 new-moon", "21:30 the-edge"],
+"2026-11-24":["18:45 reality-bites"],
+"2026-11-25":["18:15 fight-club", "21:30 begotten"],
+"2026-11-26":["18:30 gilda", "21:30 pulse"],
+"2026-11-27":["18:30 crash", "21:30 crash"],
+"2026-11-28":["13:30 cocoon", "16:00 nightmare-before", "19:00 batman"],
+"2026-11-29":["16:00 he-who-gets-slapped"],
+"2026-11-30":["18:15 heated-rivalry !"],
+"2026-12-01":["18:30 the-fin", "21:30 rapture"],
+"2026-12-02":["18:45 gremlins", "21:30 black-christmas"],
+"2026-12-03":["21:30 night-of-the-comet"],
+"2026-12-04":["15:00 godzilla-minus-zero", "21:30 die-hard"],
+"2026-12-05":["12:30 home-alone", "15:30 black-christmas", "21:30 die-hard"],
+"2026-12-06":["15:00 48-hour", "19:00 black-christmas", "21:30 godzilla-minus-zero"]
+};
+const WEEK0="2026-11-09";
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const dOf=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
+const kOf=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const label=d=>`${MON[d.getMonth()]} ${d.getDate()}`;
+const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const pad=n=>String(n).padStart(2,"0");
+const fmt12=t=>{let[h,m]=t.split(":").map(Number);const ap=h>=12?"pm":"am";h=h%12||12;return `${h}:${pad(m)} ${ap}`};
+const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+const LOC="Revue Cinema, 400 Roncesvalles Ave, Toronto, ON M6R 2M9";
+function gcal(key,t,slug){
+  const f=F[slug];const[h,m]=t.split(":").map(Number);const mins=(f[2]||120);
+  const s=dOf(key);s.setHours(h,m);const e=new Date(s.getTime()+mins*60000);
+  const st=d=>`${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
+  const q=new URLSearchParams({action:"TEMPLATE",text:f[0]+" at the Revue",dates:st(s)+"/"+st(e),ctz:"America/Toronto",location:LOC,details:f[7]});
+  return "https://calendar.google.com/calendar/render?"+q.toString();
+}
+let calApp="ics";
+try{calApp=localStorage.getItem("revue-cal")||"ics"}catch(e){}
+function icsHref(key,t,slug){return `ics/${key.replace(/-/g,"")}-${t.replace(":","")}-${slug}.ics`}
+let filter="all";
+try{filter=localStorage.getItem("revue-arch-filter")||"all"}catch(e){}
+const now=new Date();
+const todayKey="0000-00-00";
+function keepFilm(slug){return filter==="all"||filter==="eve"||F[slug][3]===filter}
+function keep(slug,t){if(filter==="eve")return Number(t.split(":")[0])>=18;return keepFilm(slug)}
+function render(){
+  document.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===filter));
+  document.querySelectorAll(".seg").forEach(b=>b.setAttribute("aria-pressed",b.dataset.c===calApp));
+  const cal=document.getElementById("cal");cal.innerHTML="";
+  for(let wk=0;wk<4;wk++){
+    const w0=dOf(WEEK0);w0.setDate(w0.getDate()+7*wk);
+    const w=document.createElement("section");w.className="week";
+    w.innerHTML=`<h2>Week of ${label(w0)}</h2>`;
+    for(let i=0;i<7;i++){
+      const dd=new Date(w0);dd.setDate(w0.getDate()+i);const key=kOf(dd);
+      if(key<todayKey||!S[key])continue;
+      const shows=S[key].map(x=>x.split(" ")).filter(([t,s])=>keep(s,t));
+      const row=document.createElement("div");row.className="day"+(key===todayKey?" today":"");
+      row.innerHTML=`<div class="stub"><div class="dow">${DOW[dd.getDay()]}</div><div class="num">${dd.getDate()}</div></div>`;
+      const bill=document.createElement("div");bill.className="bill";
+      if(!shows.length)bill.innerHTML=`<div class="empty">Nothing in this filter</div>`;
+      shows.forEach(([t,slug,flag])=>{
+        const f=F[slug];const bits=[];
+        if(f[5])bits.push(`<span class="dir">dir. ${esc(f[5])}</span>`);
+        if(f[1])bits.push(f[1]);if(f[2])bits.push(f[2]+" min");
+        if(f[8])bits.push(`<span class="fmt">${f[8]}</span>`);
+        const tag=f[6]?`<span class="tag">${esc(f[6].split(":")[0])}</span>`:(f[3]==="new"?'<span class="tag">New film</span>':"");
+        const add=calApp==="ics"?`<a href="${icsHref(key,t,slug)}">Add to calendar</a>`:`<a href="${gcal(key,t,slug)}" target="_blank" rel="noopener">Add to calendar</a>`;
+        bill.insertAdjacentHTML("beforeend",`<div class="show"><div class="time">${fmt12(t)}</div><div><a class="title" href="${esc(f[7])}" target="_blank" rel="noopener">${esc(f[0])}</a><div class="meta">${tag}${flag==="!"?'<span class="sold">Sold out</span>':""}${bits.join(" · ")} · ${add}</div></div></div>`);
+      });
+      row.appendChild(bill);w.appendChild(row);
+    }
+    if(w.querySelectorAll(".day").length)cal.appendChild(w);
+  }
+  const fl=document.getElementById("filmlist");fl.innerHTML="";
+  const runs={};Object.entries(S).forEach(([k,arr])=>{if(k<todayKey)return;arr.forEach(x=>{const s=x.split(" ")[1];(runs[s]=runs[s]||new Set()).add(k)})});
+  Object.keys(F).filter(s=>runs[s]&&keepFilm(s)).forEach(s=>{
+    const f=F[s];const ds=[...runs[s]].sort().map(k=>label(dOf(k)));
+    const by=[f[5]?`Directed by ${esc(f[5])}`:"",f[1]||"",f[2]?f[2]+" min":"",f[8]||""].filter(Boolean).join(" · ");
+    fl.insertAdjacentHTML("beforeend",`<div class="film"><h3><a href="${esc(f[7])}" target="_blank" rel="noopener">${esc(f[0])}</a></h3>${f[6]?`<div class="series">${esc(f[6])}</div>`:""}${by?`<div class="runs">${by}</div>`:""}${f[4]?`<p>${esc(f[4])}</p>`:""}<div class="runs">${ds.join(", ")}</div></div>`);
+  });
+}
+document.querySelectorAll(".seg").forEach(b=>b.addEventListener("click",()=>{calApp=b.dataset.c;try{localStorage.setItem("revue-cal",calApp)}catch(e){}render()}));
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.f;try{localStorage.setItem("revue-arch-filter",filter)}catch(e){}render()}));
+render();
+</script>
+</body>
+</html>

@@ -22,13 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261120T2130-ek-hot-spot@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261120T213000
-DTEND;TZID=America/Toronto:20261120T233000
+DTEND;TZID=America/Toronto:20261120T231100
 SUMMARY:Hot Spot at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-hot-spot/
+DESCRIPTION:Directed by Agnieszka Smoczyńska\n101 min\nEKRAN Toronto Pol
+ ish Film Festival\nA detective in an AI-run near future uncovers a rebel 
+ plot during a murder case.\nTickets: https://revuecinema.ca/films/ekran-t
+ oronto-polish-film-festival-hot-spot/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-hot-s
  pot/
 END:VEVENT

@@ -22,13 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261121T1830-ek-fatherland@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261121T183000
-DTEND;TZID=America/Toronto:20261121T203000
+DTEND;TZID=America/Toronto:20261121T195200
 SUMMARY:Fatherland (Ojczyzna) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-fatherland-ojczyzna/
+DESCRIPTION:Directed by Paweł Pawlikowski\n82 min\nEKRAN Toronto Polish 
+ Film Festival\nThomas Mann and daughter Erika drive across divided postwa
+ r Germany.\nTickets: https://revuecinema.ca/films/ekran-toronto-polish-fi
+ lm-festival-fatherland-ojczyzna/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-fathe
  rland-ojczyzna/
 END:VEVENT

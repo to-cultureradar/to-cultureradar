@@ -22,13 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261120T1530-ek-heel@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261120T153000
-DTEND;TZID=America/Toronto:20261120T173000
+DTEND;TZID=America/Toronto:20261120T172000
 SUMMARY:Heel (Dobry chłopiec) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-heel-dobry-chlopiec/
+DESCRIPTION:Directed by Jan Komasa\n110 min\nEKRAN Toronto Polish Film Fe
+ stival\nA couple kidnaps a 19-year-old offender\, set on reforming him.\n
+ Tickets: https://revuecinema.ca/films/ekran-toronto-polish-film-festival-
+ heel-dobry-chlopiec/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-heel-
  dobry-chlopiec/
 END:VEVENT

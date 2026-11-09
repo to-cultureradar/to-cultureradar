@@ -22,13 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261120T1200-ek-kumotry@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261120T120000
-DTEND;TZID=America/Toronto:20261120T140000
+DTEND;TZID=America/Toronto:20261120T131000
 SUMMARY:Double Trouble (Kumotry) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-double-trouble-kumotry/
+DESCRIPTION:Directed by Emilia Śniegoska\n70 min\nEKRAN Toronto Polish F
+ ilm Festival\nDocumentary on two widows in a Polish village in Romania as
+  their children leave.\nTickets: https://revuecinema.ca/films/ekran-toron
+ to-polish-film-festival-double-trouble-kumotry/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-doubl
  e-trouble-kumotry/
 END:VEVENT

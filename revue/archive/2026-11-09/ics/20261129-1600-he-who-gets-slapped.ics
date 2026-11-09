@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Revue Cinema Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261129T1600-he-who-gets-slapped@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261129T160000
+DTEND;TZID=America/Toronto:20261129T171200
+SUMMARY:He Who Gets Slapped at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Victor Sjöström\n1924 · 72 min\nSilent Revue\n
+ Lon Chaney as a scientist turned circus clown\, with live piano by Marily
+ n Lerner.\nTickets: https://revuecinema.ca/films/silent-revue-he-who-gets
+ -slapped-1924/
+URL:https://revuecinema.ca/films/silent-revue-he-who-gets-slapped-1924/
+END:VEVENT
+END:VCALENDAR

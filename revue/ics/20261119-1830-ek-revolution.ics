@@ -22,14 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261119T1830-ek-revolution@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261119T183000
-DTEND;TZID=America/Toronto:20261119T203000
+DTEND;TZID=America/Toronto:20261119T203500
 SUMMARY:Our Revolution (Nasza rewolucja) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-our-revolution-nasza-rewo
- lucja/
+DESCRIPTION:Directed by Piotr Domalewski\n125 min\nEKRAN Toronto Polish F
+ ilm Festival\nJacek and Grażyna Kuroń’s flat becomes an opposition hu
+ b as martial law arrives.\nTickets: https://revuecinema.ca/films/ekran-to
+ ronto-polish-film-festival-our-revolution-nasza-rewolucja/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-our-r
  evolution-nasza-rewolucja/
 END:VEVENT

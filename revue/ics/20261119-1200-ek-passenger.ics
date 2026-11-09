@@ -22,14 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261119T1200-ek-passenger@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261119T120000
-DTEND;TZID=America/Toronto:20261119T140000
+DTEND;TZID=America/Toronto:20261119T132400
 SUMMARY:The Passenger Andrzej Munk (Pasażer Andrzej Munk) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-the-passenger-andrzej-mun
- k-pasazer-andrzej-munk/
+DESCRIPTION:Directed by Michał Bielawski\n84 min\nEKRAN Toronto Polish F
+ ilm Festival\nArchival documentary on Polish Film School director Andrzej
+  Munk.\nTickets: https://revuecinema.ca/films/ekran-toronto-polish-film-f
+ estival-the-passenger-andrzej-munk-pasazer-andrzej-munk/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-p
  assenger-andrzej-munk-pasazer-andrzej-munk/
 END:VEVENT

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Revue Cinema Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261110T2130-black-zombie@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261110T213000
+DTEND;TZID=America/Toronto:20261110T230000
+SUMMARY:Black Zombie at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Maya Annik Bedward\n2026 · 90 min\nThe Black Ner
+ ds\nA documentary tracing the zombie from Haitian Vodou to Hollywood horr
+ or.\nTickets: https://revuecinema.ca/films/the-black-nerds-black-zombie-2
+ 026/
+URL:https://revuecinema.ca/films/the-black-nerds-black-zombie-2026/
+END:VEVENT
+END:VCALENDAR

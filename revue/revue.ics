@@ -25,215 +25,8 @@ TZNAME:EDT
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:20261103T1845-hero@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261103T184500
-DTEND;TZID=America/Toronto:20261103T202400
-SUMMARY:Hero at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Zhang Yimou\n2002 · 99 min\nRevue Film Society\n
- A Warring States–era official tells the king how he defeated three woul
- d-be assassins.\nTickets: https://revuecinema.ca/films/revue-film-society
- -hero-2002/
-URL:https://revuecinema.ca/films/revue-film-society-hero-2002/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261103T2130-lunar-sway@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261103T213000
-DTEND;TZID=America/Toronto:20261103T230800
-SUMMARY:Lunar Sway at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Nick Butler\n2026 · 98 min\nRevue Event\nA man i
- n a desert town reconnects with his birth mother while courting a dentist
-  named Stew.\nTickets: https://revuecinema.ca/films/revue-event-lunar-swa
- y-select-cast-crew-in-attendance/
-URL:https://revuecinema.ca/films/revue-event-lunar-sway-select-cast-crew-
- in-attendance/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261104T1830-grease-2@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261104T183000
-DTEND;TZID=America/Toronto:20261104T202500
-SUMMARY:Grease 2 at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Patricia Birch\n1982 · 115 min\nWe Really Like H
- er!\nThe 1982 sequel\, with Michelle Pfeiffer in her first lead role.\nTi
- ckets: https://revuecinema.ca/films/we-really-like-her-grease-2-1982/
-URL:https://revuecinema.ca/films/we-really-like-her-grease-2-1982/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261104T2130-henry@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261104T213000
-DTEND;TZID=America/Toronto:20261104T225300
-SUMMARY:Henry: Portrait of a Serial Killer at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by John McNaughton\n1986 · 83 min\nRevue Event\nThe
-  Canadian premiere of a new 35mm print of McNaughton’s Chicago-set firs
- t feature.\nTickets: https://revuecinema.ca/films/revue-event-henry-portr
- ait-of-a-serial-killer-1986-canadian-premiere-of-new-35mm-print/
-URL:https://revuecinema.ca/films/revue-event-henry-portrait-of-a-serial-k
- iller-1986-canadian-premiere-of-new-35mm-print/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261105T1830-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261105T183000
-DTEND;TZID=America/Toronto:20261105T203000
-SUMMARY:48 Hour Film Project – Toronto at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:120 min\n48 Hour Film Project\nLocal teams premiere short fil
- ms made in 48 hours\, one group per screening.\nTickets: https://revuecin
- ema.ca/films/the-48-hour-science-fiction-film-project-toronto/
-URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
- -toronto/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261105T2130-v-for-vendetta@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261105T213000
-DTEND;TZID=America/Toronto:20261105T234200
-SUMMARY:V for Vendetta at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by James McTeigue\n2006 · 132 min\nThe Perfect Date
- \nA masked vigilante takes on a fascist British state\; 20th anniversary.
- \nTickets: https://revuecinema.ca/films/the-perfect-date-v-for-vendetta-2
- 0th-anniversary-screening/
-URL:https://revuecinema.ca/films/the-perfect-date-v-for-vendetta-20th-ann
- iversary-screening/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261106T1845-behind-every-door@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261106T184500
-DTEND;TZID=America/Toronto:20261106T185800
-SUMMARY:Island of Listeners: Behind Every Door + artist talk at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Rachel Gray & Kim Kilpatrick\n2026 · 13 min\nRev
- ue Event\nA hand-painted short set in a palliative care unit\, followed b
- y a talk with Rachel Gray and Kim Kilpatrick.\nTickets: https://revuecine
- ma.ca/films/revue-event-island-of-listeners-behind-every-door-screening-a
- nd-artist-talk-with-rachel-gray-and-kim-kilpatrick/
-URL:https://revuecinema.ca/films/revue-event-island-of-listeners-behind-e
- very-door-screening-and-artist-talk-with-rachel-gray-and-kim-kilpatrick/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261106T2130-eraser@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261106T213000
-DTEND;TZID=America/Toronto:20261106T232500
-SUMMARY:Eraser at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Chuck Russell\n1996 · 115 min\nRevue Event\nSchw
- arzenegger’s witness-protection action film\, 30 years on.\nTickets: ht
- tps://revuecinema.ca/films/revue-event-eraser-1996-presented-on-35mm/
-URL:https://revuecinema.ca/films/revue-event-eraser-1996-presented-on-35m
- m/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261107T1200-nirvanna-s1a@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261107T120000
-DTEND;TZID=America/Toronto:20261107T132800
-SUMMARY:Nirvanna the Band the Show: Season 1\, episodes 1–4 at the Revu
- e
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Matt Johnson\n2017 · 88 min\nZapruder Films\nMat
- t and Jay’s quest to play the Rivoli\, with the pair and surprise guest
- s in person.\nTickets: https://revuecinema.ca/films/zapruder-films-nirvan
- na-the-band-the-show-season-1-episodes-1-4-with-special-guests-in-attenda
- nce/
-URL:https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-sho
- w-season-1-episodes-1-4-with-special-guests-in-attendance/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261107T1600-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261107T160000
-DTEND;TZID=America/Toronto:20261107T180000
-SUMMARY:48 Hour Film Project – Toronto at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:120 min\n48 Hour Film Project\nLocal teams premiere short fil
- ms made in 48 hours\, one group per screening.\nTickets: https://revuecin
- ema.ca/films/the-48-hour-science-fiction-film-project-toronto/
-URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
- -toronto/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261107T2000-minnow@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261107T200000
-DTEND;TZID=America/Toronto:20261107T210300
-SUMMARY:Understanding Myself as an Amphibian at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by May Matchim\n2026 · 63 min\nMinnow Magazine\nA C
- anadian documentary on sexual diversity in wildlife and the history of bi
- ology. Toronto premiere.\nTickets: https://revuecinema.ca/films/rental-ev
- ent-minnow-magazine-understanding-myself-as-an-amphibian-toronto-theatric
- al-premiere/
-URL:https://revuecinema.ca/films/rental-event-minnow-magazine-understandi
- ng-myself-as-an-amphibian-toronto-theatrical-premiere/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261107T2330-se7en@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261107T233000
-DTEND;TZID=America/Toronto:20261108T013700
-SUMMARY:Se7en at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by David Fincher\n1995 · 127 min\nThe Midnight Revu
- e\nTwo detectives track killings modelled on the seven deadly sins.\nTick
- ets: https://revuecinema.ca/films/revue-event-se7en-1995-new-4k-restorati
- on/
-URL:https://revuecinema.ca/films/revue-event-se7en-1995-new-4k-restoratio
- n/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261108T1200-nirvanna-s1b@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261108T120000
-DTEND;TZID=America/Toronto:20261108T132800
-SUMMARY:Nirvanna the Band the Show: Season 1\, episodes 5–8 at the Revu
- e
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Matt Johnson\n2017 · 88 min\nZapruder Films\nThe
-  rest of season one\, with Matt\, Jay\, and surprise guests in person.\nT
- ickets: https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the
- -show-season-1-episodes-5-8-with-special-guests-in-attendance/
-URL:https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-sho
- w-season-1-episodes-5-8-with-special-guests-in-attendance/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261108T1600-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261108T160000
-DTEND;TZID=America/Toronto:20261108T180000
-SUMMARY:48 Hour Film Project – Toronto at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:120 min\n48 Hour Film Project\nLocal teams premiere short fil
- ms made in 48 hours\, one group per screening.\nTickets: https://revuecin
- ema.ca/films/the-48-hour-science-fiction-film-project-toronto/
-URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
- -toronto/
-END:VEVENT
-BEGIN:VEVENT
-UID:20261108T1900-umberto-d@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261108T190000
-DTEND;TZID=America/Toronto:20261108T203100
-SUMMARY:Umberto D. at the Revue
-LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Vittorio De Sica\n1952 · 91 min\nDon’t Be So P
- olitical\nA retired civil servant and his dog face eviction in postwar Ro
- me.\nTickets: https://revuecinema.ca/films/dont-be-so-political-umberto-d
- -1952/
-URL:https://revuecinema.ca/films/dont-be-so-political-umberto-d-1952/
-END:VEVENT
-BEGIN:VEVENT
 UID:20261109T1830-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261109T183000
 DTEND;TZID=America/Toronto:20261109T203000
 SUMMARY:48 Hour Film Project – Toronto at the Revue
@@ -246,7 +39,7 @@ URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
 END:VEVENT
 BEGIN:VEVENT
 UID:20261109T2130-casino-royale@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261109T213000
 DTEND;TZID=America/Toronto:20261109T235400
 SUMMARY:Casino Royale at the Revue
@@ -259,7 +52,7 @@ URL:https://revuecinema.ca/films/revue-event-casino-royale-2006-new-4k-re
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110T1830-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261110T183000
 DTEND;TZID=America/Toronto:20261110T203000
 SUMMARY:48 Hour Film Project – Toronto at the Revue
@@ -272,7 +65,7 @@ URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
 END:VEVENT
 BEGIN:VEVENT
 UID:20261110T2130-black-zombie@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261110T213000
 DTEND;TZID=America/Toronto:20261110T230000
 SUMMARY:Black Zombie at the Revue
@@ -285,7 +78,7 @@ URL:https://revuecinema.ca/films/the-black-nerds-black-zombie-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111T1830-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261111T183000
 DTEND;TZID=America/Toronto:20261111T203000
 SUMMARY:48 Hour Film Project – Toronto at the Revue
@@ -298,7 +91,7 @@ URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
 END:VEVENT
 BEGIN:VEVENT
 UID:20261111T2130-trainspotting@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261111T213000
 DTEND;TZID=America/Toronto:20261111T230400
 SUMMARY:Trainspotting at the Revue
@@ -312,7 +105,7 @@ URL:https://revuecinema.ca/films/psych-out-cinema-trainspotting-1996-new-
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112T1830-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261112T183000
 DTEND;TZID=America/Toronto:20261112T203000
 SUMMARY:48 Hour Film Project – Toronto at the Revue
@@ -325,7 +118,7 @@ URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112T2130-gogol-bordello@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261112T213000
 DTEND;TZID=America/Toronto:20261112T230900
 SUMMARY:Scream of My Blood: A Gogol Bordello Story at the Revue
@@ -339,7 +132,7 @@ URL:https://revuecinema.ca/films/stompbox-scream-of-my-blood-a-gogol-bord
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113T1830-nirvanna-s2a@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261113T183000
 DTEND;TZID=America/Toronto:20261113T195800
 SUMMARY:Nirvanna the Band the Show: Season 2\, episodes 1–4 at the Revu
@@ -354,7 +147,7 @@ URL:https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-sho
 END:VEVENT
 BEGIN:VEVENT
 UID:20261113T2130-friday-13th@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261113T213000
 DTEND;TZID=America/Toronto:20261113T230700
 SUMMARY:Friday the 13th at the Revue
@@ -367,7 +160,7 @@ URL:https://revuecinema.ca/films/drunken-cinema-friday-the-13th-2009-pres
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114T1200-nirvanna-s2b@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261114T120000
 DTEND;TZID=America/Toronto:20261114T132800
 SUMMARY:Nirvanna the Band the Show: Season 2\, episodes 5–8 at the Revu
@@ -382,7 +175,7 @@ URL:https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-sho
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114T1600-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261114T160000
 DTEND;TZID=America/Toronto:20261114T180000
 SUMMARY:48 Hour Film Project – Toronto at the Revue
@@ -395,7 +188,7 @@ URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114T1900-days-of-being-wild@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261114T190000
 DTEND;TZID=America/Toronto:20261114T203400
 SUMMARY:Days of Being Wild at the Revue
@@ -409,7 +202,7 @@ URL:https://revuecinema.ca/films/destination-love-days-of-being-wild-1990
 END:VEVENT
 BEGIN:VEVENT
 UID:20261114T2130-ninja-terminator@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261114T213000
 DTEND;TZID=America/Toronto:20261114T230200
 SUMMARY:Ninja Terminator at the Revue
@@ -423,10 +216,10 @@ URL:https://revuecinema.ca/films/black-belt-cinema-ninja-terminator-40th-
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115T1130-elvira-notari@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261115T113000
 DTEND;TZID=America/Toronto:20261115T130400
-SUMMARY:An Extraordinary Filmmaker: Elvira Notari at the Revue
+SUMMARY:Elvira Notari: Beyond Silence at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
 DESCRIPTION:Directed by Valerio Ciriaci\n2025 · 94 min\nExtraordinary Wo
  men × U of T\nA documentary on the Neapolitan silent-film director\, wit
@@ -437,7 +230,7 @@ URL:https://revuecinema.ca/films/an-extraordinary-filmmaker-elvira-notari
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115T1600-48-hour@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261115T160000
 DTEND;TZID=America/Toronto:20261115T180000
 SUMMARY:48 Hour Film Project – Toronto at the Revue
@@ -450,7 +243,7 @@ URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
 END:VEVENT
 BEGIN:VEVENT
 UID:20261115T1900-walk-hard@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261115T190000
 DTEND;TZID=America/Toronto:20261115T203600
 SUMMARY:Walk Hard: The Dewey Cox Story at the Revue
@@ -464,7 +257,7 @@ URL:https://revuecinema.ca/films/the-staff-pick-of-the-month-walk-hard-th
 END:VEVENT
 BEGIN:VEVENT
 UID:20261116T1830-in-the-mood@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261116T183000
 DTEND;TZID=America/Toronto:20261116T200800
 SUMMARY:In the Mood for Love + In the Mood for Love 2001 at the Revue
@@ -478,7 +271,7 @@ URL:https://revuecinema.ca/films/revue-event-in-the-mood-for-love-2000-ne
 END:VEVENT
 BEGIN:VEVENT
 UID:20261116T2130-in-the-mood@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261116T213000
 DTEND;TZID=America/Toronto:20261116T230800
 SUMMARY:In the Mood for Love + In the Mood for Love 2001 at the Revue
@@ -492,7 +285,7 @@ URL:https://revuecinema.ca/films/revue-event-in-the-mood-for-love-2000-ne
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117T1900-final-destination-2@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261117T190000
 DTEND;TZID=America/Toronto:20261117T203000
 SUMMARY:Final Destination 2 at the Revue
@@ -505,7 +298,7 @@ URL:https://revuecinema.ca/films/not-so-terrible-twos-final-destination-2
 END:VEVENT
 BEGIN:VEVENT
 UID:20261117T2130-2046@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261117T213000
 DTEND;TZID=America/Toronto:20261117T233900
 SUMMARY:2046 at the Revue
@@ -516,20 +309,22 @@ DESCRIPTION:Directed by Wong Kar-wai\n2004 · 129 min\nDestination Love\n
 URL:https://revuecinema.ca/films/destination-love-2046/
 END:VEVENT
 BEGIN:VEVENT
-UID:20261118T1830-ek-lalka@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261118T183000
-DTEND;TZID=America/Toronto:20261118T203000
+UID:20261118T1800-ek-lalka@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261118T180000
+DTEND;TZID=America/Toronto:20261118T204200
 SUMMARY:Lalka at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-lalka/
+DESCRIPTION:Directed by Maciej Kawalski\n162 min\nEKRAN Toronto Polish Fi
+ lm Festival\nA merchant’s unreturned love for an aristocrat in 19th-cen
+ tury Warsaw\, after Bolesław Prus.\nTickets: https://revuecinema.ca/film
+ s/ekran-toronto-polish-film-festival-lalka/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-lalka
  /
 END:VEVENT
 BEGIN:VEVENT
 UID:20261118T2130-chungking-express@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261118T213000
 DTEND;TZID=America/Toronto:20261118T231200
 SUMMARY:Chungking Express at the Revue
@@ -541,206 +336,231 @@ URL:https://revuecinema.ca/films/chungking-express-1994-4k-restoration/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119T1200-ek-passenger@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261119T120000
-DTEND;TZID=America/Toronto:20261119T140000
+DTEND;TZID=America/Toronto:20261119T132400
 SUMMARY:The Passenger Andrzej Munk (Pasażer Andrzej Munk) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-the-passenger-andrzej-mun
- k-pasazer-andrzej-munk/
+DESCRIPTION:Directed by Michał Bielawski\n84 min\nEKRAN Toronto Polish F
+ ilm Festival\nArchival documentary on Polish Film School director Andrzej
+  Munk.\nTickets: https://revuecinema.ca/films/ekran-toronto-polish-film-f
+ estival-the-passenger-andrzej-munk-pasazer-andrzej-munk/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-p
  assenger-andrzej-munk-pasazer-andrzej-munk/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119T1530-ek-dzien@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261119T153000
-DTEND;TZID=America/Toronto:20261119T173000
+DTEND;TZID=America/Toronto:20261119T172000
 SUMMARY:Dzień Dziecka księdza Jana Kaczkowskiego at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-dzien-dziecka-ksiedza-jan
- a-kaczkowskiego/
+DESCRIPTION:Directed by Artur Wierzbicki\n110 min\nEKRAN Toronto Polish F
+ ilm Festival\nDocumentary on Father Jan Kaczkowski\, a priest who kept se
+ rving others through illness.\nTickets: https://revuecinema.ca/films/ekra
+ n-toronto-polish-film-festival-dzien-dziecka-ksiedza-jana-kaczkowskiego/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-dzien
  -dziecka-ksiedza-jana-kaczkowskiego/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119T1830-ek-revolution@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261119T183000
-DTEND;TZID=America/Toronto:20261119T203000
+DTEND;TZID=America/Toronto:20261119T203500
 SUMMARY:Our Revolution (Nasza rewolucja) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-our-revolution-nasza-rewo
- lucja/
+DESCRIPTION:Directed by Piotr Domalewski\n125 min\nEKRAN Toronto Polish F
+ ilm Festival\nJacek and Grażyna Kuroń’s flat becomes an opposition hu
+ b as martial law arrives.\nTickets: https://revuecinema.ca/films/ekran-to
+ ronto-polish-film-festival-our-revolution-nasza-rewolucja/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-our-r
  evolution-nasza-rewolucja/
 END:VEVENT
 BEGIN:VEVENT
-UID:20261119T2130-ek-erupcja@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261119T213000
-DTEND;TZID=America/Toronto:20261119T233000
+UID:20261119T2100-ek-erupcja@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261119T210000
+DTEND;TZID=America/Toronto:20261119T221100
 SUMMARY:Erupcja at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-erupcia/
+DESCRIPTION:Directed by Pete Ohs\n71 min\nEKRAN Toronto Polish Film Festi
+ val\nA Warsaw holiday turns when a volcano erupts and an old friendship r
+ esurfaces.\nTickets: https://revuecinema.ca/films/ekran-toronto-polish-fi
+ lm-festival-erupcia/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-erupc
  ia/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120T1200-ek-kumotry@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261120T120000
-DTEND;TZID=America/Toronto:20261120T140000
+DTEND;TZID=America/Toronto:20261120T131000
 SUMMARY:Double Trouble (Kumotry) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-double-trouble-kumotry/
+DESCRIPTION:Directed by Emilia Śniegoska\n70 min\nEKRAN Toronto Polish F
+ ilm Festival\nDocumentary on two widows in a Polish village in Romania as
+  their children leave.\nTickets: https://revuecinema.ca/films/ekran-toron
+ to-polish-film-festival-double-trouble-kumotry/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-doubl
  e-trouble-kumotry/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120T1530-ek-heel@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261120T153000
-DTEND;TZID=America/Toronto:20261120T173000
+DTEND;TZID=America/Toronto:20261120T172000
 SUMMARY:Heel (Dobry chłopiec) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-heel-dobry-chlopiec/
+DESCRIPTION:Directed by Jan Komasa\n110 min\nEKRAN Toronto Polish Film Fe
+ stival\nA couple kidnaps a 19-year-old offender\, set on reforming him.\n
+ Tickets: https://revuecinema.ca/films/ekran-toronto-polish-film-festival-
+ heel-dobry-chlopiec/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-heel-
  dobry-chlopiec/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120T1830-ek-lalka@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261120T183000
-DTEND;TZID=America/Toronto:20261120T203000
+DTEND;TZID=America/Toronto:20261120T211200
 SUMMARY:Lalka at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-lalka/
+DESCRIPTION:Directed by Maciej Kawalski\n162 min\nEKRAN Toronto Polish Fi
+ lm Festival\nA merchant’s unreturned love for an aristocrat in 19th-cen
+ tury Warsaw\, after Bolesław Prus.\nTickets: https://revuecinema.ca/film
+ s/ekran-toronto-polish-film-festival-lalka/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-lalka
  /
 END:VEVENT
 BEGIN:VEVENT
 UID:20261120T2130-ek-hot-spot@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261120T213000
-DTEND;TZID=America/Toronto:20261120T233000
+DTEND;TZID=America/Toronto:20261120T231100
 SUMMARY:Hot Spot at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-hot-spot/
+DESCRIPTION:Directed by Agnieszka Smoczyńska\n101 min\nEKRAN Toronto Pol
+ ish Film Festival\nA detective in an AI-run near future uncovers a rebel 
+ plot during a murder case.\nTickets: https://revuecinema.ca/films/ekran-t
+ oronto-polish-film-festival-hot-spot/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-hot-s
  pot/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261121T1600-ek-picasso@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261121T160000
 DTEND;TZID=America/Toronto:20261121T173500
 SUMMARY:Picasso’s Mermaid (Syrenka Picassa) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
 DESCRIPTION:Directed by Janusz Zaorski\n2026 · 95 min\nEKRAN Toronto Pol
- ish Film Festival\nTickets: https://revuecinema.ca/films/ekran-toronto-po
- lish-film-festival-picassos-mermaid-syrenka-picassa/
+ ish Film Festival\nA drawing found on a Warsaw apartment wall upends a yo
+ ung woman’s life.\nTickets: https://revuecinema.ca/films/ekran-toronto-
+ polish-film-festival-picassos-mermaid-syrenka-picassa/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-picas
  sos-mermaid-syrenka-picassa/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261121T1830-ek-fatherland@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261121T183000
-DTEND;TZID=America/Toronto:20261121T203000
+DTEND;TZID=America/Toronto:20261121T195200
 SUMMARY:Fatherland (Ojczyzna) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-fatherland-ojczyzna/
+DESCRIPTION:Directed by Paweł Pawlikowski\n82 min\nEKRAN Toronto Polish 
+ Film Festival\nThomas Mann and daughter Erika drive across divided postwa
+ r Germany.\nTickets: https://revuecinema.ca/films/ekran-toronto-polish-fi
+ lm-festival-fatherland-ojczyzna/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-fathe
  rland-ojczyzna/
 END:VEVENT
 BEGIN:VEVENT
-UID:20261121T2130-ek-tell-me@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261121T213000
-DTEND;TZID=America/Toronto:20261121T233000
+UID:20261121T2100-ek-tell-me@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261121T210000
+DTEND;TZID=America/Toronto:20261121T223400
 SUMMARY:Tell Me What You Feel (Powiedz mi\, co czujesz) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-tell-me-what-you-feel-pow
- iedz-mi-co-czujesz/
+DESCRIPTION:Directed by Łukasz Ronduda\n94 min\nEKRAN Toronto Polish Fil
+ m Festival\nA struggling painter falls for an art therapist who pays poor
+  people for their tears.\nTickets: https://revuecinema.ca/films/ekran-tor
+ onto-polish-film-festival-tell-me-what-you-feel-powiedz-mi-co-czujesz/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-tell-
  me-what-you-feel-powiedz-mi-co-czujesz/
 END:VEVENT
 BEGIN:VEVENT
-UID:20261122T1200-ek-psoty@revue-calendar
-DTSTAMP:20261104T032804Z
+UID:20261122T1200-ek-lalka@revue-calendar
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261122T120000
-DTEND;TZID=America/Toronto:20261122T140000
-SUMMARY:Psoty at the Revue
+DTEND;TZID=America/Toronto:20261122T144200
+SUMMARY:Lalka at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-psoty/
-URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-psoty
+DESCRIPTION:Directed by Maciej Kawalski\n162 min\nEKRAN Toronto Polish Fi
+ lm Festival\nA merchant’s unreturned love for an aristocrat in 19th-cen
+ tury Warsaw\, after Bolesław Prus.\nTickets: https://revuecinema.ca/film
+ s/ekran-toronto-polish-film-festival-lalka/
+URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-lalka
  /
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122T1530-ek-wild-east@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261122T153000
-DTEND;TZID=America/Toronto:20261122T173000
+DTEND;TZID=America/Toronto:20261122T171500
 SUMMARY:Wild Wild East (Dziki\, dziki wschód) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-wild-wild-east-dziki-dzik
- i-wschod/
+DESCRIPTION:Directed by Jan Holoubek\n105 min\nEKRAN Toronto Polish Film 
+ Festival\nA Berlin official’s visit to an eastern Polish town in 1943 s
+ ets off a hunt for hidden gold.\nTickets: https://revuecinema.ca/films/ek
+ ran-toronto-polish-film-festival-wild-wild-east-dziki-dziki-wschod/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-wild-
  wild-east-dziki-dziki-wschod/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261122T1830-ek-through-the-wall@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261122T183000
 DTEND;TZID=America/Toronto:20261122T203000
 SUMMARY:Through the Wall (Przez ścianę) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-film-festival-through-the-wall-przez-sciane/
+DESCRIPTION:Directed by Maciej Sobieszczański\n120 min\nEKRAN Toronto Po
+ lish Film Festival\nTwo prisoners in a Stalinist jail fall in love throug
+ h a cell wall\, talking in Morse code.\nTickets: https://revuecinema.ca/f
+ ilms/ekran-toronto-film-festival-through-the-wall-przez-sciane/
 URL:https://revuecinema.ca/films/ekran-toronto-film-festival-through-the-
  wall-przez-sciane/
 END:VEVENT
 BEGIN:VEVENT
-UID:20261122T2130-ek-cauliflower@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261122T213000
-DTEND;TZID=America/Toronto:20261122T233000
+UID:20261122T2100-ek-cauliflower@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261122T210000
+DTEND;TZID=America/Toronto:20261122T221700
 SUMMARY:The Cauliflower of Destiny (Kalafior przeznaczenia) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-the-cauliflower-of-destin
- y-kalafior-przeznaczenia/
+DESCRIPTION:Directed by Anna Urbańczyk\n77 min\nEKRAN Toronto Polish Fil
+ m Festival\nA grocery clerk under her mother’s thumb takes advice from 
+ a talking cauliflower.\nTickets: https://revuecinema.ca/films/ekran-toron
+ to-polish-film-festival-the-cauliflower-of-destiny-kalafior-przeznaczenia
+ /
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-c
  auliflower-of-destiny-kalafior-przeznaczenia/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123T1830-new-moon@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261123T183000
 DTEND;TZID=America/Toronto:20261123T204100
 SUMMARY:The Twilight Saga: New Moon at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
 DESCRIPTION:Directed by Chris Weitz\n2009 · 131 min\nRevue Event\nThe se
- cond Twilight film.\nTickets: https://revuecinema.ca/films/revue-event-th
- e-twilight-saga-new-moon/
-URL:https://revuecinema.ca/films/revue-event-the-twilight-saga-new-moon/
+ cond Twilight film\, 15 years on.\nTickets: https://revuecinema.ca/films/
+ revue-event-the-twilight-saga-new-moon-15th-anniversary-screening/
+URL:https://revuecinema.ca/films/revue-event-the-twilight-saga-new-moon-1
+ 5th-anniversary-screening/
 END:VEVENT
 BEGIN:VEVENT
 UID:20261123T2130-the-edge@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261123T213000
 DTEND;TZID=America/Toronto:20261123T232700
 SUMMARY:The Edge at the Revue
@@ -754,7 +574,7 @@ URL:https://revuecinema.ca/films/when-animals-attack-the-edge-1997-presen
 END:VEVENT
 BEGIN:VEVENT
 UID:20261124T1845-reality-bites@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261124T184500
 DTEND;TZID=America/Toronto:20261124T202400
 SUMMARY:Reality Bites at the Revue
@@ -765,10 +585,10 @@ DESCRIPTION:Directed by Ben Stiller\n1994 · 99 min\nHold Up!\nBen Stille
 URL:https://revuecinema.ca/films/hold-up-reality-bites-1994/
 END:VEVENT
 BEGIN:VEVENT
-UID:20261125T1830-fight-club@revue-calendar
-DTSTAMP:20261104T032804Z
-DTSTART;TZID=America/Toronto:20261125T183000
-DTEND;TZID=America/Toronto:20261125T204900
+UID:20261125T1815-fight-club@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261125T181500
+DTEND;TZID=America/Toronto:20261125T203400
 SUMMARY:Fight Club at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
 DESCRIPTION:Directed by David Fincher\n1999 · 139 min\nPaid in Sweat\nFi
@@ -779,7 +599,7 @@ URL:https://revuecinema.ca/films/paid-in-sweat-fight-club-1999-4k-restora
 END:VEVENT
 BEGIN:VEVENT
 UID:20261125T2130-begotten@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261125T213000
 DTEND;TZID=America/Toronto:20261125T224200
 SUMMARY:Begotten at the Revue
@@ -793,7 +613,7 @@ URL:https://revuecinema.ca/films/revue-event-begotten-1991-new-4k-restora
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126T1830-gilda@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261126T183000
 DTEND;TZID=America/Toronto:20261126T202000
 SUMMARY:Gilda at the Revue
@@ -807,7 +627,7 @@ URL:https://revuecinema.ca/films/designing-the-movies-gilda-1946-new-4k-r
 END:VEVENT
 BEGIN:VEVENT
 UID:20261126T2130-pulse@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261126T213000
 DTEND;TZID=America/Toronto:20261126T232900
 SUMMARY:Pulse (Kairo) at the Revue
@@ -821,7 +641,7 @@ URL:https://revuecinema.ca/films/nightmare-alley-pulse-25th-anniversary-s
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127T1830-crash@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261127T183000
 DTEND;TZID=America/Toronto:20261127T201000
 SUMMARY:Crash at the Revue
@@ -834,7 +654,7 @@ URL:https://revuecinema.ca/films/neon-dreams-crash-1996-presented-on-35mm
 END:VEVENT
 BEGIN:VEVENT
 UID:20261127T2130-crash@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261127T213000
 DTEND;TZID=America/Toronto:20261127T231000
 SUMMARY:Crash at the Revue
@@ -847,7 +667,7 @@ URL:https://revuecinema.ca/films/neon-dreams-crash-1996-presented-on-35mm
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128T1330-cocoon@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261128T133000
 DTEND;TZID=America/Toronto:20261128T145500
 SUMMARY:Cocoon: One Summer of Girlhood (dubbed) at the Revue
@@ -861,7 +681,7 @@ URL:https://revuecinema.ca/films/anime-at-the-revue-cocoon-one-summer-of-
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128T1600-nightmare-before@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261128T160000
 DTEND;TZID=America/Toronto:20261128T171600
 SUMMARY:The Nightmare Before Christmas at the Revue
@@ -875,7 +695,7 @@ URL:https://revuecinema.ca/films/throwback-cinema-the-nightmare-before-ch
 END:VEVENT
 BEGIN:VEVENT
 UID:20261128T1900-batman@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261128T190000
 DTEND;TZID=America/Toronto:20261128T221000
 SUMMARY:Batman (1966) + Mexican Batwoman double bill at the Revue
@@ -889,14 +709,202 @@ URL:https://revuecinema.ca/films/dumpster-raccoon-batman-66-and-mexican-b
 END:VEVENT
 BEGIN:VEVENT
 UID:20261129T1600-he-who-gets-slapped@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261129T160000
-DTEND;TZID=America/Toronto:20261129T173500
+DTEND;TZID=America/Toronto:20261129T171200
 SUMMARY:He Who Gets Slapped at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:Directed by Victor Sjöström\n1924 · 95 min\nSilent Revue\n
- Lon Chaney as a scientist turned circus clown.\nTickets: https://revuecin
- ema.ca/films/silent-revue-he-who-gets-slapped-1924/
+DESCRIPTION:Directed by Victor Sjöström\n1924 · 72 min\nSilent Revue\n
+ Lon Chaney as a scientist turned circus clown\, with live piano by Marily
+ n Lerner.\nTickets: https://revuecinema.ca/films/silent-revue-he-who-gets
+ -slapped-1924/
 URL:https://revuecinema.ca/films/silent-revue-he-who-gets-slapped-1924/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261130T1815-heated-rivalry@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261130T181500
+DTEND;TZID=America/Toronto:20261130T233700
+SUMMARY:Heated Rivalry marathon at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Jacob Tierney\n2025 · 322 min\nRevue Event\nAll 
+ six episodes of the hockey romance series in one evening\, with an interm
+ ission.\nTickets: https://revuecinema.ca/films/revue-event-heated-rivalry
+ -marathon/
+URL:https://revuecinema.ca/films/revue-event-heated-rivalry-marathon/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261201T1830-the-fin@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261201T183000
+DTEND;TZID=America/Toronto:20261201T195400
+SUMMARY:The Fin at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Park Sye-young\n2026 · 84 min\nRevue Event\nA ci
+ vil servant in a ruined future Korea shelters a mutant outcast\; director
+  Park Sye-young attends.\nTickets: https://revuecinema.ca/films/revue-eve
+ nt-the-fin-2026-toronto-theatrical-premiere-with-director-park-sye-young-
+ in-attendance/
+URL:https://revuecinema.ca/films/revue-event-the-fin-2026-toronto-theatri
+ cal-premiere-with-director-park-sye-young-in-attendance/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261201T2130-rapture@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261201T213000
+DTEND;TZID=America/Toronto:20261201T231000
+SUMMARY:The Rapture at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Michael Tolkin\n1991 · 100 min\n35 on 35\nA tele
+ phone operator’s life of empty thrills gives way to religious conversio
+ n and a test of faith.\nTickets: https://revuecinema.ca/films/35-on-35-th
+ e-rapture-1991-presented-on-35mm/
+URL:https://revuecinema.ca/films/35-on-35-the-rapture-1991-presented-on-3
+ 5mm/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261202T1845-gremlins@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261202T184500
+DTEND;TZID=America/Toronto:20261202T203100
+SUMMARY:Gremlins at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Joe Dante\n1984 · 106 min\nX-Mas Horror Classics
+ \nA Christmas pet comes with three rules\; breaking them unleashes chaos 
+ on a small town.\nTickets: https://revuecinema.ca/films/x-mas-horror-clas
+ sics-gremlins-40th-anniversary-screening/
+URL:https://revuecinema.ca/films/x-mas-horror-classics-gremlins-40th-anni
+ versary-screening/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261202T2130-black-christmas@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261202T213000
+DTEND;TZID=America/Toronto:20261202T230800
+SUMMARY:Black Christmas at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Bob Clark\n1974 · 98 min\nX-Mas Horror Classics\
+ nSorority sisters are stalked by an anonymous caller over the holidays\; 
+ a new print.\nTickets: https://revuecinema.ca/films/x-mas-horror-classics
+ -black-christmas-presented-on-35mm/
+URL:https://revuecinema.ca/films/x-mas-horror-classics-black-christmas-pr
+ esented-on-35mm/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261203T2130-night-of-the-comet@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261203T213000
+DTEND;TZID=America/Toronto:20261203T230500
+SUMMARY:Night of the Comet at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Thom Eberhardt\n1984 · 95 min\nX-Mas Horror Clas
+ sics\nTwo Valley sisters outlast a comet that turned most of Los Angeles 
+ to dust or zombies.\nTickets: https://revuecinema.ca/films/night-of-the-c
+ omet/
+URL:https://revuecinema.ca/films/night-of-the-comet/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261204T1500-godzilla-minus-zero@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261204T150000
+DTEND;TZID=America/Toronto:20261204T171500
+SUMMARY:Godzilla Minus Zero at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Takashi Yamazaki\n2026 · 135 min\nJapan rebuilds
+  after war and a Godzilla attack\, until a new threat surfaces.\nTickets:
+  https://revuecinema.ca/films/godzilla-minus-zero/
+URL:https://revuecinema.ca/films/godzilla-minus-zero/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261204T2130-die-hard@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261204T213000
+DTEND;TZID=America/Toronto:20261204T234100
+SUMMARY:Die Hard at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by John McTiernan\n1988 · 131 min\nDrunken Cinema\n
+ The Nakatomi Plaza siege as an interactive drinking-game screening with a
+  holiday pre-show.\nTickets: https://revuecinema.ca/films/drunken-cinema-
+ die-hard-1988/
+URL:https://revuecinema.ca/films/drunken-cinema-die-hard-1988/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261205T1230-home-alone@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261205T123000
+DTEND;TZID=America/Toronto:20261205T141300
+SUMMARY:Home Alone at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Chris Columbus\n1990 · 103 min\nChristmas Classi
+ cs\nA boy left behind at Christmas defends the family house from two burg
+ lars.\nTickets: https://revuecinema.ca/films/christmas-classics-home-alon
+ e-1990/
+URL:https://revuecinema.ca/films/christmas-classics-home-alone-1990/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261205T1530-black-christmas@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261205T153000
+DTEND;TZID=America/Toronto:20261205T170800
+SUMMARY:Black Christmas at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Bob Clark\n1974 · 98 min\nX-Mas Horror Classics\
+ nSorority sisters are stalked by an anonymous caller over the holidays\; 
+ a new print.\nTickets: https://revuecinema.ca/films/x-mas-horror-classics
+ -black-christmas-presented-on-35mm/
+URL:https://revuecinema.ca/films/x-mas-horror-classics-black-christmas-pr
+ esented-on-35mm/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261205T2130-die-hard@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261205T213000
+DTEND;TZID=America/Toronto:20261205T234100
+SUMMARY:Die Hard at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by John McTiernan\n1988 · 131 min\nDrunken Cinema\n
+ The Nakatomi Plaza siege as an interactive drinking-game screening with a
+  holiday pre-show.\nTickets: https://revuecinema.ca/films/drunken-cinema-
+ die-hard-1988/
+URL:https://revuecinema.ca/films/drunken-cinema-die-hard-1988/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261206T1500-48-hour@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261206T150000
+DTEND;TZID=America/Toronto:20261206T170000
+SUMMARY:48 Hour Film Project – Toronto at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:120 min\n48 Hour Film Project\nLocal teams premiere short fil
+ ms made in 48 hours\, one group per screening.\nTickets: https://revuecin
+ ema.ca/films/the-48-hour-science-fiction-film-project-toronto/
+URL:https://revuecinema.ca/films/the-48-hour-science-fiction-film-project
+ -toronto/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261206T1900-black-christmas@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261206T190000
+DTEND;TZID=America/Toronto:20261206T203800
+SUMMARY:Black Christmas at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Bob Clark\n1974 · 98 min\nX-Mas Horror Classics\
+ nSorority sisters are stalked by an anonymous caller over the holidays\; 
+ a new print.\nTickets: https://revuecinema.ca/films/x-mas-horror-classics
+ -black-christmas-presented-on-35mm/
+URL:https://revuecinema.ca/films/x-mas-horror-classics-black-christmas-pr
+ esented-on-35mm/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261206T2130-godzilla-minus-zero@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261206T213000
+DTEND;TZID=America/Toronto:20261206T234500
+SUMMARY:Godzilla Minus Zero at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Takashi Yamazaki\n2026 · 135 min\nJapan rebuilds
+  after war and a Godzilla attack\, until a new threat surfaces.\nTickets:
+  https://revuecinema.ca/films/godzilla-minus-zero/
+URL:https://revuecinema.ca/films/godzilla-minus-zero/
 END:VEVENT
 END:VCALENDAR

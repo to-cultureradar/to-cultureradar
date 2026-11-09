@@ -22,14 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261121T1600-ek-picasso@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261121T160000
 DTEND;TZID=America/Toronto:20261121T173500
 SUMMARY:Picasso’s Mermaid (Syrenka Picassa) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
 DESCRIPTION:Directed by Janusz Zaorski\n2026 · 95 min\nEKRAN Toronto Pol
- ish Film Festival\nTickets: https://revuecinema.ca/films/ekran-toronto-po
- lish-film-festival-picassos-mermaid-syrenka-picassa/
+ ish Film Festival\nA drawing found on a Warsaw apartment wall upends a yo
+ ung woman’s life.\nTickets: https://revuecinema.ca/films/ekran-toronto-
+ polish-film-festival-picassos-mermaid-syrenka-picassa/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-picas
  sos-mermaid-syrenka-picassa/
 END:VEVENT

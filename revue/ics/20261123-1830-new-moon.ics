@@ -22,14 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261123T1830-new-moon@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261123T183000
 DTEND;TZID=America/Toronto:20261123T204100
 SUMMARY:The Twilight Saga: New Moon at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
 DESCRIPTION:Directed by Chris Weitz\n2009 · 131 min\nRevue Event\nThe se
- cond Twilight film.\nTickets: https://revuecinema.ca/films/revue-event-th
- e-twilight-saga-new-moon/
-URL:https://revuecinema.ca/films/revue-event-the-twilight-saga-new-moon/
+ cond Twilight film\, 15 years on.\nTickets: https://revuecinema.ca/films/
+ revue-event-the-twilight-saga-new-moon-15th-anniversary-screening/
+URL:https://revuecinema.ca/films/revue-event-the-twilight-saga-new-moon-1
+ 5th-anniversary-screening/
 END:VEVENT
 END:VCALENDAR

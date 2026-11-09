@@ -22,10 +22,10 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261115T1130-elvira-notari@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261115T113000
 DTEND;TZID=America/Toronto:20261115T130400
-SUMMARY:An Extraordinary Filmmaker: Elvira Notari at the Revue
+SUMMARY:Elvira Notari: Beyond Silence at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
 DESCRIPTION:Directed by Valerio Ciriaci\n2025 · 94 min\nExtraordinary Wo
  men × U of T\nA documentary on the Neapolitan silent-film director\, wit

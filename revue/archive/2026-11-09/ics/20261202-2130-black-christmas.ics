@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Revue Cinema Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:STANDARD
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261202T2130-black-christmas@revue-calendar
+DTSTAMP:20261109T150327Z
+DTSTART;TZID=America/Toronto:20261202T213000
+DTEND;TZID=America/Toronto:20261202T230800
+SUMMARY:Black Christmas at the Revue
+LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
+DESCRIPTION:Directed by Bob Clark\n1974 · 98 min\nX-Mas Horror Classics\
+ nSorority sisters are stalked by an anonymous caller over the holidays\; 
+ a new print.\nTickets: https://revuecinema.ca/films/x-mas-horror-classics
+ -black-christmas-presented-on-35mm/
+URL:https://revuecinema.ca/films/x-mas-horror-classics-black-christmas-pr
+ esented-on-35mm/
+END:VEVENT
+END:VCALENDAR

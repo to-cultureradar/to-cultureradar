@@ -22,14 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261122T1530-ek-wild-east@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261122T153000
-DTEND;TZID=America/Toronto:20261122T173000
+DTEND;TZID=America/Toronto:20261122T171500
 SUMMARY:Wild Wild East (Dziki\, dziki wschód) at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-wild-wild-east-dziki-dzik
- i-wschod/
+DESCRIPTION:Directed by Jan Holoubek\n105 min\nEKRAN Toronto Polish Film 
+ Festival\nA Berlin official’s visit to an eastern Polish town in 1943 s
+ ets off a hunt for hidden gold.\nTickets: https://revuecinema.ca/films/ek
+ ran-toronto-polish-film-festival-wild-wild-east-dziki-dziki-wschod/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-wild-
  wild-east-dziki-dziki-wschod/
 END:VEVENT

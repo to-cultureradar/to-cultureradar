@@ -97,8 +97,8 @@ footer a{color:inherit}
 <div class="wrap">
 <header>
   <p class="home"><a href="/links/">← Culture Index Toronto</a></p>
-  <h1>The Revue <span>Nov 3 – 29</span></h1>
-  <p class="sub">Every screening at the Revue Cinema, 400 Roncesvalles Ave., for the next four weeks: repertory series, new films, guest events, and festivals. Titles link to the page for tickets. Listings as of Nov 3, 2026; check <a href="https://revuecinema.ca/films/">revuecinema.ca</a> for changes.</p>
+  <h1>The Revue <span>Nov 9 – Dec 6</span></h1>
+  <p class="sub">Every screening at the Revue Cinema, 400 Roncesvalles Ave., for the next four weeks: repertory series, new films, guest events, and festivals. Titles link to the page for tickets. Listings as of Nov 9, 2026; check <a href="https://revuecinema.ca/films/">revuecinema.ca</a> for changes.</p>
   <p class="subscribe"><a href="webcal://cultureradar.to/revue/revue.ics">Subscribe to every screening</a> in Apple Calendar; it updates itself each week. Or <a href="revue.ics">download the .ics</a>.</p>
 </header>
 
@@ -130,19 +130,8 @@ footer a{color:inherit}
 <script>
 // F: slug → [title, year, runtime, kind (new|cin (repertory/series)|special (guests)|partner (festivals/rentals)), blurb, director, series, url, format]
 const F={
- "lunar-sway":["Lunar Sway", 2026, 98, "new", "A man in a desert town reconnects with his birth mother while courting a dentist named Stew.", "Nick Butler", "Revue Event", "https://revuecinema.ca/films/revue-event-lunar-sway-select-cast-crew-in-attendance/", ""],
- "hero":["Hero", 2002, 99, "cin", "A Warring States–era official tells the king how he defeated three would-be assassins.", "Zhang Yimou", "Revue Film Society", "https://revuecinema.ca/films/revue-film-society-hero-2002/", ""],
- "henry":["Henry: Portrait of a Serial Killer", 1986, 83, "cin", "The Canadian premiere of a new 35mm print of McNaughton’s Chicago-set first feature.", "John McNaughton", "Revue Event", "https://revuecinema.ca/films/revue-event-henry-portrait-of-a-serial-killer-1986-canadian-premiere-of-new-35mm-print/", "35mm"],
- "grease-2":["Grease 2", 1982, 115, "cin", "The 1982 sequel, with Michelle Pfeiffer in her first lead role.", "Patricia Birch", "We Really Like Her!", "https://revuecinema.ca/films/we-really-like-her-grease-2-1982/", ""],
+ "2046":["2046", 2004, 129, "cin", "Wong Kar-wai’s loose sequel to In the Mood for Love, set partly in the future.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/destination-love-2046/", "4K"],
  "48-hour":["48 Hour Film Project – Toronto", null, 120, "partner", "Local teams premiere short films made in 48 hours, one group per screening.", "", "48 Hour Film Project", "https://revuecinema.ca/films/the-48-hour-science-fiction-film-project-toronto/", ""],
- "v-for-vendetta":["V for Vendetta", 2006, 132, "cin", "A masked vigilante takes on a fascist British state; 20th anniversary.", "James McTeigue", "The Perfect Date", "https://revuecinema.ca/films/the-perfect-date-v-for-vendetta-20th-anniversary-screening/", ""],
- "behind-every-door":["Island of Listeners: Behind Every Door + artist talk", 2026, 13, "special", "A hand-painted short set in a palliative care unit, followed by a talk with Rachel Gray and Kim Kilpatrick.", "Rachel Gray & Kim Kilpatrick", "Revue Event", "https://revuecinema.ca/films/revue-event-island-of-listeners-behind-every-door-screening-and-artist-talk-with-rachel-gray-and-kim-kilpatrick/", ""],
- "eraser":["Eraser", 1996, 115, "cin", "Schwarzenegger’s witness-protection action film, 30 years on.", "Chuck Russell", "Revue Event", "https://revuecinema.ca/films/revue-event-eraser-1996-presented-on-35mm/", "35mm"],
- "nirvanna-s1a":["Nirvanna the Band the Show: Season 1, episodes 1–4", 2017, 88, "special", "Matt and Jay’s quest to play the Rivoli, with the pair and surprise guests in person.", "Matt Johnson", "Zapruder Films", "https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-show-season-1-episodes-1-4-with-special-guests-in-attendance/", ""],
- "minnow":["Understanding Myself as an Amphibian", 2026, 63, "partner", "A Canadian documentary on sexual diversity in wildlife and the history of biology. Toronto premiere.", "May Matchim", "Minnow Magazine", "https://revuecinema.ca/films/rental-event-minnow-magazine-understanding-myself-as-an-amphibian-toronto-theatrical-premiere/", ""],
- "se7en":["Se7en", 1995, 127, "cin", "Two detectives track killings modelled on the seven deadly sins.", "David Fincher", "The Midnight Revue", "https://revuecinema.ca/films/revue-event-se7en-1995-new-4k-restoration/", "4K"],
- "nirvanna-s1b":["Nirvanna the Band the Show: Season 1, episodes 5–8", 2017, 88, "special", "The rest of season one, with Matt, Jay, and surprise guests in person.", "Matt Johnson", "Zapruder Films", "https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-show-season-1-episodes-5-8-with-special-guests-in-attendance/", ""],
- "umberto-d":["Umberto D.", 1952, 91, "cin", "A retired civil servant and his dog face eviction in postwar Rome.", "Vittorio De Sica", "Don’t Be So Political", "https://revuecinema.ca/films/dont-be-so-political-umberto-d-1952/", ""],
  "casino-royale":["Casino Royale", 2006, 144, "cin", "Daniel Craig’s first Bond, in a new restoration.", "Martin Campbell", "Revue Event", "https://revuecinema.ca/films/revue-event-casino-royale-2006-new-4k-restoration/", "4K"],
  "black-zombie":["Black Zombie", 2026, 90, "new", "A documentary tracing the zombie from Haitian Vodou to Hollywood horror.", "Maya Annik Bedward", "The Black Nerds", "https://revuecinema.ca/films/the-black-nerds-black-zombie-2026/", ""],
  "trainspotting":["Trainspotting", 1996, 94, "cin", "Irvine Welsh’s Edinburgh heroin users, in a new restoration.", "Danny Boyle", "Psych-Out Cinema", "https://revuecinema.ca/films/psych-out-cinema-trainspotting-1996-new-4k-restoration/", "4K"],
@@ -151,29 +140,27 @@ const F={
  "friday-13th":["Friday the 13th", 2009, 97, "cin", "The 2009 remake, on a Friday the 13th.", "Marcus Nispel", "Drunken Cinema", "https://revuecinema.ca/films/drunken-cinema-friday-the-13th-2009-presented-on-35mm/", "35mm"],
  "nirvanna-s2b":["Nirvanna the Band the Show: Season 2, episodes 5–8", 2017, 88, "special", "The end of season two, with Matt, Jay, and surprise guests.", "Matt Johnson", "Zapruder Films", "https://revuecinema.ca/films/zapruder-films-nirvanna-the-band-the-show-season-2-episodes-5-8-with-special-guests-in-attendance/", ""],
  "days-of-being-wild":["Days of Being Wild", 1990, 94, "cin", "A Hong Kong playboy learns the woman who raised him is not his mother.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/destination-love-days-of-being-wild-1990-new-4k-restoration/", "4K"],
- "ninja-terminator":["Ninja Terminator", 1986, 92, "cin", "Godfrey Ho’s cut-and-paste Hong Kong ninja film, 40 years on.", "Godfrey Ho", "Black Belt Cinema", "https://revuecinema.ca/films/black-belt-cinema-ninja-terminator-40th-anniversary-screening/", ""],
- "elvira-notari":["An Extraordinary Filmmaker: Elvira Notari", 2025, 94, "special", "A documentary on the Neapolitan silent-film director, with director Valerio Ciriaci and a panel.", "Valerio Ciriaci", "Extraordinary Women × U of T", "https://revuecinema.ca/films/an-extraordinary-filmmaker-elvira-notari/", ""],
+ "ninja-terminator":["Ninja Terminator", 1986, 92, "cin", "Godfrey Ho’s cut-and-paste Hong Kong ninja film, 40 years on.", "Godfrey Ho", "Black Belt Cinema", "https://revuecinema.ca/films/black-belt-cinema-ninja-terminator-40th-anniversary-screening/", "4K"],
+ "elvira-notari":["Elvira Notari: Beyond Silence", 2025, 94, "special", "A documentary on the Neapolitan silent-film director, with director Valerio Ciriaci and a panel.", "Valerio Ciriaci", "Extraordinary Women × U of T", "https://revuecinema.ca/films/an-extraordinary-filmmaker-elvira-notari/", ""],
  "walk-hard":["Walk Hard: The Dewey Cox Story", 2007, 96, "cin", "A music-biopic parody that runs one singer through every style and excess.", "Jake Kasdan", "Staff Pick of the Month", "https://revuecinema.ca/films/the-staff-pick-of-the-month-walk-hard-the-dewey-cox-story-2007/", ""],
  "in-the-mood":["In the Mood for Love + In the Mood for Love 2001", 2000, 98, "cin", "Two neighbours in 1962 Hong Kong, with the rarely shown short In the Mood for Love 2001.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/revue-event-in-the-mood-for-love-2000-new-restoration/", "4K"],
  "final-destination-2":["Final Destination 2", 2003, 90, "cin", "The highway pile-up sequel.", "David R. Ellis", "Not-So Terrible Twos", "https://revuecinema.ca/films/not-so-terrible-twos-final-destination-2-2003/", ""],
- "2046":["2046", 2004, 129, "cin", "Wong Kar-wai’s loose sequel to In the Mood for Love, set partly in the future.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/destination-love-2046/", "4K"],
  "chungking-express":["Chungking Express", 1994, 102, "cin", "Two lovesick Hong Kong cops, two stories, one snack bar.", "Wong Kar-wai", "Destination Love", "https://revuecinema.ca/films/chungking-express-1994-4k-restoration/", "4K"],
- "ek-lalka":["Lalka", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-lalka/", ""],
- "ek-passenger":["The Passenger Andrzej Munk (Pasażer Andrzej Munk)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-passenger-andrzej-munk-pasazer-andrzej-munk/", ""],
- "ek-dzien":["Dzień Dziecka księdza Jana Kaczkowskiego", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-dzien-dziecka-ksiedza-jana-kaczkowskiego/", ""],
- "ek-revolution":["Our Revolution (Nasza rewolucja)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-our-revolution-nasza-rewolucja/", ""],
- "ek-erupcja":["Erupcja", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-erupcia/", ""],
- "ek-kumotry":["Double Trouble (Kumotry)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-double-trouble-kumotry/", ""],
- "ek-heel":["Heel (Dobry chłopiec)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-heel-dobry-chlopiec/", ""],
- "ek-hot-spot":["Hot Spot", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-hot-spot/", ""],
- "ek-picasso":["Picasso’s Mermaid (Syrenka Picassa)", 2026, 95, "partner", "", "Janusz Zaorski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-picassos-mermaid-syrenka-picassa/", ""],
- "ek-fatherland":["Fatherland (Ojczyzna)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-fatherland-ojczyzna/", ""],
- "ek-tell-me":["Tell Me What You Feel (Powiedz mi, co czujesz)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-tell-me-what-you-feel-powiedz-mi-co-czujesz/", ""],
- "ek-psoty":["Psoty", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-psoty/", ""],
- "ek-wild-east":["Wild Wild East (Dziki, dziki wschód)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-wild-wild-east-dziki-dziki-wschod/", ""],
- "ek-through-the-wall":["Through the Wall (Przez ścianę)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-film-festival-through-the-wall-przez-sciane/", ""],
- "ek-cauliflower":["The Cauliflower of Destiny (Kalafior przeznaczenia)", null, null, "partner", "", "", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-cauliflower-of-destiny-kalafior-przeznaczenia/", ""],
- "new-moon":["The Twilight Saga: New Moon", 2009, 131, "cin", "The second Twilight film.", "Chris Weitz", "Revue Event", "https://revuecinema.ca/films/revue-event-the-twilight-saga-new-moon/", ""],
+ "ek-lalka":["Lalka", null, 162, "partner", "A merchant’s unreturned love for an aristocrat in 19th-century Warsaw, after Bolesław Prus.", "Maciej Kawalski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-lalka/", ""],
+ "ek-passenger":["The Passenger Andrzej Munk (Pasażer Andrzej Munk)", null, 84, "partner", "Archival documentary on Polish Film School director Andrzej Munk.", "Michał Bielawski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-passenger-andrzej-munk-pasazer-andrzej-munk/", ""],
+ "ek-dzien":["Dzień Dziecka księdza Jana Kaczkowskiego", null, 110, "partner", "Documentary on Father Jan Kaczkowski, a priest who kept serving others through illness.", "Artur Wierzbicki", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-dzien-dziecka-ksiedza-jana-kaczkowskiego/", ""],
+ "ek-revolution":["Our Revolution (Nasza rewolucja)", null, 125, "partner", "Jacek and Grażyna Kuroń’s flat becomes an opposition hub as martial law arrives.", "Piotr Domalewski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-our-revolution-nasza-rewolucja/", ""],
+ "ek-erupcja":["Erupcja", null, 71, "partner", "A Warsaw holiday turns when a volcano erupts and an old friendship resurfaces.", "Pete Ohs", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-erupcia/", ""],
+ "ek-kumotry":["Double Trouble (Kumotry)", null, 70, "partner", "Documentary on two widows in a Polish village in Romania as their children leave.", "Emilia Śniegoska", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-double-trouble-kumotry/", ""],
+ "ek-heel":["Heel (Dobry chłopiec)", null, 110, "partner", "A couple kidnaps a 19-year-old offender, set on reforming him.", "Jan Komasa", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-heel-dobry-chlopiec/", ""],
+ "ek-hot-spot":["Hot Spot", null, 101, "partner", "A detective in an AI-run near future uncovers a rebel plot during a murder case.", "Agnieszka Smoczyńska", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-hot-spot/", ""],
+ "ek-picasso":["Picasso’s Mermaid (Syrenka Picassa)", 2026, 95, "partner", "A drawing found on a Warsaw apartment wall upends a young woman’s life.", "Janusz Zaorski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-picassos-mermaid-syrenka-picassa/", ""],
+ "ek-fatherland":["Fatherland (Ojczyzna)", null, 82, "partner", "Thomas Mann and daughter Erika drive across divided postwar Germany.", "Paweł Pawlikowski", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-fatherland-ojczyzna/", ""],
+ "ek-tell-me":["Tell Me What You Feel (Powiedz mi, co czujesz)", null, 94, "partner", "A struggling painter falls for an art therapist who pays poor people for their tears.", "Łukasz Ronduda", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-tell-me-what-you-feel-powiedz-mi-co-czujesz/", ""],
+ "ek-wild-east":["Wild Wild East (Dziki, dziki wschód)", null, 105, "partner", "A Berlin official’s visit to an eastern Polish town in 1943 sets off a hunt for hidden gold.", "Jan Holoubek", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-wild-wild-east-dziki-dziki-wschod/", ""],
+ "ek-through-the-wall":["Through the Wall (Przez ścianę)", null, 120, "partner", "Two prisoners in a Stalinist jail fall in love through a cell wall, talking in Morse code.", "Maciej Sobieszczański", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-film-festival-through-the-wall-przez-sciane/", ""],
+ "ek-cauliflower":["The Cauliflower of Destiny (Kalafior przeznaczenia)", null, 77, "partner", "A grocery clerk under her mother’s thumb takes advice from a talking cauliflower.", "Anna Urbańczyk", "EKRAN Toronto Polish Film Festival", "https://revuecinema.ca/films/ekran-toronto-polish-film-festival-the-cauliflower-of-destiny-kalafior-przeznaczenia/", ""],
+ "new-moon":["The Twilight Saga: New Moon", 2009, 131, "cin", "The second Twilight film, 15 years on.", "Chris Weitz", "Revue Event", "https://revuecinema.ca/films/revue-event-the-twilight-saga-new-moon-15th-anniversary-screening/", ""],
  "the-edge":["The Edge", 1997, 117, "cin", "Three men stranded in the Alaskan wilderness, a bear, and mounting distrust.", "Lee Tamahori", "When Animals Attack", "https://revuecinema.ca/films/when-animals-attack-the-edge-1997-presented-on-35mm/", "35mm"],
  "reality-bites":["Reality Bites", 1994, 99, "cin", "Ben Stiller’s first feature, about new graduates in Houston.", "Ben Stiller", "Hold Up!", "https://revuecinema.ca/films/hold-up-reality-bites-1994/", ""],
  "fight-club":["Fight Club", 1999, 139, "cin", "Fincher’s 1999 film, in a new restoration.", "David Fincher", "Paid in Sweat", "https://revuecinema.ca/films/paid-in-sweat-fight-club-1999-4k-restoration/", "4K"],
@@ -184,17 +171,20 @@ const F={
  "cocoon":["Cocoon: One Summer of Girlhood (dubbed)", 2026, 85, "new", "Two schoolgirls are drafted to nurse soldiers in a hidden wartime cave hospital.", "Yukimitsu Ina", "Anime at the Revue", "https://revuecinema.ca/films/anime-at-the-revue-cocoon-one-summer-of-childhood/", ""],
  "nightmare-before":["The Nightmare Before Christmas", 1993, 76, "cin", "Stop-motion musical in which Halloween Town’s Pumpkin King takes over Christmas.", "Henry Selick", "Throwback Cinema", "https://revuecinema.ca/films/throwback-cinema-the-nightmare-before-christmas/", ""],
  "batman":["Batman (1966) + Mexican Batwoman double bill", 1966, 190, "cin", "The 1966 Batman feature paired with the 1968 Mexican Batwoman, with an intermission.", "Leslie H. Martinson", "Dumpster Raccoon", "https://revuecinema.ca/films/dumpster-raccoon-batman-66-and-mexican-batwoman-double-bill/", ""],
- "he-who-gets-slapped":["He Who Gets Slapped", 1924, 95, "cin", "Lon Chaney as a scientist turned circus clown.", "Victor Sjöström", "Silent Revue", "https://revuecinema.ca/films/silent-revue-he-who-gets-slapped-1924/", ""]
+ "he-who-gets-slapped":["He Who Gets Slapped", 1924, 72, "special", "Lon Chaney as a scientist turned circus clown, with live piano by Marilyn Lerner.", "Victor Sjöström", "Silent Revue", "https://revuecinema.ca/films/silent-revue-he-who-gets-slapped-1924/", ""],
+ "heated-rivalry":["Heated Rivalry marathon", 2025, 322, "new", "All six episodes of the hockey romance series in one evening, with an intermission.", "Jacob Tierney", "Revue Event", "https://revuecinema.ca/films/revue-event-heated-rivalry-marathon/", ""],
+ "the-fin":["The Fin", 2026, 84, "special", "A civil servant in a ruined future Korea shelters a mutant outcast; director Park Sye-young attends.", "Park Sye-young", "Revue Event", "https://revuecinema.ca/films/revue-event-the-fin-2026-toronto-theatrical-premiere-with-director-park-sye-young-in-attendance/", ""],
+ "rapture":["The Rapture", 1991, 100, "cin", "A telephone operator’s life of empty thrills gives way to religious conversion and a test of faith.", "Michael Tolkin", "35 on 35", "https://revuecinema.ca/films/35-on-35-the-rapture-1991-presented-on-35mm/", "35mm"],
+ "gremlins":["Gremlins", 1984, 106, "cin", "A Christmas pet comes with three rules; breaking them unleashes chaos on a small town.", "Joe Dante", "X-Mas Horror Classics", "https://revuecinema.ca/films/x-mas-horror-classics-gremlins-40th-anniversary-screening/", ""],
+ "black-christmas":["Black Christmas", 1974, 98, "cin", "Sorority sisters are stalked by an anonymous caller over the holidays; a new print.", "Bob Clark", "X-Mas Horror Classics", "https://revuecinema.ca/films/x-mas-horror-classics-black-christmas-presented-on-35mm/", "35mm"],
+ "night-of-the-comet":["Night of the Comet", 1984, 95, "cin", "Two Valley sisters outlast a comet that turned most of Los Angeles to dust or zombies.", "Thom Eberhardt", "X-Mas Horror Classics", "https://revuecinema.ca/films/night-of-the-comet/", "35mm"],
+ "godzilla-minus-zero":["Godzilla Minus Zero", 2026, 135, "new", "Japan rebuilds after war and a Godzilla attack, until a new threat surfaces.", "Takashi Yamazaki", "", "https://revuecinema.ca/films/godzilla-minus-zero/", ""],
+ "die-hard":["Die Hard", 1988, 131, "cin", "The Nakatomi Plaza siege as an interactive drinking-game screening with a holiday pre-show.", "John McTiernan", "Drunken Cinema", "https://revuecinema.ca/films/drunken-cinema-die-hard-1988/", "35mm"],
+ "home-alone":["Home Alone", 1990, 103, "cin", "A boy left behind at Christmas defends the family house from two burglars.", "Chris Columbus", "Christmas Classics", "https://revuecinema.ca/films/christmas-classics-home-alone-1990/", ""]
 };
 // S: "YYYY-MM-DD" → ["HH:MM slug", …] (" !" after the slug marks sold out)
 // WEEK0: the Monday that starts the four-week window (update it with the listings date)
 const S={
-"2026-11-03":["18:45 hero", "21:30 lunar-sway"],
-"2026-11-04":["18:30 grease-2", "21:30 henry"],
-"2026-11-05":["18:30 48-hour", "21:30 v-for-vendetta"],
-"2026-11-06":["18:45 behind-every-door", "21:30 eraser"],
-"2026-11-07":["12:00 nirvanna-s1a !", "16:00 48-hour", "20:00 minnow", "23:30 se7en"],
-"2026-11-08":["12:00 nirvanna-s1b !", "16:00 48-hour", "19:00 umberto-d"],
 "2026-11-09":["18:30 48-hour", "21:30 casino-royale"],
 "2026-11-10":["18:30 48-hour", "21:30 black-zombie"],
 "2026-11-11":["18:30 48-hour", "21:30 trainspotting"],
@@ -204,20 +194,27 @@ const S={
 "2026-11-15":["11:30 elvira-notari", "16:00 48-hour", "19:00 walk-hard"],
 "2026-11-16":["18:30 in-the-mood", "21:30 in-the-mood"],
 "2026-11-17":["19:00 final-destination-2", "21:30 2046"],
-"2026-11-18":["18:30 ek-lalka", "21:30 chungking-express"],
-"2026-11-19":["12:00 ek-passenger", "15:30 ek-dzien", "18:30 ek-revolution", "21:30 ek-erupcja"],
+"2026-11-18":["18:00 ek-lalka", "21:30 chungking-express"],
+"2026-11-19":["12:00 ek-passenger", "15:30 ek-dzien", "18:30 ek-revolution", "21:00 ek-erupcja"],
 "2026-11-20":["12:00 ek-kumotry", "15:30 ek-heel", "18:30 ek-lalka", "21:30 ek-hot-spot"],
-"2026-11-21":["16:00 ek-picasso", "18:30 ek-fatherland", "21:30 ek-tell-me"],
-"2026-11-22":["12:00 ek-psoty", "15:30 ek-wild-east", "18:30 ek-through-the-wall", "21:30 ek-cauliflower"],
+"2026-11-21":["16:00 ek-picasso", "18:30 ek-fatherland", "21:00 ek-tell-me"],
+"2026-11-22":["12:00 ek-lalka", "15:30 ek-wild-east", "18:30 ek-through-the-wall", "21:00 ek-cauliflower"],
 "2026-11-23":["18:30 new-moon", "21:30 the-edge"],
 "2026-11-24":["18:45 reality-bites"],
-"2026-11-25":["18:30 fight-club", "21:30 begotten"],
+"2026-11-25":["18:15 fight-club", "21:30 begotten"],
 "2026-11-26":["18:30 gilda", "21:30 pulse"],
 "2026-11-27":["18:30 crash", "21:30 crash"],
 "2026-11-28":["13:30 cocoon", "16:00 nightmare-before", "19:00 batman"],
-"2026-11-29":["16:00 he-who-gets-slapped"]
+"2026-11-29":["16:00 he-who-gets-slapped"],
+"2026-11-30":["18:15 heated-rivalry !"],
+"2026-12-01":["18:30 the-fin", "21:30 rapture"],
+"2026-12-02":["18:45 gremlins", "21:30 black-christmas"],
+"2026-12-03":["21:30 night-of-the-comet"],
+"2026-12-04":["15:00 godzilla-minus-zero", "21:30 die-hard"],
+"2026-12-05":["12:30 home-alone", "15:30 black-christmas", "21:30 die-hard"],
+"2026-12-06":["15:00 48-hour", "19:00 black-christmas", "21:30 godzilla-minus-zero"]
 };
-const WEEK0="2026-11-02";
+const WEEK0="2026-11-09";
 const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const dOf=k=>{const[y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d)};
 const kOf=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;

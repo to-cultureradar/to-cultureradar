@@ -22,14 +22,15 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261119T1530-ek-dzien@revue-calendar
-DTSTAMP:20261104T032804Z
+DTSTAMP:20261109T150327Z
 DTSTART;TZID=America/Toronto:20261119T153000
-DTEND;TZID=America/Toronto:20261119T173000
+DTEND;TZID=America/Toronto:20261119T172000
 SUMMARY:Dzień Dziecka księdza Jana Kaczkowskiego at the Revue
 LOCATION:Revue Cinema\, 400 Roncesvalles Ave\, Toronto\, ON M6R 2M9
-DESCRIPTION:EKRAN Toronto Polish Film Festival\nTickets: https://revuecin
- ema.ca/films/ekran-toronto-polish-film-festival-dzien-dziecka-ksiedza-jan
- a-kaczkowskiego/
+DESCRIPTION:Directed by Artur Wierzbicki\n110 min\nEKRAN Toronto Polish F
+ ilm Festival\nDocumentary on Father Jan Kaczkowski\, a priest who kept se
+ rving others through illness.\nTickets: https://revuecinema.ca/films/ekra
+ n-toronto-polish-film-festival-dzien-dziecka-ksiedza-jana-kaczkowskiego/
 URL:https://revuecinema.ca/films/ekran-toronto-polish-film-festival-dzien
  -dziecka-ksiedza-jana-kaczkowskiego/
 END:VEVENT

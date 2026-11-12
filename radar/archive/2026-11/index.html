@@ -226,6 +226,7 @@ const ext=u=>/^https?:/.test(u);
 function flags(t){return (t.includes("pick")?'<span class="flag pick">Pick</span>':"")+(t.includes("free")?'<span class="flag free">Free</span>':"")+(t.includes("pwyc")?'<span class="flag free">PWYC</span>':"")+(t.includes("tour")?'<span class="flag tour">Touring</span>':"")+(t.includes("sold")?'<span class="flag sold">Sold out</span>':"");}
 function renderPicks(){
   const P=E.filter(e=>e[6].includes("pick")).sort((a,b)=>key(a[1])-key(b[1]));
+  document.querySelector(".picks").hidden=!P.length;
   document.getElementById("picks").innerHTML=P.map(([c,w,t,where,,link,tags])=>`<a class="pickcard" href="${esc(link)}"${ext(link)?' target="_blank" rel="noopener"':''}><span class="d">${esc(w)} · ${esc(CATNAME[c]||c)}${tags.includes("sold")?(/tiff\.net/.test(link)?' <span class="flag sold">Rush only</span>':' <span class="flag sold">Sold out</span>'):''}</span><span class="t">${esc(t)}</span><span class="v">${esc(where.split(" · ")[0])}</span></a>`).join("");
 }
 function renderTabs(){
